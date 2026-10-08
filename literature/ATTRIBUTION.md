@@ -7,6 +7,14 @@ large-size limit. [SOURCES.json](SOURCES.json) records versions, exact reading
 locations, methods, and access limits; the original
 [source record](../archive/research-handoff-2026-10-08/SOURCES.json) is preserved.
 
+## Learning source
+
+[Tichy, arXiv:1312.4266v2](https://arxiv.org/html/1312.4266v2) is the single
+external tutorial for the [learning bridge](../research/TUTORIAL_BRIDGE.md).
+It supplies interference prerequisites; the repository supplies the
+distillation-specific steps. The research sources below serve attribution
+and proof context.
+
 ## Existing results and the additional converse
 
 | Source and locations | Existing result | Additional conclusion or distinction |

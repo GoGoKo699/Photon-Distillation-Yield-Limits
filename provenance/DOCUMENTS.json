@@ -12,8 +12,8 @@
     "sha256": "e88022d321f44bce72762e5b3e0028d7eb8117ee2b113b76fdc3657c4270b345"
   },
   "README.md": {
-    "bytes": 4456,
-    "sha256": "45937b61f89f3481a35c1ed807730944c79dea99504c960f54768e96608f26e1"
+    "bytes": 6694,
+    "sha256": "c8f29125a0156e365fa4f798f97a6e878faf9c7056533e5435e1f7a3dfed8d71"
   },
   "VERIFICATION.md": {
     "bytes": 4091,
@@ -28,16 +28,16 @@
     "sha256": "d6a67b899ff5d00ea865aaaed744de33c3bb23867086d898c93a6da74f61d93e"
   },
   "literature/ATTRIBUTION.md": {
-    "bytes": 6404,
-    "sha256": "7c7e091e67cadbeff81b470515c712caee891ad6f43bfdf1d2cfa0455e4ab320"
+    "bytes": 6740,
+    "sha256": "339f4a7ac5884f1e687b7f3f55cb9ca63456ae14857404a9c8f32dede3e036bb"
   },
   "literature/SOURCES.json": {
-    "bytes": 9335,
-    "sha256": "fc8c6183c53cd66c30b78c380132843bc73d3121ba99aab00c4a3ec249042eb9"
+    "bytes": 10394,
+    "sha256": "399754e36fb6e6d65787a9c694c800ff9007d101d6d4b82105f3ee9a4e1cf657"
   },
   "llms.txt": {
-    "bytes": 1337,
-    "sha256": "96112c527db72b20463b2720f65a417032171722660669fd2dccc0b5558ec142"
+    "bytes": 7613,
+    "sha256": "ebc0be9291ac1ec5e9388bf1f0e4705e0d4d4cc88a9e95b06a8f5db2f8c9b445"
   },
   "provenance/ACTIVE_EDITS.json": {
     "bytes": 33372,
@@ -56,8 +56,8 @@
     "sha256": "f6877e25cb08e342927c385838d8746c11021ecc1230f9d8b4879d06208cb68b"
   },
   "research/MODEL_AND_CLAIMS.md": {
-    "bytes": 2801,
-    "sha256": "fb6a7d1d1d9c6af323ac1529ee2567889e83407bae3b7629ec53c898f5ab0166"
+    "bytes": 2907,
+    "sha256": "721ae9a91bde53ee6f884a2b313ff6faf2054eba03bd50fb157487c9b4100ddf"
   },
   "research/OPTICAL_CONSTRUCTION.md": {
     "bytes": 10419,
@@ -76,8 +76,8 @@
     "sha256": "f70cde0ef276ec6661b514f6e4207b027aa62f8ed343087e01a15daae60625ff"
   },
   "research/PROOF_MAP.md": {
-    "bytes": 2394,
-    "sha256": "29b7800e07f07a3039f9b0c641e05ba9c0ca2ad423a7e8dd702eee45d8a28a92"
+    "bytes": 2501,
+    "sha256": "1ff12a7b1bacaf2d98b30989441cbc1238dbfd740449a8486833c38b14ba1e20"
   },
   "research/SCIENTIFIC_AUDIT.md": {
     "bytes": 6116,
@@ -86,6 +86,10 @@
   "research/THEOREM.md": {
     "bytes": 10646,
     "sha256": "617fdd12effd28d64e8608038623a7905b6458635d3805e5ce04cecfdc0e5f45"
+  },
+  "research/TUTORIAL_BRIDGE.md": {
+    "bytes": 9670,
+    "sha256": "e9167b7a2e9c460ec7982c6fa6f7830ffd72bb2bf56ccc2618cf2c3eeac07fe8"
   },
   "tests/test_integrity.py": {
     "bytes": 6083,
@@ -108,7 +112,7 @@
     "sha256": "88b9b6f0c1741de7032c2c9ce4f532c1e4a4f648b7e4e9efd8eb3799ad7a3c39"
   },
   "work_orders/CURRENT.md": {
-    "bytes": 1794,
-    "sha256": "d80f00e938d3737244afa934276e514d009cdc58123f87a685263f773f43291d"
+    "bytes": 2149,
+    "sha256": "939070c1bcc5b4027fdc7afb2ce67ecd0996290950d4dc4d0dadf637c053fb11"
   }
 }

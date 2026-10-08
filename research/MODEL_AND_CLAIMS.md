@@ -1,6 +1,8 @@
 # Model and claim hierarchy
 
-The complete statements and proofs are in [THEOREM.md](THEOREM.md).
+The [tutorial bridge](TUTORIAL_BRIDGE.md) introduces the optical notation and
+a worked heralding example. The complete statements and proofs are in
+[THEOREM.md](THEOREM.md).
 
 ## Fixed resources
 

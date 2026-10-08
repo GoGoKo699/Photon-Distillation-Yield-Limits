@@ -28,4 +28,10 @@ explicitly selected new claim. Finite-error operation, loss, adaptive survivor
 routing, correlated inputs, extra nonvacuum resources, and all finite-N optima are
 separate questions. A passing test is not independent review or a novelty certificate.
 
+The selected learning source is Tichy, arXiv:1312.4266v2. Maintain the
+[tutorial bridge](../research/TUTORIAL_BRIDGE.md), reader-focused README, and
+[LLM guide](../llms.txt) together. The README and bridge use GitHub inline math
+with backtick-wrapped expressions and fenced `math` display blocks. Keep the
+source-to-repository matrix transpose explicit.
+
 Use [AGENTS.md](../AGENTS.md) and [VERIFICATION.md](../VERIFICATION.md) for edits.
