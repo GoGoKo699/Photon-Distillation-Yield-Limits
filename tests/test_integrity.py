@@ -7,11 +7,13 @@ import re
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'tools'))
 from integrity import (ROOT, check_entry, current_metadata, reproduce_active, safe_path,
                        source_files, verify_active, verify_archive, verify_links, verify_metadata)
+import sync_active
 
 class IntegrityTests(unittest.TestCase):
     def test_archive_inventory(self):
@@ -77,5 +79,40 @@ class IntegrityTests(unittest.TestCase):
             check_entry(path,record)
             path.write_bytes(b'modified')
             with self.assertRaises(AssertionError):check_entry(path,record)
+
+    def assert_active_write_rejected(self, second_destination):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            protected = ['LICENSE', 'archive/research-handoff-2026-10-08/THEOREM.md',
+                         'provenance/IMPORT.json', 'tools/verify.py']
+            for name in ['research/active.md', *protected]:
+                path = root/name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text('original\n')
+            source = 'archive/research-handoff-2026-10-08/THEOREM.md'
+            copies = [{'destination': name, 'source': source,
+                       'source_sha256': hashlib.sha256(b'original\n').hexdigest(),
+                       'destination_sha256': '',
+                       'replacements': [{'old': 'original', 'new': 'changed', 'count': 1}]}
+                      for name in ['research/active.md', second_destination]]
+            (root/'provenance/ACTIVE_EDITS.json').write_text(json.dumps({'copies': copies}))
+            before = {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()}
+            with patch.object(sync_active, 'ROOT', root), patch('integrity.ROOT', root), \
+                    patch.object(sync_active, 'verify_archive'), \
+                    patch.object(sys, 'argv', ['sync_active.py', '--write']):
+                with self.assertRaises(ValueError):
+                    sync_active.main()
+            after = {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()}
+            self.assertEqual(before, after, 'Rejected specifications must not partially write files')
+
+    def test_active_sync_rejects_protected_destinations_before_writing(self):
+        for destination in ['LICENSE', 'archive/research-handoff-2026-10-08/THEOREM.md',
+                            'provenance/IMPORT.json', 'provenance/ACTIVE_EDITS.json',
+                            'tools/verify.py']:
+            with self.subTest(destination=destination):
+                self.assert_active_write_rejected(destination)
+
+    def test_active_sync_rejects_duplicate_destinations_before_writing(self):
+        self.assert_active_write_rejected('research/active.md')
 
 if __name__=='__main__':unittest.main()

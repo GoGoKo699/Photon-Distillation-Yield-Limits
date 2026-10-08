@@ -65,9 +65,10 @@ required by the central asymptotic theorem.
 
 The complete original research package is preserved in
 [the dated archive](archive/README.md), including proofs, unchanged checkers,
-canonical reports, and failed attempts. Active documents have only the declared
-navigation and initialization-status changes recorded in
-[ACTIVE_EDITS.json](provenance/ACTIVE_EDITS.json). The proofs remain author-side;
+canonical reports, and failed attempts. Active documents use the declared, reviewed
+navigation and presentation changes recorded in
+[ACTIVE_EDITS.json](provenance/ACTIVE_EDITS.json), preserving the scientific claims,
+proofs, scope, attribution, and audit status. The proofs remain author-side;
 passing checks establish neither independent proof review nor exhaustive priority.
 
 ```bash
@@ -76,8 +77,8 @@ python -m unittest discover -s tests -v
 python tools/verify.py --output-dir build/verification
 ```
 
-The output directory must be new. See [WORKSPACE.md](WORKSPACE.md) and
-[the current work boundary](work_orders/CURRENT.md) for maintenance and takeover.
+The output directory must be new. [Verification](VERIFICATION.md) explains the
+evidence and strict report comparison, including numerical-runtime differences.
 
 ## Purpose and contact
 

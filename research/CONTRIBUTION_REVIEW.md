@@ -1,34 +1,32 @@
-# Contribution review and scientific stopping point
+# Contribution assessment
 
-## Decision
+Known Fourier protocols reduce the first-order distinguishability error by
+$1/N$ with ideal success approaching $1/4$, at a photon cost approaching $4N$.
+The central contribution is the matching all-network converse: every sequence
+in the allowed fixed-output, passive, vacuum-extended class has limiting upper
+success at most $1/4$ when its first-order error coefficient vanishes. Optimizing batch size as
+well gives the sharp leading cost $(4+o(1))R$ for requested derivative-level
+reduction $R$.
 
-GO for a dedicated project record and author-facing review of this bounded
-contribution. Stop automatic scientific expansion. The stable first-order yield
-ceiling and its batch-optimized photon cost are the central result; the exact
-four-photon optimum is a finite-resource companion. This turn consolidates their
-proof and completes a physical interpretation of the quarter. It does not claim
-a new thermalization principle or upgrade the result to finite-error operation.
+This is a bounded resource theorem. Known Fourier attainment, the necessary
+thermal number marginal, and the exact four-photon optimum play distinct roles
+alongside the central converse.
 
-## The result after granting the strongest predecessors
+## Why the converse is needed
 
-Existing protocols already reduce the first-order distinguishability error by
-$1/N$ with ideal success approaching $1/4$, giving a cost approaching $4N$.
-The additional theorem says that no apparatus in the declared fixed-output,
-passive, vacuum-extended class can improve the asymptotic success while making
-its first-order error coefficient vanish. Optimizing batch size as well does
-not beat $(4+o(1))R$ photons for requested derivative-level reduction $R$.
+A balanced Fourier row alone does not control arbitrary competitors. Strongly
+coupled inputs can produce a one-photon probability above one quarter. The proof
+uses accepted error amplitudes, a grouped Gram norm, and a uniform product
+estimate to control those inputs while allowing imbalance, arbitrary vacuum
+enlargement, and larger batches with suboptimal but vanishing error coefficients.
+The exact-coefficient theorem is a corollary of this stable form.
 
-The missing predecessor implication is not the limit of a balanced Fourier row.
-It is uniform control of arbitrary rows, including macroscopic couplings that
-can have a one-photon probability greater than one quarter. The accepted error
-amplitudes, grouped Gram norm, and uniform product estimate control that case.
-The exact-coefficient theorem survives, but is now a corollary of the stable form.
-
-The physical account has a strict logical order. The converse first proves that
-approaching the ceiling forces diffuse occupied-input couplings and total occupied
-row norm approaching one. Known quantum-central-limit behavior then explains the
-resulting half-vacuum, quarter-single-photon, quarter-multiphoton marginal. It would
-be circular to assume that marginal before excluding strongly coupled competitors.
+Approaching the ceiling forces diffuse occupied-input couplings and total
+occupied row norm approaching one. Known quantum-central-limit behavior then
+gives the half-vacuum, quarter-single-photon, quarter-multiphoton marginal.
+Assuming that marginal before excluding strongly coupled competitors would
+omit the central optimization problem. The number law does not certify internal
+purity: the detector selection rule is essential.
 
 ## Claim hierarchy
 
@@ -41,95 +39,81 @@ be circular to assume that marginal before excluding strongly coupled competitor
 | Control | Count-only acceptance has the same ideal yield but fails to purify; the uniform-row coefficient tends to $1+s$. | This failure mechanism already appears in Saied Appendix D. |
 | Cost equality | Approaching cost $4R$ requires $N/R\to1$ and $Nc\to1$, in addition to yield optimality. | Normalized mean-square amplitude erasure, not a unique complete interferometer. |
 
-## Primary-source reconstruction in this turn
+## Source attribution and reading boundaries
 
-**Somhorst et al., arXiv:2601.05947v1.** Section II distinguishes the error
-coefficient optimum from the then-open success optimum. Appendix B's theorem is
-for an $N\times N$ passive matrix. Our amplitude identity explicitly includes
-vacuum enlargement. Its experimental conclusions are not used as evidence that
-our first-order bound is attained by imperfect hardware.
+**Somhorst et al., [arXiv:2601.05947v1](https://arxiv.org/html/2601.05947v1).**
+Section II distinguishes the error coefficient optimum from the then-open
+success optimum. Appendix B's theorem is for an $N\times N$ passive matrix.
+The amplitude identity here explicitly includes vacuum enlargement. The source's
+experimental conclusions do not establish attainment of this first-order bound
+by imperfect hardware.
 
-**Saied et al., arXiv:2404.14217v4, Phys. Rev. Applied 23, 034079 (2025).**
-Theorem III.5 has the uniformly coupled first-row hypothesis and the attainable
-quarter limit. Theorem III.9 states the $4N$ cost for error sufficiently small
-relative to $N$. Appendix D also obtains the Haar-averaged one-photon probability
-approaching a quarter and explicitly warns that accepting all one-survivor
-patterns amplifies error, reporting the same behavior numerically for Fourier
-interference. Therefore neither common number statistics nor the need for
-pattern selection is a separate first-discovery claim. The appendix's selected
-random-matrix calculations do not prove the uniform arbitrary-network converse.
-The parsed theorem/appendix text was read; no source figure data were extracted.
+**Saied et al., [arXiv:2404.14217v4](https://arxiv.org/pdf/2404.14217v4),
+Phys. Rev. Applied 23, 034079 (2025).** Theorem III.5 assumes a uniformly coupled
+first row and proves the attainable quarter limit. Theorem III.9 states the $4N$
+cost for error sufficiently small relative to $N$. Appendix D obtains the
+Haar-averaged one-photon probability approaching a quarter and explicitly warns
+that accepting all one-survivor patterns amplifies error, reporting the same
+behavior numerically for Fourier interference. Neither common number statistics
+nor the need for pattern selection is a separate first-discovery claim here.
+Those selected random-matrix calculations do not supply the uniform
+arbitrary-network converse. The parsed theorem and appendix text were read;
+PDF page rendering was unavailable, and no source figure data were extracted.
 
-**Somhorst et al., arXiv:2404.14262v4.** The scalable Fourier construction,
-zero-transmission character rule, internal-error distinctions and finite-error
-qualification are inherited. Sections II-III were read for these statements.
-Its apparent finite-error performance must not be substituted for our derivative
-objective.
+**Somhorst et al., [arXiv:2404.14262v4](https://arxiv.org/html/2404.14262v4).**
+Sections II–III were read for the scalable Fourier construction,
+zero-transmission character rule, internal-error distinctions, and finite-error
+qualification. These are inherited; the source's finite-error performance is
+not substituted for the derivative objective.
 
-**Becker, Datta, Lami, Rouze, Communications in Mathematical Physics 383,
-223-279 (2021), DOI 10.1007/s00220-021-03988-1.** The publisher's full text,
-Introduction and the characteristic-function discussion, gives the
-Cushen-Hudson optical central limit interpretation, passive characteristic
-factorization, and trace-norm convergence. These are inherited. Our
-Fock-input weighted-row proof gives the exact characteristic and a direct
-coefficient/tail estimate under the row condition forced by the distillation
-converse. No new CLT or optimal convergence-rate claim is made.
+**Becker, Datta, Lami and Rouze, Communications in Mathematical Physics 383,
+223–279 (2021), [DOI 10.1007/s00220-021-03988-1](https://doi.org/10.1007/s00220-021-03988-1).**
+The publisher's full text, Introduction and characteristic-function discussion,
+was read for the Cushen-Hudson optical central limit interpretation, passive
+characteristic factorization, and trace-norm convergence. The arXiv PDF/HTML was
+unavailable. The Fock-input weighted-row proof here supplies an exact
+characteristic function and direct coefficient/tail estimate under the row
+condition forced by the converse. It does not claim a new CLT or an optimal rate.
 
-The earlier comparison with Hoch et al. and the nonlinear-sign-shift theorem
-is retained under `prior/`. It was not freshly re-audited here. The current
-arXiv records fetched in this turn show v4 for 2404.14217 and v1 for 2601.05947.
-A bounded search did not identify a directly covering stable all-row converse.
-This is not exhaustive priority clearance.
+The earlier Hoch et al. comparison is preserved in the
+[source review](../archive/research-handoff-2026-10-08/prior/REVIEW.md); the
+nonlinear-sign-shift comparison is in the
+[global proof](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md).
+These are inherited readings, not fresh audits. The version checks recorded in
+the [original assessment](../archive/research-handoff-2026-10-08/CLAIMS_AND_REVIEW.md)
+returned v4 for 2404.14217 and v1 for 2601.05947. Its bounded search found no
+directly covering stable all-row converse; this is not exhaustive priority clearance.
+No unviewed image or plotted number supports the claims.
 
-## Positive and skeptical cases
+## Significance, scope, and audit status
 
-**Positive.** This determines an unavoidable leading resource cost for an explicit
-operation, rather than improving a selected optical setting. It treats the most
-natural static apparatus alternatives: imbalance, vacuum enlargement and larger
-batches with suboptimal but increasingly strong first-order suppression. The
-physical explanation identifies why mere one-photon yield is not enough and why
-the known Fourier scheme already pays the asymptotically minimum cost.
+The positive case is an unavoidable leading resource cost for a specified
+physical operation: the known Fourier scheme already pays the asymptotically
+minimum photon cost among the allowed static apparatuses. The main claim is the
+converse, rather than a thermalization principle, known Fourier suppression,
+or the small percentage gain in the four-photon example.
 
-**Skeptical.** It is an ideal first-order theorem with a predetermined survivor.
-It gives no finite-error yield, loss tolerance, clock-rate advantage, encoded
-logical performance, or adaptive-output optimum. The mathematical converse
-uses elementary tools but requires a uniform optimization argument. Neither
-proof length, exactness nor the new thermal interpretation settles broad
-physical significance. The all-network converse remains subject to independent
-scrutiny; current checks are author-side diagnostics.
+The skeptical case is the ideal first-order, predetermined-survivor scope.
+Finite-error yield, loss tolerance, clock rate, encoded logical performance,
+and adaptive-output optimization require different claims. The proof uses
+elementary tools but needs uniform control across apparatuses; exactness,
+proof length, and the thermal interpretation alone do not settle broad physical
+significance. The analytical proof and its checks remain author-side evidence,
+subject to independent scrutiny.
 
-The same central claim survives the fuller background reconstruction. No fallback
-headline based on thermalization, previously known Fourier suppression, or the
-small finite four-photon percentage is proposed.
+The recorded four suites passed all 21 groups (4+5+6+6), with canonical reports
+reproduced byte-for-byte. [Verification](../VERIFICATION.md) gives the reproducible
+procedure; the original [run record](../archive/research-handoff-2026-10-08/RUN_RECORD.json)
+and [report comparisons](../archive/research-handoff-2026-10-08/evidence/report_comparisons.json)
+preserve the audit evidence. The physical-mechanism checks use optical matrices
+up to $6\times6$ and at most 252 occupation amplitudes; number-law calculations
+through 128 inputs use scalar exact rational recursions. Earlier small-network
+checks reach dimension 8. No large optical Fock-state simulation or experiment
+underlies these results, and no scientific assertion or tolerance was changed to
+obtain a pass.
 
-## Validation
-
-Four new groups passed on their first full run and repetition, with identical
-reports. All three legacy drivers (5+6+6 groups) passed unchanged and reproduced
-all three canonical reports byte-for-byte. All 62 incoming archive files and all
-three nested manifests remain unchanged. Full details, source hashes and
-comparison receipts are in `RUN_RECORD.json` and `evidence/`.
-
-The largest new optical matrix is 6 by 6, with at most 252 complete occupation
-amplitudes. The number-law calculations up to 128 occupied inputs use scalar
-exact rational recursions. The legacy small-network checks reach dimension 8.
-There was no large optical Fock-state simulation or experiment. No scientific
-assertion failed or tolerance changed in the new formal runs.
-
-The source-access limits are recorded: the arXiv central-limit PDF/HTML requests
-failed, but the publisher's primary full text was readable; the Saied PDF page
-render failed. No unviewed image or plotted number supports a claim. A preliminary
-file-list inspection used the wrong legacy checker filename, then the actual
-filename was inspected; no scientific execution was affected. A terminal startup
-warning after the first passing run did not change the report. These operational
-issues are not counted as scientific failures or successes.
-
-## Freeze
-
-The next stage should use [THEOREM.md](THEOREM.md),
-[PHYSICAL_MECHANISM.md](PHYSICAL_MECHANISM.md), and this assessment as the active
-claim record, with all original derivations and tests preserved. It should not
-automatically add finite error, photon loss, adaptive survivor routing, correlated
-inputs, internal-mode manipulation, extra nonvacuum ancillas, or every finite
-batch optimum. A named proof objection, directly covering source, or explicitly
-selected new claim can reopen the work. The original account is preserved in the research archive.
+The established contribution is retained at this scope. Finite error, photon
+loss, adaptive survivor routing, correlated inputs, internal-mode manipulation,
+extra nonvacuum ancillas, and every finite-batch optimum are separate questions.
+A named proof objection, directly covering source, or explicitly selected new
+claim can reopen the research.

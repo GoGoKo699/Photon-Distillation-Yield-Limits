@@ -15,6 +15,8 @@ Read the [model](MODEL_AND_CLAIMS.md) before the [active theorem](THEOREM.md).
 | Full reproducibility | [Verification procedure](../VERIFICATION.md) |
 
 The original derivations and failed attempts are preserved, not rewritten to
-match a later narrative. Active copies differ only by the explicit replacements
-in [ACTIVE_EDITS.json](../provenance/ACTIVE_EDITS.json). A scientific correction
-requires a separate explanatory note and revision of the active claim.
+match a later narrative. Active copies use only the declared, reviewed navigation
+and presentation replacements in [ACTIVE_EDITS.json](../provenance/ACTIVE_EDITS.json).
+These preserve claims, equations, proofs, scope, attribution, reading boundaries,
+and audit status. A scientific correction requires a separate explanatory note
+and revision of the active claim.
