@@ -6,7 +6,7 @@ a worked heralding example. The complete statements and proofs are in
 
 ## Fixed resources
 
-One attempt starts with $N$ independent single photons in distinct occupied
+One attempt starts with $`N`$ independent single photons in distinct occupied
 spatial inputs. Their internal states share a good mode and have the form
 
 ```math
@@ -18,25 +18,25 @@ A fixed, lossless passive spatial unitary acts identically on internal modes.
 Every additional input is vacuum; their number is unrestricted.
 One output is retained in advance;
 all other outputs are measured by ideal photon-number-resolving detectors which
-do not distinguish internal modes. Accepted records contain $N-1$ photons.
+do not distinguish internal modes. Accepted records contain $`N-1`$ photons.
 
 ## Objectives and limits
 
 For the conditional internal state, define
-$\epsilon_{\mathrm{out}}=1-\langle g|\rho_{\mathrm{out}}|g\rangle$.
-At fixed apparatus, $p_{\mathrm{herald}}(\epsilon)=p_0+O(\epsilon)$ and
-$\epsilon_{\mathrm{out}}=c\epsilon+O(\epsilon^2)$, with $p_0>0$.
-The derivative at zero error precedes the sequence in $N$ or the requested
-reduction $R$. The expansion remainder is controlled at each fixed apparatus.
-Independent attempts consume $N/p_0$ input photons per success in this ideal limit.
+$`\epsilon_{\mathrm{out}}=1-\langle g|\rho_{\mathrm{out}}|g\rangle`$.
+At fixed apparatus, $`p_{\mathrm{herald}}(\epsilon)=p_0+O(\epsilon)`$ and
+$`\epsilon_{\mathrm{out}}=c\epsilon+O(\epsilon^2)`$, with $`p_0>0`$.
+The derivative at zero error precedes the sequence in $`N`$ or the requested
+reduction $`R`$. The expansion remainder is controlled at each fixed apparatus.
+Independent attempts consume $`N/p_0`$ input photons per success in this ideal limit.
 
 | Role | Statement |
 |---|---|
-| Central converse | Any sequence with $c_N\to0$ has $\limsup p_{0,N}\le1/4$. |
-| Resource optimum | Optimizing batch size and network gives $\mathcal C(R)=(4+o(1))R$. |
+| Central converse | Any sequence with $`c_N\to0`$ has $`\limsup p_{0,N}\le1/4`$. |
+| Resource optimum | Optimizing batch size and network gives $`\mathcal C(R)=(4+o(1))R`$. |
 | Attainment | Established Fourier protocols achieve the asymptotic constant. |
-| Finite companion | Sharp optima for $N=2,3,4$ at $c=1/N$, including vacuum extensions. |
-| Necessary structure | Sequences with $c_N\to0$ and $p_{0,N}\to1/4$ have diffuse survivor couplings and an ideal unconditional thermal number marginal of mean one. |
+| Finite companion | Sharp optima for $`N=2,3,4`$ at $`c=1/N`$, including vacuum extensions. |
+| Necessary structure | Sequences with $`c_N\to0`$ and $`p_{0,N}\to1/4`$ have diffuse survivor couplings and an ideal unconditional thermal number marginal of mean one. |
 | Control | Equal ideal single-photon yield does not imply equal purification; the acceptance rule matters. |
 
 Thermal number statistics concern the unconditional designated output for ideal

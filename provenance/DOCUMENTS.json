@@ -16,16 +16,16 @@
     "sha256": "dc087af8066100515f5667c1ccffdb86e8e21747de9ed06845a164f2e2494437"
   },
   "VERIFICATION.md": {
-    "bytes": 4091,
-    "sha256": "f60aa32f774b324300d1f1ca715430de48c85d3f645b63cf3dd4cc2d0bd12f01"
+    "bytes": 4093,
+    "sha256": "50077f72c20146f6a318cb89ca76c48a1e76cc929533dcd6b282acf8b297521c"
   },
   "archive/README.md": {
     "bytes": 784,
     "sha256": "e105ee19848d14d14573def2bb250b1e85d7c2da2d9288479e95f36b8ab9010b"
   },
   "literature/ATTRIBUTION.md": {
-    "bytes": 5297,
-    "sha256": "25373eebb606255e477d5d24ce0e844f381e3b93d98908828ebe4ece5cf0a944"
+    "bytes": 5333,
+    "sha256": "70a58e8b7962c1e3f32e58cb04d85570b6767e2a32c2b3813b50702f103c8f9b"
   },
   "literature/SOURCES.json": {
     "bytes": 10394,
@@ -36,16 +36,16 @@
     "sha256": "70124390456083d75bf2295bbb223bf76f164eece071bfee33bfeefd9c3b4699"
   },
   "maintenance/CURRENT.md": {
-    "bytes": 2530,
-    "sha256": "c9ec0f4de4ca698f28ad8c65f3883129d7ab0a81f172b146f7b37a1bb3c57382"
+    "bytes": 2585,
+    "sha256": "149f135c4b39c08394de53130d4983eb8de773b48c9191f33d6cb962a46861cc"
   },
   "maintenance/README.md": {
     "bytes": 2006,
     "sha256": "26a86ae111c98eecd347a893427140c858421088b18fa496ad581b6d7496af19"
   },
   "provenance/ACTIVE_EDITS.json": {
-    "bytes": 89997,
-    "sha256": "1c307451dbc1e9ff3e1675272100fbb7455c8250bc1aefa462ffe495307edc22"
+    "bytes": 107407,
+    "sha256": "e500954cb790aef84785e1a8dfb428068f24bf84a7ff4ecebebc56a64fae3509"
   },
   "provenance/HOSTED_REPORT_REVIEW.json": {
     "bytes": 19096,
@@ -60,36 +60,36 @@
     "sha256": "f7308e5b60ea62603b458da5fadbb55614b46fbb4d083200fa2cc9843085ceef"
   },
   "research/CONTRIBUTION_REVIEW.md": {
-    "bytes": 4385,
-    "sha256": "23f4a04941800bbf95e5d2bebd75cf9727123d008a1530dde454de3de7df643b"
+    "bytes": 4417,
+    "sha256": "0348a50fe795a34df8af4b7f3a45fa0d61c9468bdfcfc0316e5c0f214d4cddf6"
   },
   "research/MODEL_AND_CLAIMS.md": {
-    "bytes": 2771,
-    "sha256": "77dd60dbf206dd1e549b61f481b75cb2fd4e292d3eb64b8c67dbad630c20124a"
+    "bytes": 2803,
+    "sha256": "5aca4b9f168fab348cc04273e516912e0a134edc4d3fc7b1e3f2d7c97d1e5cde"
   },
   "research/OPTICAL_CONSTRUCTION.md": {
-    "bytes": 10564,
-    "sha256": "77c6887fed9f8ea110a8fc4d23159c3a2ba5aa539e917ff4066efdd0ab6322b5"
+    "bytes": 10762,
+    "sha256": "d0ceb36e568b1c6927fc520e2e6c1a8a866587af3679153b1a76930c6c52915f"
   },
   "research/PHYSICAL_INTERPRETATION.md": {
-    "bytes": 12044,
-    "sha256": "79966bdfc7ee4e6c0e9229676dbfea0bb7b083523f5acee15172f4bf4dd65635"
+    "bytes": 12196,
+    "sha256": "e9072b12819c26c3eade7f92f56cf575e1ae4da18771eb60d27ddd4ef3bd633e"
   },
   "research/PHYSICAL_MECHANISM.md": {
-    "bytes": 9641,
-    "sha256": "c16acdba4f647d133643468ea925b4a44d72629f09da121eab8d25211c98756f"
+    "bytes": 9797,
+    "sha256": "c307df9ad66fa36bc7b56ae403ec73b52f6f64869fbeecdf153c6ff5b9a45fb2"
   },
   "research/PROOF_DETAILS.md": {
-    "bytes": 10746,
-    "sha256": "421fb28e14f8804fa59cf51346b571f98252b7b4f500bb100ba4626997a79027"
+    "bytes": 10960,
+    "sha256": "62208ed4b95578253874e864571a4ed432a43300f77e884140189f0a30382d60"
   },
   "research/PROOF_MAP.md": {
     "bytes": 1239,
     "sha256": "fec74fb2386f4109a7cc361f6529b84259c403220ffd2e333c49c252d8bc1c2c"
   },
   "research/THEOREM.md": {
-    "bytes": 9926,
-    "sha256": "b8f9de46538e2d972023efce7a45a65cf8d0e292b05c671969de7a0205ab2acb"
+    "bytes": 10110,
+    "sha256": "f0c7ee8c1fac3d207209293166dc9e00dd2f700861666d571c3e275756b87c3f"
   },
   "research/TUTORIAL_BRIDGE.md": {
     "bytes": 9594,
