@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-08",
+  "first_new_run": {
+    "cause": "Both endpoints made from earlier unvalidated decimals lay below the true root.",
+    "failed_group": "exact root-enclosure subcheck inside integer-certificate group",
+    "original_science_changed": false,
+    "original_tolerance_changed": false,
+    "passed_groups": 4,
+    "repair": "Correct rational endpoints verified by exact polynomial signs; archived failed driver and patch.",
+    "status": "FAIL"
+  },
+  "incoming_archive": {
+    "all_bytes_match": true,
+    "nested_manifests_checked": 2,
+    "path": "/mnt/data/distillation_yield_global_2026-10-08.zip",
+    "preserved_members": 41,
+    "sha256": "952f09b10b5fbf692b0d9d63cd7fbdef63144375a2f5f71cb6f11781863d754b"
+  },
+  "new_theory": [
+    "c_N -> 0 implies limsup p_0,N <= 1/4 in the stated passive fixed-survivor class.",
+    "Optimization over batch size for c <= 1/R gives ideal-limit photon cost (4+o(1))R.",
+    "Approaching quarter success with c_N -> 0 requires sum p_i -> 1 and max p_i -> 0.",
+    "Old four-photon certificate forces a balanced survivor intensity row at its optimum."
+  ],
+  "nonclaims": [
+    "fixed nonzero error performance",
+    "optimal finite-epsilon tradeoff",
+    "loss tolerance",
+    "adaptive survivor routing",
+    "all finite-N optima",
+    "independent proof review",
+    "exhaustive priority certification"
+  ],
+  "numerical_scope": {
+    "direct_permanent_max_optical_matrix": 6,
+    "embedded_protocol_max_optical_matrix": 8,
+    "largest_permanent_order": 4,
+    "legacy_global_max_optical_matrix": 7,
+    "no_large_state_simulation": true
+  },
+  "scientific_checks": {
+    "all_final_pass": true,
+    "comparisons": {
+      "new_repeat": {
+        "byte_identical": true,
+        "differences": [],
+        "differing_fields": 0,
+        "max_absolute_difference": 0
+      },
+      "prior_global": {
+        "byte_identical": true,
+        "differences": [],
+        "differing_fields": 0,
+        "max_absolute_difference": 0
+      },
+      "prior_pilot": {
+        "byte_identical": true,
+        "differences": [],
+        "differing_fields": 0,
+        "max_absolute_difference": 0
+      }
+    },
+    "new_complete_passing_runs": 2,
+    "new_groups": 5,
+    "prior_global_groups": 6,
+    "prior_pilot_groups": 6
+  },
+  "scope": "Independent photon-distillation yield proof review; no repository access or modification.",
+  "source_access_limits": [
+    "Runtime arXiv HTTP request failed at DNS; primary web text was readable.",
+    "Saied PDF page screenshot failed; parsed theorem text used, no plotted values imported.",
+    "Hoch PDF page 2 screenshot and protocol text inspected.",
+    "One Python-runtime output write was blocked by directory ownership; this script recomputed and saved the comparison record."
+  ]
+}

@@ -1,0 +1,28 @@
+--- exploration/check_before_driver_repairs.py	2026-10-08 09:31:01.941275278 +0000
++++ check_followup.py	2026-10-08 09:31:02.655187150 +0000
+@@ -98,8 +98,14 @@
+             self.assertGreaterEqual(Qstar,0)
+             self.assertLessEqual(Qstar,sp.Rational(1,4))
+             self.assertLessEqual(abs(Q-Qstar),96*v2)
+-            n=len(ps); beta=sp.Rational(n)/(n-len(A)+len(A)*lam/(1+lam))
+-            self.assertEqual(sum(beta*z),n)
++            n=len(ps)
++            if len(A)==n:
++                # This formal all-heavy identity is outside delta>1/N.
++                # Its unnormalized quadratic is valid, but no normalizing beta exists.
++                self.assertEqual(lam,0); self.assertEqual(z,sp.zeros(n,1))
++            else:
++                beta=sp.Rational(n)/(n-len(A)+len(A)*lam/(1+lam))
++                self.assertEqual(sum(beta*z),n)
+             exact.append(dict(p=list(map(str,ps)),heavy=sorted(A),Q=str(Q),Qstar=str(Qstar),v2=str(v2)))
+         rng=np.random.default_rng(6401);errors=[]
+         for n in range(2,7):
+@@ -246,7 +252,7 @@
+                 value+=quad(integrand,n,120,epsabs=3e-13,epsrel=3e-13,limit=200)[0]
+             tail_bound=(2*120+4)*math.exp(-120/2)
+             self.assertLess(tail_bound,3e-24)
+-            if n<=10:self.assertAlmostEqual(value,float(old.success_poly(n).subs({'eta':1})),places=11)
++            if n<=10:self.assertAlmostEqual(value,float(old.success_poly(n).subs(sp.Symbol('eta',real=True),1)),places=11)
+             vals.append(dict(N=n,Fourier_success=value,photons_per_output=n/value))
+         self.assertLess(abs(vals[-1]['Fourier_success']-.25),.0001)
+         # Ordinary single-photon routing gives unit success, but no purification.

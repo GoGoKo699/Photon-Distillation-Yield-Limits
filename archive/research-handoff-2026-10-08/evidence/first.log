@@ -1,0 +1,9 @@
+test_01_number_law_against_fock_amplitudes (__main__.Checks.test_01_number_law_against_fock_amplitudes) ... ok
+test_02_full_distribution_and_thermal_limit (__main__.Checks.test_02_full_distribution_and_thermal_limit) ... ok
+test_03_photon_number_does_not_certify_purification (__main__.Checks.test_03_photon_number_does_not_certify_purification) ... ok
+test_04_macroscopic_coupling_and_cost_identities (__main__.Checks.test_04_macroscopic_coupling_and_cost_identities) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.498s
+
+OK

@@ -1,0 +1,18 @@
+{
+  "previous_unvalidated_decimal": "0.7832160613205729",
+  "computed_root": "0.7832160613205732542470418038467717155853074287402406886588991322",
+  "first_test_endpoints": [
+    "0.7832160613205728",
+    "0.7832160613205730"
+  ],
+  "failure": "Both endpoints are below the unique true root; the old approximate value was not interval-certified.",
+  "final_rational_endpoints": [
+    "783216061320573254247041/1000000000000000000000000",
+    "391608030660286627123521/500000000000000000000000"
+  ],
+  "signs": [
+    "positive",
+    "negative"
+  ],
+  "change": "Only new checker enclosure endpoints; polynomial, objective, original checkers and tolerances unchanged."
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-08",
+  "first_run": {
+    "groups": 5,
+    "status": "PASS",
+    "source": "development/check_first_passing.py",
+    "report": "evidence/first.json"
+  },
+  "enrichment": {
+    "added": "Full N=3 Schur-concavity certificate and independent Gaussian-integer finite-Fock checks",
+    "scientific_assertion_tolerances_changed": false,
+    "earlier_source_preserved": true
+  },
+  "final_runs": [
+    {
+      "groups": 6,
+      "status": "PASS",
+      "report": "evidence/final.json"
+    },
+    {
+      "groups": 6,
+      "status": "PASS",
+      "report": "evidence/repeat.json"
+    }
+  ],
+  "final_report_byte_identical": true,
+  "operational_issue": "An attempted save through the notebook lacked write permission on the new container-owned checker. The save failed; no scientific test ran. Group write access was granted only to this new pilot's directories/file, then the enriched file was written and read back before execution.",
+  "scientific_test_failures": 0,
+  "legacy_suites_imported_or_run": [],
+  "repository_access_or_modification": false,
+  "limits": [
+    "N>=4 global optimum not proved",
+    "Finite-error Pareto improvement not universal",
+    "No loss/dark-count performance",
+    "Fixed survivor and no adaptive feed-forward",
+    "No protected source PDFs used"
+  ],
+  "evidence_role": "Numerical identities and independent exact finite calculations accompany analytical proofs; not an independent review or novelty certificate."
+}

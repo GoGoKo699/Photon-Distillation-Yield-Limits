@@ -1,0 +1,11 @@
+test_01_general_gram_and_equality (__main__.Pilot.test_01_general_gram_and_equality) ... ok
+test_02_balanced_constructive_saturation (__main__.Pilot.test_02_balanced_constructive_saturation) ... ok
+test_03_four_photon_exact_certificate (__main__.Pilot.test_03_four_photon_exact_certificate) ... ok
+test_04_exact_finite_error_counting (__main__.Pilot.test_04_exact_finite_error_counting) ... ok
+test_05_hypotheses_and_small_case_bounds (__main__.Pilot.test_05_hypotheses_and_small_case_bounds) ... ok
+test_06_gaussian_integer_fock_certificates (__main__.Pilot.test_06_gaussian_integer_fock_certificates) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.637s
+
+OK

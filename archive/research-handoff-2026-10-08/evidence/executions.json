@@ -1,0 +1,26 @@
+[
+  {
+    "name": "repeat",
+    "script": "check_consolidation.py",
+    "returncode": 0,
+    "seconds": 2.571478472000024
+  },
+  {
+    "name": "legacy_review",
+    "script": "prior/check_review.py",
+    "returncode": 0,
+    "seconds": 1.518452585000034
+  },
+  {
+    "name": "legacy_global",
+    "script": "prior/prior/check_followup.py",
+    "returncode": 0,
+    "seconds": 3.022842426000011
+  },
+  {
+    "name": "legacy_pilot",
+    "script": "prior/prior/prior/check_pilot.py",
+    "returncode": 0,
+    "seconds": 1.66839293299995
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-08",
+  "input_archive": {
+    "members": 62,
+    "name": "distillation_yield_review_2026-10-08.zip",
+    "sha256": "085256ded00bd415beb6bbb69f0c12ef12d2a6515e17d7cd996a587bdcade40d"
+  },
+  "interpretation": "All asymptotic claims rest on analytical bounds. Reproducible finite checks do not certify novelty or replace independent proof review.",
+  "issues": [
+    "One preliminary grep requested a nonexistent legacy filename; the actual script was inspected and used. No scientific run affected.",
+    "First passing shell run emitted a terminal-environment warning after scientific checks.",
+    "Saied PDF screenshot failed; parsed theorem/Appendix D text was used and no figure data imported.",
+    "arXiv central-limit full text retrieval failed; publisher primary full text was retrieved instead."
+  ],
+  "legacy_suites": {
+    "all_passed": true,
+    "all_reports_byte_identical_to_canonical": true,
+    "complete_runs_each_this_turn": 2,
+    "groups_by_driver": [
+      5,
+      6,
+      6
+    ]
+  },
+  "new_suites": {
+    "all_passed": true,
+    "changed_scientific_tolerances": false,
+    "complete_runs": 3,
+    "groups": 4,
+    "mathematical_failures": 0,
+    "reports_byte_identical": true
+  },
+  "preservation": {
+    "all_incoming_members_byte_identical": true,
+    "nested_manifests": 3,
+    "prior_file_count": 62,
+    "standalone_latest_review_matches": true,
+    "standalone_latest_theorem_matches": true
+  },
+  "relative_links_checked": 15,
+  "report_comparisons": "evidence/report_comparisons.json",
+  "scope": {
+    "external_author_contact": false,
+    "largest_scalar_probability_recursion_input_count": 128,
+    "legacy_largest_optical_matrix": 8,
+    "many_body_simulation": false,
+    "new_largest_occupation_amplitudes": 252,
+    "new_largest_optical_matrix": 6,
+    "repository_actions": false,
+    "third_party_source_PDFs_redistributed": false
+  },
+  "source_records": "SOURCES.json",
+  "task": "Consolidate stable photon-distillation yield/cost converse and complete physical interpretation, without expanding resources."
+}

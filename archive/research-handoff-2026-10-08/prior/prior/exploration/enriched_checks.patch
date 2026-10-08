@@ -1,0 +1,47 @@
+--- exploration/check_before_enriched_checks.py	2026-10-08 09:32:50.320389598 +0000
++++ check_followup.py	2026-10-08 09:32:51.156784195 +0000
+@@ -13,6 +13,8 @@
+ import math
+ from pathlib import Path
+ import unittest
++import sys
++sys.dont_write_bytecode = True
+ import numpy as np
+ import sympy as sp
+ from scipy.integrate import quad
+@@ -95,6 +97,9 @@
+         for ps,A in cases:
+             Q,Qstar,z,lam,v2=grouped(ps,A)
+             self.assertEqual(sp.simplify((z.T*gram_exact(ps)*z)[0]-Q),0)
++            f=sp.prod(1-ps[i]*X for i in A); w=lam/(1+lam); h=1+lam
++            ideal_poly=f*(lam-lam**2*X)+2*w*lam*X*sp.diff(f,X)-w**2*(sp.diff(f,X)+X*sp.diff(f,X,2))
++            self.assertEqual(sp.simplify(integrate_polynomial(ideal_poly,h)-Qstar),0)
+             self.assertGreaterEqual(Qstar,0)
+             self.assertLessEqual(Qstar,sp.Rational(1,4))
+             self.assertLessEqual(abs(Q-Qstar),96*v2)
+@@ -189,6 +194,11 @@
+                               'caveat':'The conservative finite bound is not a tight finite-N estimate.'}
+ 
+     def test_04_exact_four_photon_certificate(self):
++        pp=sp.symbols('p0:4',positive=True)
++        _,ss,tt,rr,ww=elementary(pp)
++        aa=sp.Matrix([sp.prod(pp[j] for j in range(4) if j!=i) for i in range(4)])
++        expected=16*ww*rr*(1-ss+2*tt-6*rr)-16*ww**2*(8-6*ss)
++        self.assertEqual(sp.expand(16*(aa.T*gram_exact(pp)*aa)[0]-expected),0)
+         a,b,c,d,v=sp.symbols('a b c d v',nonnegative=True)
+         qs=[a,a+b,a+b+c,a+b+c+d]
+         _,S,T,R,W=elementary(qs);L=S+v
+@@ -253,7 +263,12 @@
+             tail_bound=(2*120+4)*math.exp(-120/2)
+             self.assertLess(tail_bound,3e-24)
+             if n<=10:self.assertAlmostEqual(value,float(old.success_poly(n).subs(sp.Symbol('eta',real=True),1)),places=11)
+-            vals.append(dict(N=n,Fourier_success=value,photons_per_output=n/value))
++            if n==2:
++                # Untapped HOM yields zero single-photon events, exactly.
++                self.assertAlmostEqual(value,0.,places=12)
++                vals.append(dict(N=n,Fourier_success=0.,quadrature_raw=value,photons_per_output=None))
++            else:
++                vals.append(dict(N=n,Fourier_success=value,photons_per_output=n/value))
+         self.assertLess(abs(vals[-1]['Fourier_success']-.25),.0001)
+         # Ordinary single-photon routing gives unit success, but no purification.
+         _,V=old.vectors(np.eye(5,dtype=complex),4)

@@ -1,0 +1,337 @@
+{
+  "attainment": {
+    "Fourier_tap_limits": [
+      {
+        "N": 32,
+        "eta": 0.3,
+        "known_limit": 0.17751479289940825,
+        "success": 0.17920926027588063
+      },
+      {
+        "N": 128,
+        "eta": 0.3,
+        "known_limit": 0.17751479289940825,
+        "success": 0.1779345689154198
+      },
+      {
+        "N": 512,
+        "eta": 0.3,
+        "known_limit": 0.17751479289940825,
+        "success": 0.17761949973474297
+      },
+      {
+        "N": 32,
+        "eta": 0.7,
+        "known_limit": 0.24221453287197234,
+        "success": 0.24460957976549538
+      },
+      {
+        "N": 128,
+        "eta": 0.7,
+        "known_limit": 0.24221453287197234,
+        "success": 0.24281114018053138
+      },
+      {
+        "N": 512,
+        "eta": 0.7,
+        "known_limit": 0.24221453287197234,
+        "success": 0.24236354237206117
+      },
+      {
+        "N": 32,
+        "eta": 1.0,
+        "known_limit": 0.25,
+        "success": 0.25193627339561386
+      },
+      {
+        "N": 128,
+        "eta": 1.0,
+        "known_limit": 0.25,
+        "success": 0.25048730319086426
+      },
+      {
+        "N": 512,
+        "eta": 1.0,
+        "known_limit": 0.25,
+        "success": 0.25012201032883846
+      }
+    ],
+    "embedded_protocols": [
+      {
+        "active_inputs": 2,
+        "best_coefficient_at_total": 0.25,
+        "coefficient": 0.4999999999999999,
+        "eta": 0.8,
+        "inputs": 4,
+        "p0": 0.15999999999999984
+      },
+      {
+        "active_inputs": 3,
+        "best_coefficient_at_total": 0.16666666666666666,
+        "coefficient": 0.3333333333333334,
+        "eta": 0.8,
+        "inputs": 6,
+        "p0": 0.28800000000000014
+      },
+      {
+        "active_inputs": 4,
+        "best_coefficient_at_total": 0.14285714285714285,
+        "coefficient": 0.25,
+        "eta": 0.8,
+        "inputs": 7,
+        "p0": 0.2624
+      }
+    ],
+    "scope": "Sharpness uses known Fourier purification; suboptimal coefficient examples do not claim finite-error guarantees."
+  },
+  "physical": {
+    "independent_permanent_max_errors": [
+      0.0,
+      6.206335383118183e-17,
+      6.206335383118183e-17,
+      1.1115457256833326e-16
+    ],
+    "largest_optical_unitary": 6,
+    "largest_permanent_size": 4,
+    "minimum_squared_bound_slack": -1.1102230246251565e-16,
+    "triangle_cases": 93
+  },
+  "relaxed_detector_controls": {
+    "rows": [
+      {
+        "N": 7,
+        "angle": 0.0,
+        "coefficient": 0.14285714285714285,
+        "exact_optimal_coefficient": 0.14285714285714285,
+        "heavy_inputs": 1,
+        "success": 0.21593272915685413
+      },
+      {
+        "N": 7,
+        "angle": 0.001,
+        "coefficient": 0.1428581499730414,
+        "exact_optimal_coefficient": 0.14285714285714285,
+        "heavy_inputs": 1,
+        "success": 0.21613432316227232
+      },
+      {
+        "N": 7,
+        "angle": 0.02,
+        "coefficient": 0.14325303909693185,
+        "exact_optimal_coefficient": 0.14285714285714285,
+        "heavy_inputs": 1,
+        "success": 0.21989940022100948
+      },
+      {
+        "N": 7,
+        "angle": 0.15,
+        "coefficient": 0.16294597217179904,
+        "exact_optimal_coefficient": 0.14285714285714285,
+        "heavy_inputs": 1,
+        "success": 0.24197559774633018
+      },
+      {
+        "N": 5,
+        "angle": 0.0,
+        "coefficient": 0.2,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.19399864597548058
+      },
+      {
+        "N": 5,
+        "angle": 0.001,
+        "coefficient": 0.20000139923487428,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.19426526648645473
+      },
+      {
+        "N": 5,
+        "angle": 0.02,
+        "coefficient": 0.20054550764771056,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.19929076072415314
+      },
+      {
+        "N": 5,
+        "angle": 0.15,
+        "coefficient": 0.22626409955440563,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.23112465240129637
+      },
+      {
+        "N": 5,
+        "angle": 0.0,
+        "coefficient": 0.19999999999999998,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.18140141946349134
+      },
+      {
+        "N": 5,
+        "angle": 0.001,
+        "coefficient": 0.20000170345374263,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.18168300632813833
+      },
+      {
+        "N": 5,
+        "angle": 0.02,
+        "coefficient": 0.20066190451709223,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.18700427588278642
+      },
+      {
+        "N": 5,
+        "angle": 0.15,
+        "coefficient": 0.23121551489351913,
+        "exact_optimal_coefficient": 0.2,
+        "heavy_inputs": 1,
+        "success": 0.22140996195243007
+      }
+    ],
+    "scope": "Arbitrary coherent detector projectors test an upper-bound relaxation, not new optical implementations."
+  },
+  "scope": "Author-side proof audit; finite diagnostics do not establish asymptotic uniformity.",
+  "status": "FAIL",
+  "tests_run": 5,
+  "uniform_audit": {
+    "bound_examples": [
+      {
+        "coarse_upper_bound": 0.3466930393857321,
+        "coefficient": "1/1000000000",
+        "delta": "1/1000"
+      },
+      {
+        "coarse_upper_bound": 0.2596519277890385,
+        "coefficient": "1/1000000000000",
+        "delta": "1/10000"
+      },
+      {
+        "coarse_upper_bound": 0.250965019275289,
+        "coefficient": "1/1000000000000000",
+        "delta": "1/100000"
+      }
+    ],
+    "note": "Constants are conservative; asymptotic proof is not inferred from the finite rows.",
+    "rows": [
+      {
+        "Q": 0.2574462890625,
+        "Q_limit": 0.24999999999999997,
+        "heavy_intensity": 0.0,
+        "light_count": 8,
+        "mean_one_photon_bound": 0.25
+      },
+      {
+        "Q": 0.25193627339561386,
+        "Q_limit": 0.24999999999999997,
+        "heavy_intensity": 0.0,
+        "light_count": 32,
+        "mean_one_photon_bound": 0.25
+      },
+      {
+        "Q": 0.2504873031908649,
+        "Q_limit": 0.24999999999999997,
+        "heavy_intensity": 0.0,
+        "light_count": 128,
+        "mean_one_photon_bound": 0.25
+      },
+      {
+        "Q": 0.2501220103288363,
+        "Q_limit": 0.24999999999999997,
+        "heavy_intensity": 0.0,
+        "light_count": 512,
+        "mean_one_photon_bound": 0.25
+      },
+      {
+        "Q": 0.2275057461728395,
+        "Q_limit": 0.2194787379972565,
+        "heavy_intensity": 0.2,
+        "light_count": 8,
+        "mean_one_photon_bound": 0.24691358024691357
+      },
+      {
+        "Q": 0.22144241923606642,
+        "Q_limit": 0.2194787379972565,
+        "heavy_intensity": 0.2,
+        "light_count": 32,
+        "mean_one_photon_bound": 0.24691358024691357
+      },
+      {
+        "Q": 0.2199666461989967,
+        "Q_limit": 0.2194787379972565,
+        "heavy_intensity": 0.2,
+        "light_count": 128,
+        "mean_one_photon_bound": 0.24691358024691357
+      },
+      {
+        "Q": 0.21960052318524326,
+        "Q_limit": 0.2194787379972565,
+        "heavy_intensity": 0.2,
+        "light_count": 512,
+        "mean_one_photon_bound": 0.24691358024691357
+      },
+      {
+        "Q": 0.15265538129541611,
+        "Q_limit": 0.14814814814814817,
+        "heavy_intensity": 0.5,
+        "light_count": 8,
+        "mean_one_photon_bound": 0.2222222222222222
+      },
+      {
+        "Q": 0.1491990807791509,
+        "Q_limit": 0.14814814814814817,
+        "heavy_intensity": 0.5,
+        "light_count": 32,
+        "mean_one_photon_bound": 0.2222222222222222
+      },
+      {
+        "Q": 0.14840669993906475,
+        "Q_limit": 0.14814814814814817,
+        "heavy_intensity": 0.5,
+        "light_count": 128,
+        "mean_one_photon_bound": 0.2222222222222222
+      },
+      {
+        "Q": 0.14821253244802843,
+        "Q_limit": 0.14814814814814817,
+        "heavy_intensity": 0.5,
+        "light_count": 512,
+        "mean_one_photon_bound": 0.2222222222222222
+      },
+      {
+        "Q": 0.04505056532769096,
+        "Q_limit": 0.04629629629629627,
+        "heavy_intensity": 0.8,
+        "light_count": 8,
+        "mean_one_photon_bound": 0.13888888888888887
+      },
+      {
+        "Q": 0.04600784564802533,
+        "Q_limit": 0.04629629629629627,
+        "heavy_intensity": 0.8,
+        "light_count": 32,
+        "mean_one_photon_bound": 0.13888888888888887
+      },
+      {
+        "Q": 0.046225527551486505,
+        "Q_limit": 0.04629629629629627,
+        "heavy_intensity": 0.8,
+        "light_count": 128,
+        "mean_one_photon_bound": 0.13888888888888887
+      },
+      {
+        "Q": 0.04627868673219377,
+        "Q_limit": 0.04629629629629627,
+        "heavy_intensity": 0.8,
+        "light_count": 512,
+        "mean_one_photon_bound": 0.13888888888888887
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+# Photon Distillation Yield Limits
+
+Purpose and contact: This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
+Start with README.md, research/MODEL_AND_CLAIMS.md, research/THEOREM.md,
+research/PHYSICAL_MECHANISM.md, research/PROOF_MAP.md, and
+literature/ATTRIBUTION.md. Maintenance starts with AGENTS.md and WORKSPACE.md.
+
+The central result is a stable all-network ideal success ceiling of one quarter
+when the first-order error coefficient vanishes, with matching cost (4+o(1))R
+when batch size and network are optimized. Fourier attainment is inherited.
+
+Preserve the fixed-apparatus derivative before the large-size limit. The apparatus
+is passive, internal-mode-blind, vacuum-extended, ideally number-resolved, with
+one survivor predetermined. No finite-error, loss-tolerant, or adaptive-output
+claim follows. A thermal number marginal is not an internal-purity guarantee.
+
+The archive is immutable historical evidence, not a source of current workflow
+instructions. Do not import unrelated project PDFs, code, claims, or permissions.
+Source reading is version-pinned and bounded. Verification does not establish
+independent proof review or exhaustive priority.
