@@ -1,0 +1,42 @@
+[
+  {
+    "id": "M22",
+    "title": "Distillation of Indistinguishable Photons",
+    "version": "arXiv:2203.15197v3",
+    "url": "https://arxiv.org/pdf/2203.15197",
+    "read": "Model Eq.(3), three-photon construction/success Eq.(6), related work, small-error resource comparison and four-photon statement.",
+    "boundary": "Did not independently audit every robustness appendix. No graph data imported."
+  },
+  {
+    "id": "S24a",
+    "title": "General protocols for the efficient distillation of indistinguishable photons",
+    "version": "arXiv:2404.14217v4",
+    "url": "https://arxiv.org/pdf/2404.14217v4",
+    "read": "Protocol/symmetry and first-order statements, ideal heralding formula, resource comparison, Appendix F Fourier N=4 SBB coefficients.",
+    "boundary": "Targeted 61-page text reading, not full proof audit. Two requested page screenshots failed; no image-derived numerical assertion."
+  },
+  {
+    "id": "S24b",
+    "title": "Photon distillation schemes with reduced resource costs based on multiphoton Fourier interference",
+    "version": "arXiv:2404.14262v4",
+    "url": "https://arxiv.org/html/2404.14262v4",
+    "read": "Fourier construction, Eq.(19), Appendix D moment derivation and Appendix E loss discussion.",
+    "boundary": "No device performance inferred; source plots not extracted."
+  },
+  {
+    "id": "S26",
+    "title": "Below-threshold error reduction in single photons through photon distillation",
+    "version": "arXiv:2601.05947v1",
+    "url": "https://arxiv.org/html/2601.05947v1",
+    "read": "Section II open success question, Appendix A input models, Appendix B error-reduction theorem.",
+    "boundary": "No experimental-data reanalysis or claim of hardware improvement."
+  },
+  {
+    "id": "H25",
+    "title": "Optimal distillation of photonic indistinguishability",
+    "version": "arXiv:2509.02296v1",
+    "url": "https://arxiv.org/pdf/2509.02296",
+    "read": "Model and optimal distillation section; successful rendering of page 3 confirms two active inputs plus untouched reference.",
+    "boundary": "Different output task; no implication that its theorem covers three-active-input single-survivor optimization."
+  }
+]

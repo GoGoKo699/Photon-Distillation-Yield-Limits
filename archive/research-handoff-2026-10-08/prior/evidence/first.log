@@ -1,0 +1,19 @@
+test_01_physical_amplitudes_and_arbitrary_acceptance (__main__.Review.test_01_physical_amplitudes_and_arbitrary_acceptance) ... ok
+test_02_near_optimal_coherent_relaxation (__main__.Review.test_02_near_optimal_coherent_relaxation) ... ok
+test_03_uniform_grouping_and_architecture_limits (__main__.Review.test_03_uniform_grouping_and_architecture_limits) ... ok
+test_04_independent_integer_certificate_and_uniqueness (__main__.Review.test_04_independent_integer_certificate_and_uniqueness) ... FAIL
+test_05_physical_attainment_with_suboptimal_coefficient (__main__.Review.test_05_physical_attainment_with_suboptimal_coefficient) ... ok
+
+======================================================================
+FAIL: test_04_independent_integer_certificate_and_uniqueness (__main__.Review.test_04_independent_integer_certificate_and_uniqueness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/distillation_yield_review_2026-10-08/check_review.py", line 223, in test_04_independent_integer_certificate_and_uniqueness
+    self.assertLess(polynomial.subs(x,hi),0)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 240881213941053195868427082449/250000000000000000000000000000000000000000000 not less than 0
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.101s
+
+FAILED (failures=1)

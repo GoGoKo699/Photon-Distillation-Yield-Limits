@@ -1,0 +1,69 @@
+{
+  "manifests_before": {
+    "prior/MANIFEST.json": 61,
+    "prior/prior/MANIFEST.json": 40,
+    "prior/prior/prior/MANIFEST.json": 14
+  },
+  "protected_file_count": 62,
+  "runs": [
+    {
+      "actual_groups": 4,
+      "byte_identical": true,
+      "canonical": "evidence/first.json",
+      "canonical_sha256": "30019041713d9c784c2a50fa2370fcbcc13705c59f578bc871e7b43b2a6ad850",
+      "elapsed_seconds": 2.571541105000051,
+      "expected_groups": 4,
+      "name": "consolidation",
+      "report_sha256": "30019041713d9c784c2a50fa2370fcbcc13705c59f578bc871e7b43b2a6ad850",
+      "returncode": 0,
+      "script": "check_consolidation.py",
+      "script_sha256": "eddbd17dd5762b986fced65f7b0cfb2ec74a4eb402f7b8c1087ba564dc91b7fd",
+      "status": "PASS"
+    },
+    {
+      "actual_groups": 5,
+      "byte_identical": true,
+      "canonical": "prior/evidence/final.json",
+      "canonical_sha256": "1dda0579f221f3574c24d2e5755840d19cc7fb9d679eaea4493d18dfa1aa806f",
+      "elapsed_seconds": 1.4179086890000008,
+      "expected_groups": 5,
+      "name": "stability",
+      "report_sha256": "1dda0579f221f3574c24d2e5755840d19cc7fb9d679eaea4493d18dfa1aa806f",
+      "returncode": 0,
+      "script": "prior/check_review.py",
+      "script_sha256": "92284ed5edbe42e9e47fe8304802460d8120d78f87413d385fb001c10ae56030",
+      "status": "PASS"
+    },
+    {
+      "actual_groups": 6,
+      "byte_identical": true,
+      "canonical": "prior/prior/evidence/enriched.json",
+      "canonical_sha256": "0c64a061136c72bf6731b2e97536ca414c2c1d8960461e8751ccb16feb8e2c31",
+      "elapsed_seconds": 2.8221771590000344,
+      "expected_groups": 6,
+      "name": "global",
+      "report_sha256": "0c64a061136c72bf6731b2e97536ca414c2c1d8960461e8751ccb16feb8e2c31",
+      "returncode": 0,
+      "script": "prior/prior/check_followup.py",
+      "script_sha256": "bed5f9b609c1de50fbab3dd459ba92eefbe42b8fbcde104b91d6a1476de7967c",
+      "status": "PASS"
+    },
+    {
+      "actual_groups": 6,
+      "byte_identical": true,
+      "canonical": "prior/prior/prior/evidence/final.json",
+      "canonical_sha256": "5b987c2dab098af435cb90cafdad7471349f4b6aa1aec8801de6b6f91f23f57a",
+      "elapsed_seconds": 1.8187232180000592,
+      "expected_groups": 6,
+      "name": "pilot",
+      "report_sha256": "5b987c2dab098af435cb90cafdad7471349f4b6aa1aec8801de6b6f91f23f57a",
+      "returncode": 0,
+      "script": "prior/prior/prior/check_pilot.py",
+      "script_sha256": "4069e6e1741bbafad5820e9b1d8e1c401ff6d73da1beb322ed4773b6271653b3",
+      "status": "PASS"
+    }
+  ],
+  "scope": "All original mathematical checks unchanged; report nonidentity requires review.",
+  "source_unchanged": true,
+  "status": "PASS"
+}

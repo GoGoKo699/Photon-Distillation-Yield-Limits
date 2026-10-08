@@ -1,0 +1,11 @@
+test_01_grouped_quadratic_and_physical_gram (__main__.Checks.test_01_grouped_quadratic_and_physical_gram) ... ok
+test_02_global_product_bounds_and_constant (__main__.Checks.test_02_global_product_bounds_and_constant) ... ok
+test_03_no_click_probability_and_heavy_light_bound (__main__.Checks.test_03_no_click_probability_and_heavy_light_bound) ... ok
+test_04_exact_four_photon_certificate (__main__.Checks.test_04_exact_four_photon_certificate) ... ok
+test_05_balancing_counterexample_and_small_case_controls (__main__.Checks.test_05_balancing_counterexample_and_small_case_controls) ... ok
+test_06_known_achieving_sequence_and_coherent_control (__main__.Checks.test_06_known_achieving_sequence_and_coherent_control) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.641s
+
+OK

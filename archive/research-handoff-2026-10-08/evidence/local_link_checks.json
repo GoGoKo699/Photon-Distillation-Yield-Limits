@@ -1,0 +1,62 @@
+[
+  {
+    "source": "PHYSICAL_MECHANISM.md",
+    "target": "THEOREM.md"
+  },
+  {
+    "source": "CLAIMS_AND_REVIEW.md",
+    "target": "THEOREM.md"
+  },
+  {
+    "source": "CLAIMS_AND_REVIEW.md",
+    "target": "PHYSICAL_MECHANISM.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "PHYSICAL_MECHANISM.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "prior/prior/prior/PILOT.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "prior/THEOREM.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "PHYSICAL_MECHANISM.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "prior/prior/FOLLOWUP.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "prior/THEOREM.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "CLAIMS_AND_REVIEW.md"
+  },
+  {
+    "source": "THEOREM.md",
+    "target": "PROJECT_HANDOFF.md"
+  },
+  {
+    "source": "README.md",
+    "target": "THEOREM.md"
+  },
+  {
+    "source": "README.md",
+    "target": "PHYSICAL_MECHANISM.md"
+  },
+  {
+    "source": "README.md",
+    "target": "CLAIMS_AND_REVIEW.md"
+  },
+  {
+    "source": "README.md",
+    "target": "PROJECT_HANDOFF.md"
+  }
+]

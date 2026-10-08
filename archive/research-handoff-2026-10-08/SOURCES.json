@@ -1,0 +1,45 @@
+{
+  "review_date": "2026-10-08",
+  "sources": [
+    {
+      "id": "S26",
+      "title": "Below-threshold error reduction in single photons through photon distillation",
+      "authors": "F. H. B. Somhorst et al.",
+      "version": "arXiv:2601.05947v1",
+      "url": "https://arxiv.org/html/2601.05947v1",
+      "inspected": "Section II, Appendix B; primary version history",
+      "role": "Inherited error-coefficient optimum and explicit distinction from then-open success optimum; no apparatus performance imported"
+    },
+    {
+      "id": "SMAR25",
+      "title": "General protocols for the efficient distillation of indistinguishable photons",
+      "authors": "J. Saied, J. Marshall, N. Anand, E. G. Rieffel",
+      "version": "arXiv:2404.14217v4; Phys. Rev. Applied 23, 034079 (2025)",
+      "url": "https://arxiv.org/pdf/2404.14217v4",
+      "inspected": "Theorems III.4, III.5, III.9; Appendix D, especially discussion after D.4; primary version record",
+      "role": "Uniform-row attainable quarter limit and photon cost; count-only error amplification already recognized; no arbitrary-row stable success converse identified in inspected passages",
+      "visual_boundary": "Screenshot of page 14 (zero-index 13) failed. Only parsed theorem and appendix text used; no plots or figure data interpreted."
+    },
+    {
+      "id": "S24/25",
+      "title": "Photon distillation schemes with reduced resource costs based on multiphoton Fourier interference",
+      "authors": "F. H. B. Somhorst et al.",
+      "version": "arXiv:2404.14262v4",
+      "url": "https://arxiv.org/html/2404.14262v4",
+      "inspected": "Sections II-III: error model, Fourier phase rule and low-error qualification",
+      "role": "Inherited optical construction and input model; no new phase-selection mechanism claimed"
+    },
+    {
+      "id": "BDLR21",
+      "title": "Convergence Rates for the Quantum Central Limit Theorem",
+      "authors": "S. Becker, N. Datta, L. Lami, C. Rouze",
+      "version": "Commun. Math. Phys. 383, 223-279 (2021)",
+      "url": "https://link.springer.com/article/10.1007/s00220-021-03988-1",
+      "arxiv": "1912.06129",
+      "inspected": "Publisher full-text Introduction, characteristic factorization and trace-norm convergence discussion; Fock-state discussion for context",
+      "role": "Inherited Cushen-Hudson optical central limit machinery; weighted Fock-input statement derived directly rather than claiming novelty for central limit",
+      "access": "arXiv HTML/PDF requests failed; publisher full text readable. No figure-based claim."
+    }
+  ],
+  "boundaries": "Targeted construction-level comparison, not exhaustive priority clearance. No third-party PDFs redistributed. Earlier references remain archived rather than falsely claimed freshly audited."
+}

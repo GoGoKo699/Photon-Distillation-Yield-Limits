@@ -1,0 +1,56 @@
+{
+  "balancing": {
+    "after": 0.007439418928716956,
+    "after_exact": "7964707/1070608750",
+    "before": 0.007529544821034959,
+    "before_exact": "399293056/53030171875",
+    "conclusion": "Schur-concavity is false already at N=4; balanced global N=4 optimum follows from the separate certificate.",
+    "minimum_random_four_photon_gap": 0.0011852488429308639,
+    "positive_difference": "8186973478119/90839305637406250"
+  },
+  "boundary": "Author-side analytical proof; no repository operations; no generic finite-N>=5 optimum or finite-error guarantee.",
+  "four_photon": {
+    "homogeneous_degree": 10,
+    "minimum_coefficient": 2,
+    "optimal_eta": 0.7832160613205729,
+    "optimal_success": 0.2624669882112195,
+    "photon_cost": 15.240011809717618,
+    "positive_monomials": 613,
+    "proof": "exact nonnegative polynomial plus physical Fourier/tap equality",
+    "rational_success": "164/625 at eta=4/5"
+  },
+  "heavy_light": {
+    "caveat": "The conservative finite bound is not a tight finite-N estimate.",
+    "finite_bound": "(1/4+96*delta)/(1-1/(N*delta))^2; delta>1/N; may be capped at 1",
+    "max_trial_in_diagnostics": 0.391186884740619,
+    "no_click_controls": [
+      {
+        "Qstar": 0.11661807580174927,
+        "light_intensity": "2/5",
+        "no_click": 0.5714285714285714
+      },
+      {
+        "Qstar": 0.1393661474359742,
+        "light_intensity": "5/12",
+        "no_click": 0.671280276816609
+      },
+      {
+        "Qstar": 0.24,
+        "light_intensity": "2/3",
+        "no_click": 1.0
+      }
+    ]
+  },
+  "status": "FAIL",
+  "tests_run": 6,
+  "uniform_bounds": {
+    "evaluations": 2350,
+    "integrated_constant": 96,
+    "max_error_to_bound_ratios": [
+      0.9999877651850702,
+      0.9999990549215676,
+      1.0000000000000047
+    ],
+    "scope": "Finite checks of inequalities whose all-x proofs are in FOLLOWUP.md."
+  }
+}

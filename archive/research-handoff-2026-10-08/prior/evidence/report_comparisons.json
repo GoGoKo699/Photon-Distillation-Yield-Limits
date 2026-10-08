@@ -1,0 +1,20 @@
+{
+  "new_repeat": {
+    "byte_identical": true,
+    "differences": [],
+    "differing_fields": 0,
+    "max_absolute_difference": 0
+  },
+  "prior_global": {
+    "byte_identical": true,
+    "differences": [],
+    "differing_fields": 0,
+    "max_absolute_difference": 0
+  },
+  "prior_pilot": {
+    "byte_identical": true,
+    "differences": [],
+    "differing_fields": 0,
+    "max_absolute_difference": 0
+  }
+}

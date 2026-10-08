@@ -1,0 +1,110 @@
+{
+  "canonical_new": "evidence/enriched.json",
+  "date": "2026-10-08",
+  "earlier_passing_versions": [
+    "evidence/final.json",
+    "evidence/repeat.json"
+  ],
+  "exploratory_execution_issues": [
+    "Initial Python execution returned ClientError; archive access was retried through container.",
+    "A constrained finite-difference optimizer evaluated outside the physical simplex; subsequent numerical exploration used a physical parameterization, without weakening the original Gram domain.",
+    "Early save attempts encountered directory ownership permissions; only the new working directory permissions were corrected.",
+    "A symbolic Boolean-count summary and a missing JSON import caused exploratory reporting errors; exact certificate regenerated successfully."
+  ],
+  "first_formal_run": "evidence/first.json: six groups, one driver failure for an all-heavy fixture outside delta>1/N and one SymPy substitution error. Both fixed without changing scientific conditions or tolerances.",
+  "four_photon_certificate": {
+    "coefficient_arithmetic": "exact integers",
+    "counts_by_slack_degree": {
+      "0": 225,
+      "1": 178,
+      "2": 126,
+      "3": 84
+    },
+    "file": "certificates/four_photon_positive.json",
+    "nonzero_monomials": 613
+  },
+  "incoming_archive_sha256": "2cb3b9d5361854cd02a3d97f0d281839fe4d887c5fc027e47a34dc11d6f9d577",
+  "incoming_members_preserved": 15,
+  "new_driver": "check_followup.py",
+  "new_groups": 6,
+  "new_repeat_byte_identical": true,
+  "prior_canonical": "prior/evidence/final.json",
+  "prior_driver": "prior/check_pilot.py",
+  "prior_groups": 6,
+  "prior_member_hashes": {
+    "MANIFEST.json": {
+      "bytes": 1835,
+      "sha256": "c6ca3d76d8429aec1621f50856f86609db749600fc7d623a53458af47913f36b"
+    },
+    "PILOT.md": {
+      "bytes": 20196,
+      "sha256": "9578d5e41e77753e277321e5760214e48826d19aba688040c0a2c3c2934c8d70"
+    },
+    "README.md": {
+      "bytes": 1768,
+      "sha256": "dae12ce1ab5c7503c5d00984ac881cb4ca4b8781371bf289b2339839746a77b0"
+    },
+    "RUN_RECORD.json": {
+      "bytes": 1469,
+      "sha256": "594f0a1815fae1e6810e47e2c82e766662324913ca150233f92f5d4fe47cb707"
+    },
+    "SOURCES.json": {
+      "bytes": 2177,
+      "sha256": "1b26f71b67491b4877c8cdbea6acd13eacad0569920cc63b7c10ff113e6f6d1b"
+    },
+    "check_pilot.py": {
+      "bytes": 16486,
+      "sha256": "4069e6e1741bbafad5820e9b1d8e1c401ff6d73da1beb322ed4773b6271653b3"
+    },
+    "development/check_first_passing.py": {
+      "bytes": 12544,
+      "sha256": "1adef2b09e8a91aa52bafc0e8fb4f57e187fbd5b926fa549368c6bd7cedaec5d"
+    },
+    "development/enrichment.patch": {
+      "bytes": 6505,
+      "sha256": "a97563eafcd097926a529c5767716c2150d5ce6a0a5fccc5340c567906512e4d"
+    },
+    "environment.json": {
+      "bytes": 533,
+      "sha256": "d4ce9d240d13d879966c3ce09c088676f4f312df55adb6bb32de0ebad5ff784e"
+    },
+    "evidence/final.json": {
+      "bytes": 10124,
+      "sha256": "5b987c2dab098af435cb90cafdad7471349f4b6aa1aec8801de6b6f91f23f57a"
+    },
+    "evidence/final.log": {
+      "bytes": 708,
+      "sha256": "f3c763c7ae0798ee485a9b30d9ef6fdce7ce82a8b1cb090701a1b7dd82f5e6a1"
+    },
+    "evidence/first.json": {
+      "bytes": 8727,
+      "sha256": "10d551114432365cafd7cc4e5146cdef58db5bde7b2735655126156ba8c5c340"
+    },
+    "evidence/first.log": {
+      "bytes": 598,
+      "sha256": "5d25c0ef43203e646c0f3f8b80d8b3c49a9e8a9bfa5bb157366810c539f11166"
+    },
+    "evidence/repeat.json": {
+      "bytes": 10124,
+      "sha256": "5b987c2dab098af435cb90cafdad7471349f4b6aa1aec8801de6b6f91f23f57a"
+    },
+    "evidence/repeat.log": {
+      "bytes": 708,
+      "sha256": "448f26c068b2b09e4c142b7cf24d61fcceb8b46cdacfe1787809b7c241cdcadd"
+    }
+  },
+  "prior_report_byte_identical": true,
+  "prior_rerun": "evidence/prior_rerun.json",
+  "repairs": [
+    "exploration/driver_repairs.patch",
+    "exploration/enriched_checks.patch"
+  ],
+  "repeat_new": "evidence/enriched_repeat.json",
+  "reporting_control": "Untapped N=2 Fourier has exactly zero success; raw numerical cancellation is retained and undefined photon cost is null, not a large negative number.",
+  "repository_operations": false,
+  "scientific_negative_outcome": "Schur-concavity conjecture fails at N=4; the balanced global optimum follows by a different exact polynomial certificate.",
+  "source_reading": "Primary sources listed in FOLLOWUP.md; parsed PDF theorem text used. Two requested PDF screenshots failed, no plot values used.",
+  "status": "PASS; analytical proofs are author-side, not independently reviewed. No finite-error or general exact finite-N>=5 result claimed.",
+  "task": "Global asymptotic success ceiling and exact four-photon optimum at optimal first-order photon purification",
+  "third_party_pdfs_in_archive": false
+}

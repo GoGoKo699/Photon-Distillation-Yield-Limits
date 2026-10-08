@@ -1,0 +1,348 @@
+{
+  "balanced_family": [
+    {
+      "equality_residual": 0.0,
+      "eta": 0.5,
+      "ideal_success": 0.25,
+      "n": 2
+    },
+    {
+      "equality_residual": 0.0,
+      "eta": 0.8,
+      "ideal_success": 0.15999999999999984,
+      "n": 2
+    },
+    {
+      "equality_residual": 0.0,
+      "eta": 1.0,
+      "ideal_success": 0.0,
+      "n": 2
+    },
+    {
+      "equality_residual": 1.0548741742140322e-16,
+      "eta": 0.5,
+      "ideal_success": 0.2500000000000002,
+      "n": 3
+    },
+    {
+      "equality_residual": 1.226002171892944e-16,
+      "eta": 0.8,
+      "ideal_success": 0.28800000000000014,
+      "n": 3
+    },
+    {
+      "equality_residual": 1.465770053273017e-16,
+      "eta": 1.0,
+      "ideal_success": 0.33333333333333354,
+      "n": 3
+    },
+    {
+      "equality_residual": 5.359054682990449e-17,
+      "eta": 0.5,
+      "ideal_success": 0.2421875,
+      "n": 4
+    },
+    {
+      "equality_residual": 5.30528563626986e-17,
+      "eta": 0.8,
+      "ideal_success": 0.2624,
+      "n": 4
+    },
+    {
+      "equality_residual": 4.921726842978294e-17,
+      "eta": 1.0,
+      "ideal_success": 0.2500000000000001,
+      "n": 4
+    },
+    {
+      "equality_residual": 8.922821313617856e-17,
+      "eta": 0.5,
+      "ideal_success": 0.23799999999999996,
+      "n": 5
+    },
+    {
+      "equality_residual": 1.0567061326036964e-16,
+      "eta": 0.8,
+      "ideal_success": 0.2616217599999998,
+      "n": 5
+    },
+    {
+      "equality_residual": 1.087415669192399e-16,
+      "eta": 1.0,
+      "ideal_success": 0.26399999999999996,
+      "n": 5
+    },
+    {
+      "equality_residual": 3.5697443825745315e-16,
+      "eta": 0.5,
+      "ideal_success": 0.23524305555555594,
+      "n": 6
+    },
+    {
+      "equality_residual": 4.005825874508946e-16,
+      "eta": 0.8,
+      "ideal_success": 0.258986666666667,
+      "n": 6
+    },
+    {
+      "equality_residual": 4.165082471148215e-16,
+      "eta": 1.0,
+      "ideal_success": 0.25925925925925974,
+      "n": 6
+    }
+  ],
+  "controls": {
+    "identity_error_coefficient": 1.0,
+    "identity_yield": 1.0,
+    "limitations": "No general global success optimum proved for N>=4; first order is at fixed N.",
+    "tap_without_symmetry_check_coefficient": 1.8048780487804876,
+    "three_photon_no_vacuum_row_success_upper_bound": 0.3333333333333333,
+    "two_photon_global_success_upper_bound": 0.25,
+    "two_photon_upper_bound": "-4*p1*p2*(p1 + p2 - 1)/(p1 + p2)"
+  },
+  "finite_error": [
+    {
+      "common_bad": false,
+      "conditional_error": 0.00025125187549627294,
+      "epsilon": 0.001,
+      "eta": 1.0,
+      "photons_per_success": 16.048064007857707,
+      "success": 0.24925124912521887
+    },
+    {
+      "common_bad": false,
+      "conditional_error": 0.0026268796198799307,
+      "epsilon": 0.01,
+      "eta": 1.0,
+      "photons_per_success": 16.486406551434175,
+      "success": 0.24262412718750007
+    },
+    {
+      "common_bad": false,
+      "conditional_error": 0.015861205839519246,
+      "epsilon": 0.05,
+      "eta": 1.0,
+      "photons_per_success": 18.560021460024807,
+      "success": 0.21551699218750006
+    },
+    {
+      "common_bad": false,
+      "conditional_error": 0.0002511664090657501,
+      "epsilon": 0.001,
+      "eta": 0.8,
+      "photons_per_success": 15.289694756332558,
+      "success": 0.26161411746583846
+    },
+    {
+      "common_bad": false,
+      "conditional_error": 0.0026182427831736867,
+      "epsilon": 0.01,
+      "eta": 0.8,
+      "photons_per_success": 15.707284821355303,
+      "success": 0.254658907984
+    },
+    {
+      "common_bad": false,
+      "conditional_error": 0.015635528297610616,
+      "epsilon": 0.05,
+      "eta": 0.8,
+      "photons_per_success": 17.681848640811765,
+      "success": 0.22622069
+    },
+    {
+      "common_bad": true,
+      "conditional_error": 0.0002510012507494976,
+      "epsilon": 0.001,
+      "eta": 1.0,
+      "photons_per_success": 16.048064015887736,
+      "success": 0.2492512490005001
+    },
+    {
+      "common_bad": true,
+      "conditional_error": 0.002601257447712149,
+      "epsilon": 0.01,
+      "eta": 1.0,
+      "photons_per_success": 16.486414854127887,
+      "success": 0.2426240050000001
+    },
+    {
+      "common_bad": true,
+      "conditional_error": 0.015160743028668376,
+      "epsilon": 0.05,
+      "eta": 1.0,
+      "photons_per_success": 18.56121575963225,
+      "success": 0.21550312500000005
+    },
+    {
+      "common_bad": true,
+      "conditional_error": 0.00025111106131595366,
+      "epsilon": 0.001,
+      "eta": 0.8,
+      "photons_per_success": 15.289691777461458,
+      "success": 0.26161416843578245
+    },
+    {
+      "common_bad": true,
+      "conditional_error": 0.002612283761276716,
+      "epsilon": 0.01,
+      "eta": 0.8,
+      "photons_per_success": 15.706983025919072,
+      "success": 0.254663801024
+    },
+    {
+      "common_bad": true,
+      "conditional_error": 0.015439150336396755,
+      "epsilon": 0.05,
+      "eta": 0.8,
+      "photons_per_success": 17.673930475352734,
+      "success": 0.22632203999999997
+    }
+  ],
+  "finite_error_polynomial_coefficients": [
+    {
+      "B_mask_sums": [
+        0.0,
+        0.0625,
+        0.31250000000000006,
+        0.28125,
+        0.09375
+      ],
+      "H_mask_sums": [
+        0.2500000000000001,
+        0.25,
+        0.5,
+        0.375,
+        0.09375
+      ],
+      "common_bad": false,
+      "eta": 1.0
+    },
+    {
+      "B_mask_sums": [
+        0.0,
+        0.06559999999999999,
+        0.3056,
+        0.2928000000000001,
+        0.09760000000000005
+      ],
+      "H_mask_sums": [
+        0.2624,
+        0.26239999999999997,
+        0.5312,
+        0.3904000000000002,
+        0.09760000000000005
+      ],
+      "common_bad": false,
+      "eta": 0.8
+    },
+    {
+      "B_mask_sums": [
+        0.0,
+        0.0625,
+        0.25,
+        0.1875,
+        0.2500000000000001
+      ],
+      "H_mask_sums": [
+        0.2500000000000001,
+        0.25,
+        0.5,
+        0.25,
+        0.2500000000000001
+      ],
+      "common_bad": true,
+      "eta": 1.0
+    },
+    {
+      "B_mask_sums": [
+        0.0,
+        0.06559999999999999,
+        0.29119999999999996,
+        0.19679999999999997,
+        0.2624
+      ],
+      "H_mask_sums": [
+        0.2624,
+        0.26239999999999997,
+        0.5824,
+        0.26239999999999997,
+        0.2624
+      ],
+      "common_bad": true,
+      "eta": 0.8
+    }
+  ],
+  "four_photon": {
+    "exact_ideal_success": "164/625",
+    "first_order_error_coefficient": 0.24999999999999994,
+    "old_ideal_success": "1/4",
+    "optimal_eta_within_tapped_family": 0.7832160613205729,
+    "optimal_success_within_tapped_family": 0.2624669882112195,
+    "photons_per_success": 15.24390243902439,
+    "rational_setting": "4/5",
+    "relative_success_improvement": 0.0496,
+    "scope": "Optimum only in the tapped Fourier family; global optical optimum unresolved.",
+    "success_polynomial": "-3*eta**4/8 + 9*eta**3/8 - 3*eta**2/2 + eta"
+  },
+  "gram_identity": [
+    {
+      "cauchy_excess": 0.5000000000000001,
+      "gram_error": 1.2643266404855218e-16,
+      "independent_projection": 1.5407439555097887e-32,
+      "modes": 2,
+      "n": 2,
+      "relaxed_upper_bound": 0.0
+    },
+    {
+      "cauchy_excess": 0.12095602310875257,
+      "gram_error": 5.612668540064762e-17,
+      "independent_projection": 0.16415145668526052,
+      "modes": 4,
+      "n": 2,
+      "relaxed_upper_bound": 0.16415145668526046
+    },
+    {
+      "cauchy_excess": 0.4982961666985986,
+      "gram_error": 1.1708487286942948e-16,
+      "independent_projection": 0.06273417847453801,
+      "modes": 3,
+      "n": 3,
+      "relaxed_upper_bound": 0.06273417847453783
+    },
+    {
+      "cauchy_excess": 0.11856537825786283,
+      "gram_error": 7.883498829551233e-17,
+      "independent_projection": 0.1945620279603431,
+      "modes": 5,
+      "n": 3,
+      "relaxed_upper_bound": 0.19456202796034336
+    },
+    {
+      "cauchy_excess": 0.3888702995036189,
+      "gram_error": 1.0101878834111261e-16,
+      "independent_projection": 0.2215243929242081,
+      "modes": 4,
+      "n": 4,
+      "relaxed_upper_bound": 0.22152439292420828
+    },
+    {
+      "cauchy_excess": 0.1087239946896392,
+      "gram_error": 9.115171445427589e-17,
+      "independent_projection": 0.16485619477871855,
+      "modes": 6,
+      "n": 4,
+      "relaxed_upper_bound": 0.16485619477871857
+    },
+    {
+      "cauchy_excess": 0.3643136785252581,
+      "gram_error": 8.908334833743516e-16,
+      "independent_projection": 0.02355247296834838,
+      "modes": 6,
+      "n": 5,
+      "relaxed_upper_bound": 0.023552472968348344
+    }
+  ],
+  "scope": "Ideal passive photon distillation with one retained port; no device or global-optimum claim.",
+  "status": "PASS",
+  "tests_run": 5
+}

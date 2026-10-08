@@ -1,0 +1,292 @@
+{
+  "fock_dictionary": {
+    "cases": 8,
+    "independent_method": "normalized creation amplitudes versus exact rational PGF recurrence",
+    "max_completion_error": 8.881784197001252e-16,
+    "max_occupation_entries": 252,
+    "max_optical_matrix": 6,
+    "max_probability_error": 4.440892098500626e-16
+  },
+  "necessity_controls": {
+    "heavy_rows": [
+      {
+        "P1": 0.2900814265012741,
+        "P1_limit": 0.2962962962962963,
+        "small_c_limiting_Q_upper": 0.14814814814814814,
+        "weak_inputs": 8
+      },
+      {
+        "P1": 0.2947482999537549,
+        "P1_limit": 0.2962962962962963,
+        "small_c_limiting_Q_upper": 0.14814814814814814,
+        "weak_inputs": 32
+      },
+      {
+        "P1": 0.29591016748276394,
+        "P1_limit": 0.2962962962962963,
+        "small_c_limiting_Q_upper": 0.14814814814814814,
+        "weak_inputs": 128
+      }
+    ],
+    "max_Cauchy_residual_error": 8.881784197001252e-16,
+    "scope": "The heavy-row P1 is not a purification yield. Near-minimal cost forces N/R -> 1 and Nc -> 1 algebraically."
+  },
+  "scope": "Physical interpretation and fixed-scope consolidation. No finite-error or hardware claim.",
+  "selection_control": {
+    "finite_Fock_rows": [
+      {
+        "N": 2,
+        "eta": "1/2",
+        "p0_exact": "1/4",
+        "unfiltered_coefficient_exact": "3/2",
+        "values": {
+          "all": {
+            "coefficient": 1.4999999999999998,
+            "p0": 0.25
+          },
+          "phase": {
+            "coefficient": 0.5,
+            "p0": 0.25
+          }
+        }
+      },
+      {
+        "N": 3,
+        "eta": "1",
+        "p0_exact": "1/3",
+        "unfiltered_coefficient_exact": "5/3",
+        "values": {
+          "all": {
+            "coefficient": 1.6666666666666674,
+            "p0": 0.33333333333333354
+          },
+          "phase": {
+            "coefficient": 0.33333333333333337,
+            "p0": 0.33333333333333354
+          }
+        }
+      },
+      {
+        "N": 4,
+        "eta": "1",
+        "p0_exact": "1/4",
+        "unfiltered_coefficient_exact": "17/8",
+        "values": {
+          "all": {
+            "coefficient": 2.124999999999999,
+            "p0": 0.2500000000000001
+          },
+          "phase": {
+            "coefficient": 0.2499999999999999,
+            "p0": 0.2500000000000001
+          }
+        }
+      },
+      {
+        "N": 4,
+        "eta": "4/5",
+        "p0_exact": "164/625",
+        "unfiltered_coefficient_exact": "74/41",
+        "values": {
+          "all": {
+            "coefficient": 1.8048780487804876,
+            "p0": 0.2624
+          },
+          "phase": {
+            "coefficient": 0.24999999999999994,
+            "p0": 0.2624
+          }
+        }
+      }
+    ],
+    "message": "The ideal one-photon weight is the same with or without the Fourier character rule; only the latter purifies.",
+    "same_photon_number_limit": [
+      {
+        "Fourier_c": 0.0625,
+        "N": 16,
+        "p0": 0.25383214353161065,
+        "unfiltered_c": 2.0010556875044005
+      },
+      {
+        "Fourier_c": 0.015625,
+        "N": 64,
+        "p0": 0.25097255137070845,
+        "unfiltered_c": 2.000062239141617
+      },
+      {
+        "Fourier_c": 0.0078125,
+        "N": 128,
+        "p0": 0.25048730319086476,
+        "unfiltered_c": 2.000015408550895
+      }
+    ]
+  },
+  "status": "PASS",
+  "test_groups": 4,
+  "thermal_controls": {
+    "finite_exact_coefficient_bounds": 21,
+    "rows": [
+      {
+        "N": 4,
+        "P0": 0.5740740740740741,
+        "P1": 0.25925925925925924,
+        "P_at_least_2": 0.16666666666666666,
+        "s": "2/3",
+        "sum_p_squared": 0.1111111111111111,
+        "trace_distance_to_thermal": 0.03752888888888889,
+        "unequal": false
+      },
+      {
+        "N": 4,
+        "P0": 0.5659722222222222,
+        "P1": 0.2638888888888889,
+        "P_at_least_2": 0.1701388888888889,
+        "s": "2/3",
+        "sum_p_squared": 0.1388888888888889,
+        "trace_distance_to_thermal": 0.04921111111111111,
+        "unequal": true
+      },
+      {
+        "N": 16,
+        "P0": 0.5938786197366009,
+        "P1": 0.24485521053596285,
+        "P_at_least_2": 0.1612661697274362,
+        "s": "2/3",
+        "sum_p_squared": 0.027777777777777776,
+        "trace_distance_to_thermal": 0.00815172841113112,
+        "unequal": false
+      },
+      {
+        "N": 16,
+        "P0": 0.5922464364255868,
+        "P1": 0.24617214100107448,
+        "P_at_least_2": 0.16158142257333868,
+        "s": "2/3",
+        "sum_p_squared": 0.034722222222222224,
+        "trace_distance_to_thermal": 0.010351252821204646,
+        "unequal": true
+      },
+      {
+        "N": 64,
+        "P0": 0.5984924769863609,
+        "P1": 0.24120368218226704,
+        "P_at_least_2": 0.16030384083137214,
+        "s": "2/3",
+        "sum_p_squared": 0.006944444444444444,
+        "trace_distance_to_thermal": 0.0019940786229000825,
+        "unequal": false
+      },
+      {
+        "N": 64,
+        "P0": 0.5981096145403211,
+        "P1": 0.24151079165358375,
+        "P_at_least_2": 0.16037959380609515,
+        "s": "2/3",
+        "sum_p_squared": 0.008680555555555556,
+        "trace_distance_to_thermal": 0.0025018499481958413,
+        "unequal": true
+      },
+      {
+        "N": 128,
+        "P0": 0.599248122096372,
+        "P1": 0.2406009291609711,
+        "P_at_least_2": 0.16015094874265695,
+        "s": "2/3",
+        "sum_p_squared": 0.003472222222222222,
+        "trace_distance_to_thermal": 0.0009935034838037917,
+        "unequal": false
+      },
+      {
+        "N": 128,
+        "P0": 0.5990586725781818,
+        "P1": 0.24075269688559772,
+        "P_at_least_2": 0.16018863053622048,
+        "s": "2/3",
+        "sum_p_squared": 0.004340277777777778,
+        "trace_distance_to_thermal": 0.0012441603866485632,
+        "unequal": true
+      },
+      {
+        "N": 4,
+        "P0": 0.46875,
+        "P1": 0.25,
+        "P_at_least_2": 0.28125,
+        "s": "1",
+        "sum_p_squared": 0.25,
+        "trace_distance_to_thermal": 0.125,
+        "unequal": false
+      },
+      {
+        "N": 4,
+        "P0": 0.458984375,
+        "P1": 0.2578125,
+        "P_at_least_2": 0.283203125,
+        "s": "1",
+        "sum_p_squared": 0.3125,
+        "trace_distance_to_thermal": 0.072265625,
+        "unequal": true
+      },
+      {
+        "N": 16,
+        "P0": 0.49206774551463717,
+        "P1": 0.25383214353161065,
+        "P_at_least_2": 0.2541001109537522,
+        "s": "1",
+        "sum_p_squared": 0.0625,
+        "trace_distance_to_thermal": 0.010537651892995825,
+        "unequal": false
+      },
+      {
+        "N": 16,
+        "P0": 0.4899465551792671,
+        "P1": 0.25485764481305406,
+        "P_at_least_2": 0.2551958000076789,
+        "s": "1",
+        "sum_p_squared": 0.078125,
+        "trace_distance_to_thermal": 0.013403800975487181,
+        "unequal": true
+      },
+      {
+        "N": 64,
+        "P0": 0.49803927694241634,
+        "P1": 0.25097255137070845,
+        "P_at_least_2": 0.2509881716868752,
+        "s": "1",
+        "sum_p_squared": 0.015625,
+        "trace_distance_to_thermal": 0.002580781707621523,
+        "unequal": false
+      },
+      {
+        "N": 64,
+        "P0": 0.4975408549001123,
+        "P1": 0.25122016986293205,
+        "P_at_least_2": 0.2512389752369557,
+        "s": "1",
+        "sum_p_squared": 0.01953125,
+        "trace_distance_to_thermal": 0.003239219855642794,
+        "unequal": true
+      },
+      {
+        "N": 128,
+        "P0": 0.4990215339719107,
+        "P1": 0.25048730319086476,
+        "P_at_least_2": 0.25049116283722456,
+        "s": "1",
+        "sum_p_squared": 0.0078125,
+        "trace_distance_to_thermal": 0.0012860471193364704,
+        "unequal": false
+      },
+      {
+        "N": 128,
+        "P0": 0.4987748739929775,
+        "P1": 0.25061025583134877,
+        "P_at_least_2": 0.25061487017567374,
+        "s": "1",
+        "sum_p_squared": 0.009765625,
+        "trace_distance_to_thermal": 0.0016108229316987557,
+        "unequal": true
+      }
+    ],
+    "scope": "Complete finite distributions use rational arithmetic. Convergence is proved analytically, not fitted."
+  }
+}

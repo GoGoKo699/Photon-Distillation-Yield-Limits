@@ -1,0 +1,132 @@
+--- first_passing/check_pilot.py
++++ final/check_pilot.py
+@@ -11,6 +11,7 @@
+ import itertools
+ import json
+ import math
++from fractions import Fraction
+ from pathlib import Path
+ import unittest
+ import numpy as np
+@@ -139,6 +140,40 @@
+         if abs(norm-1)>5e-12: raise ArithmeticError('Fock norm failure')
+         H[mask.bit_count()]+=h; B[mask.bit_count()]+=b
+     return H,B
++
++
++
++def gaussian_fock_mask4(eta: Fraction, mask: int, common_bad: bool=False):
++    """Independent exact check: unnormalized creation polynomials over Z[i].
++
++    Fourier phases are fourth roots of unity. Row weights and Fock factorials
++    are applied only after the integer polynomial is expanded. eta is rational.
++    """
++    n=4; modes=5
++    labels=[(1 if common_bad else j+1) if mask>>j&1 else 0 for j in range(n)]
++    d=max(labels)+1
++    state={(0,)*(modes*d):(1,0)}
++    roots=((1,0),(0,1),(-1,0),(0,-1))
++    for j,lab in enumerate(labels):
++        nxt={}
++        for occ,(ar,ai) in state.items():
++            for row in range(modes):
++                phase=(row*j)%4 if row<4 else 0
++                cr,ci=roots[phase]
++                key=list(occ);key[row*d+lab]+=1;key=tuple(key)
++                br,bi=nxt.get(key,(0,0))
++                nxt[key]=(br+ar*cr-ai*ci,bi+ar*ci+ai*cr)
++        state=nxt
++    norm=Fraction(0); h=Fraction(0); bad=Fraction(0)
++    for occ,(ar,ai) in state.items():
++        spatial=[sum(occ[row*d:(row+1)*d]) for row in range(modes)]
++        weight=Fraction((ar*ar+ai*ai)*math.prod(math.factorial(k) for k in occ),4**4)
++        weight*=eta**spatial[0]*(1-eta)**spatial[4]
++        norm+=weight
++        if spatial[0]==1 and sum(row*spatial[row] for row in range(1,4))%4==0:
++            h+=weight
++            if sum(occ[1:d])==1:bad+=weight
++    return norm,h,bad
+ 
+ 
+ def evaluate(H,B,epsilon):
+@@ -184,7 +219,9 @@
+                 err=float(np.linalg.norm(V[mask]-v[mask,None]/n))
+                 self.assertLess(err,4e-14)
+                 self.assertLess(np.linalg.norm(v[~mask]),4e-14)
+-                val=float(success_poly(n).subs('eta',eta)) if False else float(success_poly(n).subs({next(iter(success_poly(n).free_symbols)):eta}))
++                poly=success_poly(n)
++                eta_symbol=next(iter(poly.free_symbols))
++                val=float(poly.subs(eta_symbol,eta))
+                 self.assertAlmostEqual(p,val,places=11)
+                 self.assertAlmostEqual(relaxed_bound(gram(np.ones(n)*eta/n)),p,places=10)
+                 if p>1e-12:
+@@ -250,19 +287,65 @@
+         G=sp.Matrix([[p1*(1-p2),-p1*p2],[-p1*p2,p2*(1-p1)]])
+         exact=sp.factor(4*G.det()/sum(G.adjugate()))
+         self.assertEqual(sp.simplify(exact-4*p1*p2*(1-p1-p2)/(p1+p2)),0)
+-        # Fixed N=3 with NO vacuum coupling to the retained port: bound 9 p1 p2 p3 <= 1/3.
++        # Exact N=3 bound including arbitrary vacuum coupling:
++        # Gram inverse, Schur concavity at fixed sum, then monotonicity in sum.
+         a,b,c3=sp.symbols('a b c',positive=True)
+         G3=sp.Matrix([[a*(1-b-c3+2*b*c3),-a*b*(1-2*c3),-a*c3*(1-2*b)],
+                       [-a*b*(1-2*c3),b*(1-a-c3+2*a*c3),-b*c3*(1-2*a)],
+                       [-a*c3*(1-2*b),-b*c3*(1-2*a),c3*(1-a-b+2*a*b)]])
+-        numerator=9*G3.det();den=sum(G3.adjugate())
+-        self.assertEqual(sp.factor((numerator-9*a*b*c3*den).subs(c3,1-a-b)),0)
++        s,t,r,w,u=sp.symbols('s t r w u',nonnegative=True)
++        B3=9*r*((1-s)**2+2*(1-s)*t+2*(s+1)*r)/((1-s)*t+(s+3)*r)
++        self.assertEqual(sp.factor(9*G3.det()-B3.subs(
++            {s:a+b+c3,t:a*b+a*c3+b*c3,r:a*b*c3})*sum(G3.adjugate())),0)
++        D=(1-s)*t+(s+3)*r
++        numerator=sp.factor(D**2*(sp.diff(B3,t)+w*sp.diff(B3,r))/9)
++        positive=(u**3*(w*t-r)+2*u**2*w*t**2+4*u*(2-u)*w*t*r
++                  +2*(2-u)*(4-u)*w*r**2+4*u*r**2)
++        self.assertEqual(sp.expand(numerator.subs(s,1-u)-positive),0)
++        # w is the third input intensity: w*t-r = w^2*(other two).
++        self.assertEqual(sp.expand((w*t-r).subs(
++            {w:c3,t:a*b+a*c3+b*c3,r:a*b*c3})-c3**2*(a+b)),0)
++        P3=s-sp.Rational(4,3)*s**2+sp.Rational(2,3)*s**3
++        self.assertEqual(sp.factor(B3.subs({t:s*s/3,r:s**3/27})-P3),0)
++        self.assertEqual(sp.expand(sp.diff(P3,s)-(2*(s-sp.Rational(2,3))**2+sp.Rational(1,9))),0)
++        self.assertEqual(P3.subs(s,1),sp.Rational(1,3))
++        # Additional finite row check is diagnostic, not the global proof.
++        rng=np.random.default_rng(815)
++        maxB=0.
++        for _ in range(100):
++            ps=rng.dirichlet(np.ones(3))*rng.uniform(.05,1.)
++            value=relaxed_bound(gram(ps));maxB=max(maxB,value)
++            total=ps.sum()
++            self.assertLessEqual(value,total-4*total**2/3+2*total**3/3+1e-12)
++
+         REPORT['controls']={'identity_yield':1.,'identity_error_coefficient':1.,
+           'tap_without_symmetry_check_coefficient':coef,
+           'two_photon_upper_bound':str(exact),
+           'two_photon_global_success_upper_bound':.25,
+-          'three_photon_no_vacuum_row_success_upper_bound':1/3,
++          'three_photon_global_success_upper_bound':1/3,
++          'three_photon_bound_formula':str(B3),
++          'three_photon_schur_identity':'exact symbolic identity; positive decomposition in note',
++          'three_photon_diagnostic_max':maxB,
+           'limitations':'No general global success optimum proved for N>=4; first order is at fixed N.'}
++
++    def test_06_gaussian_integer_fock_certificates(self):
++        records=[]
++        for common in (False,True):
++            for eta in (Fraction(1),Fraction(4,5)):
++                H=[Fraction(0)]*5;B=[Fraction(0)]*5
++                for mask in range(16):
++                    norm,h,b=gaussian_fock_mask4(eta,mask,common)
++                    self.assertEqual(norm,Fraction(1))
++                    H[mask.bit_count()]+=h;B[mask.bit_count()]+=b
++                fH,fB=full_polynomials(4,float(eta),common)
++                self.assertLess(np.linalg.norm(fH-np.array(list(map(float,H)))),2e-12)
++                self.assertLess(np.linalg.norm(fB-np.array(list(map(float,B)))),2e-12)
++                self.assertEqual(B[1],H[0]/4)
++                if eta==Fraction(4,5):self.assertEqual(H[0],Fraction(164,625))
++                records.append({'common_bad':common,'eta':str(eta),
++                                'H_exact':[str(x) for x in H],
++                                'B_exact':[str(x) for x in B]})
++        REPORT['exact_fock_certificates']=records
+ 
+ 
+ def main():

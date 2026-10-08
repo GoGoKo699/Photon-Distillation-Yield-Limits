@@ -1,0 +1,90 @@
+{
+  ".github/workflows/verify.yml": {
+    "bytes": 1174,
+    "sha256": "8e1fd4736d33ad1e9611c00addcf7070b9e7dd0d746d2d80ef536e1a257d9b16"
+  },
+  ".gitignore": {
+    "bytes": 37,
+    "sha256": "835138233722f615e0ba8e9e144ffe1c3b8ce45009120fac3680a94c702ad8de"
+  },
+  "AGENTS.md": {
+    "bytes": 2476,
+    "sha256": "e88022d321f44bce72762e5b3e0028d7eb8117ee2b113b76fdc3657c4270b345"
+  },
+  "README.md": {
+    "bytes": 4010,
+    "sha256": "db72e2b0a92658babf363364c9cbe8925b818f566a347a052a841940685f59a8"
+  },
+  "VERIFICATION.md": {
+    "bytes": 3151,
+    "sha256": "413248633922a422ae1a37643c09fa5f7ba7d3f5a8949d92d5c91e0cea91c9a3"
+  },
+  "WORKSPACE.md": {
+    "bytes": 1969,
+    "sha256": "ac47870cc35cef88cefdc59378fe0a2181608d0bd2e3227b6dd2de8066881cdd"
+  },
+  "archive/README.md": {
+    "bytes": 763,
+    "sha256": "d6a67b899ff5d00ea865aaaed744de33c3bb23867086d898c93a6da74f61d93e"
+  },
+  "literature/ATTRIBUTION.md": {
+    "bytes": 2031,
+    "sha256": "8adc834dda6988566e05d856c8b5b0c46d46a9362b02c46b632e98631de412f1"
+  },
+  "llms.txt": {
+    "bytes": 1337,
+    "sha256": "96112c527db72b20463b2720f65a417032171722660669fd2dccc0b5558ec142"
+  },
+  "provenance/ACTIVE_EDITS.json": {
+    "bytes": 2955,
+    "sha256": "c4f1dc48be41e0aec7bfdff97f281897f552dde0d2a074a77e5f177f40bab761"
+  },
+  "requirements.txt": {
+    "bytes": 41,
+    "sha256": "f7308e5b60ea62603b458da5fadbb55614b46fbb4d083200fa2cc9843085ceef"
+  },
+  "research/CONTRIBUTION_REVIEW.md": {
+    "bytes": 8603,
+    "sha256": "4c534534f66726a3c99267b833a985fb17e67fb16a58fd5a5ff67acf4d31fc57"
+  },
+  "research/MODEL_AND_CLAIMS.md": {
+    "bytes": 2438,
+    "sha256": "a5538afdf04958f011d3996338d7404d5188242d37fabc681ced0dc7f19d0200"
+  },
+  "research/PHYSICAL_MECHANISM.md": {
+    "bytes": 9252,
+    "sha256": "174aeddc13fce4fce5cd5a4d049e58ac490861566ee2afafc3b302b1a429e773"
+  },
+  "research/PROOF_MAP.md": {
+    "bytes": 1733,
+    "sha256": "fa15a6695288250833dbeceaf26f8c57a513d2440c55228db8e3e8157b0f7f56"
+  },
+  "research/THEOREM.md": {
+    "bytes": 10182,
+    "sha256": "2f17ed793a0bdf240fa46127972ba2d4ac1b1fc0224afd54af6b99000401a980"
+  },
+  "tests/test_integrity.py": {
+    "bytes": 3812,
+    "sha256": "cc58e4fbb9520c9d54d875494cf50ffc54f9b5a77b194bf756e7beec5cc4d1b0"
+  },
+  "tools/integrity.py": {
+    "bytes": 5110,
+    "sha256": "ddd1965c3f8b5a1483d3bc44b5ad41c756d1f0e7c39a12d41a64b40574435d22"
+  },
+  "tools/sync_active.py": {
+    "bytes": 1165,
+    "sha256": "4ba490dad1e65b129532e8eb1354070588e1bd334584b4985d0b1493d18f0f7c"
+  },
+  "tools/sync_metadata.py": {
+    "bytes": 841,
+    "sha256": "350aa0c0b1b649b993310d47bd377fa96f7a2ad1f01320e3fc306bd28e292ae4"
+  },
+  "tools/verify.py": {
+    "bytes": 5433,
+    "sha256": "88b9b6f0c1741de7032c2c9ce4f532c1e4a4f648b7e4e9efd8eb3799ad7a3c39"
+  },
+  "work_orders/CURRENT.md": {
+    "bytes": 1387,
+    "sha256": "9fe3546c174f5727f4c1983c59e4ffaf603b2510800d10add875a5f3e9f80652"
+  }
+}

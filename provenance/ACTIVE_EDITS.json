@@ -1,0 +1,79 @@
+{
+  "copies": [
+    {
+      "destination": "research/THEOREM.md",
+      "destination_sha256": "2f17ed793a0bdf240fa46127972ba2d4ac1b1fc0224afd54af6b99000401a980",
+      "replacements": [
+        {
+          "count": 1,
+          "new": "](CONTRIBUTION_REVIEW.md)",
+          "old": "](CLAIMS_AND_REVIEW.md)"
+        },
+        {
+          "count": 1,
+          "new": "](../WORKSPACE.md)",
+          "old": "](PROJECT_HANDOFF.md)"
+        },
+        {
+          "count": 2,
+          "new": "](../archive/research-handoff-2026-10-08/prior/THEOREM.md)",
+          "old": "](prior/THEOREM.md)"
+        },
+        {
+          "count": 1,
+          "new": "](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md)",
+          "old": "](prior/prior/FOLLOWUP.md)"
+        },
+        {
+          "count": 1,
+          "new": "](../archive/research-handoff-2026-10-08/prior/prior/prior/PILOT.md)",
+          "old": "](prior/prior/prior/PILOT.md)"
+        },
+        {
+          "count": 1,
+          "new": "",
+          "old": "**8 October 2026 \u2014 consolidated research account, not a submitted manuscript.**\n\n"
+        },
+        {
+          "count": 1,
+          "new": "The original research record is preserved unchanged under\n`archive/research-handoff-2026-10-08/`.",
+          "old": "No repository has been selected by the user or modified in\nthis turn. All previous research bytes are unchanged under `prior/`."
+        }
+      ],
+      "source": "archive/research-handoff-2026-10-08/THEOREM.md",
+      "source_sha256": "a4bf4e0228f999ff9453bda4d809539b5eb66f2f3f9b183994405404a1007d86"
+    },
+    {
+      "destination": "research/PHYSICAL_MECHANISM.md",
+      "destination_sha256": "174aeddc13fce4fce5cd5a4d049e58ac490861566ee2afafc3b302b1a429e773",
+      "replacements": [
+        {
+          "count": 1,
+          "new": "",
+          "old": "**8 October 2026. Same ideal, fixed-output, first-order optical task.**\n\n"
+        }
+      ],
+      "source": "archive/research-handoff-2026-10-08/PHYSICAL_MECHANISM.md",
+      "source_sha256": "4f58ceb2364dd3bb54db3d63e0f63baae6e0acd1c2116b542a156de4c184e5ae"
+    },
+    {
+      "destination": "research/CONTRIBUTION_REVIEW.md",
+      "destination_sha256": "4c534534f66726a3c99267b833a985fb17e67fb16a58fd5a5ff67acf4d31fc57",
+      "replacements": [
+        {
+          "count": 1,
+          "new": "",
+          "old": "**8 October 2026. No repository accessed or modified.**\n\n"
+        },
+        {
+          "count": 1,
+          "new": "The original account is preserved in the research archive.",
+          "old": "No repository is created in this turn."
+        }
+      ],
+      "source": "archive/research-handoff-2026-10-08/CLAIMS_AND_REVIEW.md",
+      "source_sha256": "9fa16bafc698f08d0f3550f2f35694b28a4f749ccfc8d7e4bd0849d6c126eb2b"
+    }
+  ],
+  "policy": "Only the listed navigation and initialization-status replacements are applied. Original source bytes are immutable."
+}

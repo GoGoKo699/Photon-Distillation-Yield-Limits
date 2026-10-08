@@ -1,0 +1,50 @@
+{
+  "global": {
+    "byte_identical": true,
+    "canonical": "prior/prior/evidence/enriched.json",
+    "difference_count": 0,
+    "differences": [],
+    "maximum_absolute_numeric_difference": 0,
+    "rerun": "evidence/legacy_global.json",
+    "sha256s": [
+      "0c64a061136c72bf6731b2e97536ca414c2c1d8960461e8751ccb16feb8e2c31",
+      "0c64a061136c72bf6731b2e97536ca414c2c1d8960461e8751ccb16feb8e2c31"
+    ]
+  },
+  "new_repeat": {
+    "byte_identical": true,
+    "canonical": "evidence/first.json",
+    "difference_count": 0,
+    "differences": [],
+    "maximum_absolute_numeric_difference": 0,
+    "rerun": "evidence/repeat.json",
+    "sha256s": [
+      "30019041713d9c784c2a50fa2370fcbcc13705c59f578bc871e7b43b2a6ad850",
+      "30019041713d9c784c2a50fa2370fcbcc13705c59f578bc871e7b43b2a6ad850"
+    ]
+  },
+  "pilot": {
+    "byte_identical": true,
+    "canonical": "prior/prior/prior/evidence/final.json",
+    "difference_count": 0,
+    "differences": [],
+    "maximum_absolute_numeric_difference": 0,
+    "rerun": "evidence/legacy_pilot.json",
+    "sha256s": [
+      "5b987c2dab098af435cb90cafdad7471349f4b6aa1aec8801de6b6f91f23f57a",
+      "5b987c2dab098af435cb90cafdad7471349f4b6aa1aec8801de6b6f91f23f57a"
+    ]
+  },
+  "review": {
+    "byte_identical": true,
+    "canonical": "prior/evidence/final.json",
+    "difference_count": 0,
+    "differences": [],
+    "maximum_absolute_numeric_difference": 0,
+    "rerun": "evidence/legacy_review.json",
+    "sha256s": [
+      "1dda0579f221f3574c24d2e5755840d19cc7fb9d679eaea4493d18dfa1aa806f",
+      "1dda0579f221f3574c24d2e5755840d19cc7fb9d679eaea4493d18dfa1aa806f"
+    ]
+  }
+}

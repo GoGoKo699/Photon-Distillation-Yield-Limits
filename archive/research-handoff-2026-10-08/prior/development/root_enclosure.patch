@@ -1,0 +1,13 @@
+--- check_before_root_enclosure.py
++++ check_review.py
+@@ -217,8 +217,8 @@
+         import sympy as sp
+         x=sp.Symbol("x")
+         polynomial=8-24*x+27*x*x-12*x**3
+-        lo=sp.Rational(7832160613205728,10**16)
+-        hi=sp.Rational(7832160613205730,10**16)
++        lo=sp.Rational(783216061320573254247041,1000000000000000000000000)
++        hi=sp.Rational(783216061320573254247042,1000000000000000000000000)
+         self.assertGreater(polynomial.subs(x,lo),0)
+         self.assertLess(polynomial.subs(x,hi),0)
+         # P4' strictly decreases; uniqueness of its zero was proved in prior text.

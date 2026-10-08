@@ -1,0 +1,10 @@
+test_01_physical_amplitudes_and_arbitrary_acceptance (__main__.Review.test_01_physical_amplitudes_and_arbitrary_acceptance) ... ok
+test_02_near_optimal_coherent_relaxation (__main__.Review.test_02_near_optimal_coherent_relaxation) ... ok
+test_03_uniform_grouping_and_architecture_limits (__main__.Review.test_03_uniform_grouping_and_architecture_limits) ... ok
+test_04_independent_integer_certificate_and_uniqueness (__main__.Review.test_04_independent_integer_certificate_and_uniqueness) ... ok
+test_05_physical_attainment_with_suboptimal_coefficient (__main__.Review.test_05_physical_attainment_with_suboptimal_coefficient) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.106s
+
+OK
