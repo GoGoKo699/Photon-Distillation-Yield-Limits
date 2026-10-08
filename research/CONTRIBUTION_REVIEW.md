@@ -1,12 +1,12 @@
 # The result in context
 
 Known Fourier protocols reduce the first-order distinguishability error by
-$1/N$ with ideal success approaching $1/4$, at a photon cost approaching $4N$.
+$`1/N`$ with ideal success approaching $`1/4`$, at a photon cost approaching $`4N`$.
 The central contribution is the matching all-network converse: every sequence
 in the allowed fixed-output, passive, vacuum-extended class has limiting upper
-success at most $1/4$ when its first-order error coefficient vanishes. Optimizing batch size as
-well gives the sharp leading cost $(4+o(1))R$ for requested derivative-level
-reduction $R$.
+success at most $`1/4`$ when its first-order error coefficient vanishes. Optimizing batch size as
+well gives the sharp leading cost $`(4+o(1))R`$ for requested derivative-level
+reduction $`R`$.
 
 Known Fourier attainment, the necessary
 thermal number marginal, and the exact four-photon optimum play distinct roles
@@ -21,7 +21,7 @@ estimate to control those inputs while allowing imbalance, arbitrary vacuum
 enlargement, and larger batches with suboptimal but vanishing error coefficients.
 The exact-coefficient theorem is a corollary of this stable form.
 
-With $c_N\to0$, approaching the ceiling forces diffuse occupied-input couplings and total
+With $`c_N\to0`$, approaching the ceiling forces diffuse occupied-input couplings and total
 occupied row norm approaching one. Known quantum-central-limit behavior then
 gives the half-vacuum, quarter-single-photon, quarter-multiphoton marginal.
 Assuming that marginal before excluding strongly coupled competitors would
@@ -32,12 +32,12 @@ purity: the detector selection rule is essential.
 
 | Role | Result |
 |---|---|
-| Converse | Every allowed sequence with $c\to0$ has $\limsup p_0\le1/4$; optimizing batch size gives cost $(4+o(1))R$. |
+| Converse | Every allowed sequence with $`c\to0`$ has $`\limsup p_0\le1/4`$; optimizing batch size gives cost $`(4+o(1))R`$. |
 | Attainment | Established Fourier-family protocols attain the leading cost. |
-| Finite companion | Sharp success optima for two, three, and four photons at $c=1/N$; a monitored vacuum tap attains the four-photon value. |
-| Necessary structure | Sequences with $c_N\to0$ and $p_{0,N}\to1/4$ have diffuse survivor couplings, a mean-one thermal number marginal, and asymptotically complete acceptance of the ideal one-survivor probability. |
+| Finite companion | Sharp success optima for two, three, and four photons at $`c=1/N`$; a monitored vacuum tap attains the four-photon value. |
+| Necessary structure | Sequences with $`c_N\to0`$ and $`p_{0,N}\to1/4`$ have diffuse survivor couplings, a mean-one thermal number marginal, and asymptotically complete acceptance of the ideal one-survivor probability. |
 | Selection control | Count-only acceptance has the same ideal yield as character selection but amplifies the leading error, as discussed in Saied et al., Appendix D. |
-| Cost equality | Approaching cost $4R$ requires $N/R\to1$ and $Nc\to1$, together with asymptotically vanishing normalized mean-square deviation among the accepted input-origin amplitudes. |
+| Cost equality | Approaching cost $`4R`$ requires $`N/R\to1`$ and $`Nc\to1`$, together with asymptotically vanishing normalized mean-square deviation among the accepted input-origin amplitudes. |
 
 ## Relation to established results
 

@@ -41,7 +41,7 @@ No separate numerical tolerance is used to silently accept a mismatch.
 Floating-point report bytes can depend on the numerical runtime even with pinned
 Python and package versions. The [hosted report review](provenance/HOSTED_REPORT_REVIEW.json)
 records the initial PR and merged-main evidence: all 21 scientific groups passed,
-while 60 floating-point leaves differed by at most $6.11\times10^{-16}$.
+while 60 floating-point leaves differed by at most $`6.11\times10^{-16}`$.
 A local BLAS-dispatch experiment reproduced 58 of those differences exactly;
 the remaining two were quadrature values satisfying the unchanged bound checks.
 The original reports, assertions, and tolerances remain unchanged. These runs

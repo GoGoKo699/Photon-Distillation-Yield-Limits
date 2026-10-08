@@ -2,7 +2,7 @@
   "copies": [
     {
       "destination": "research/THEOREM.md",
-      "destination_sha256": "b8f9de46538e2d972023efce7a45a65cf8d0e292b05c671969de7a0205ab2acb",
+      "destination_sha256": "f0c7ee8c1fac3d207209293166dc9e00dd2f700861666d571c3e275756b87c3f",
       "replacements": [
         {
           "count": 1,
@@ -148,6 +148,421 @@
           "count": 1,
           "new": "\\mathrm{supp}",
           "old": "\\operatorname{supp}"
+        },
+        {
+          "count": 1,
+          "new": "$`p_0`$",
+          "old": "$p_0$"
+        },
+        {
+          "count": 1,
+          "new": "$`c`$",
+          "old": "$c$"
+        },
+        {
+          "count": 1,
+          "new": "$`c_N=1/N`$",
+          "old": "$c_N=1/N$"
+        },
+        {
+          "count": 2,
+          "new": "$`p_{0,N}\\to1/4`$",
+          "old": "$p_{0,N}\\to1/4$"
+        },
+        {
+          "count": 2,
+          "new": "$`R`$",
+          "old": "$R$"
+        },
+        {
+          "count": 1,
+          "new": "$`N\\ge2`$",
+          "old": "$N\\ge2$"
+        },
+        {
+          "count": 5,
+          "new": "$`N`$",
+          "old": "$N$"
+        },
+        {
+          "count": 1,
+          "new": "$`|g\\rangle`$",
+          "old": "$|g\\rangle$"
+        },
+        {
+          "count": 2,
+          "new": "$`N-1`$",
+          "old": "$N-1$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\epsilon_{\\rm out}=1-\\langle g|\\rho_{\\rm out}|g\\rangle`$",
+          "old": "$\\epsilon_{\\rm out}=1-\\langle g|\\rho_{\\rm out}|g\\rangle$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_0>0`$",
+          "old": "$p_0>0$"
+        },
+        {
+          "count": 1,
+          "new": "$`N/p_0`$",
+          "old": "$N/p_0$"
+        },
+        {
+          "count": 1,
+          "new": "$`u_i=U_{0i}`$",
+          "old": "$u_i=U_{0i}$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i=|u_i|^2`$",
+          "old": "$p_i=|u_i|^2$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\widetilde a_i^\\dagger=\\sum_{r\\ne0}U_{ri}b_r^\\dagger`$",
+          "old": "$\\widetilde a_i^\\dagger=\\sum_{r\\ne0}U_{ri}b_r^\\dagger$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i\\ge0`$",
+          "old": "$p_i\\ge0$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\sum_i p_i\\le1`$",
+          "old": "$\\sum_i p_i\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`(N-1)`$",
+          "old": "$(N-1)$"
+        },
+        {
+          "count": 1,
+          "new": "$`P`$",
+          "old": "$P$"
+        },
+        {
+          "count": 1,
+          "new": "$`a_i=Pv_i`$",
+          "old": "$a_i=Pv_i$"
+        },
+        {
+          "count": 1,
+          "new": "$`a=Pv`$",
+          "old": "$a=Pv$"
+        },
+        {
+          "count": 1,
+          "new": "$`v`$",
+          "old": "$v$"
+        },
+        {
+          "count": 1,
+          "new": "$`i`$",
+          "old": "$i$"
+        },
+        {
+          "count": 1,
+          "new": "$`v_i`$",
+          "old": "$v_i$"
+        },
+        {
+          "count": 1,
+          "new": "$`c\\ge1/N`$",
+          "old": "$c\\ge1/N$"
+        },
+        {
+          "count": 1,
+          "new": "$`a_i`$",
+          "old": "$a_i$"
+        },
+        {
+          "count": 1,
+          "new": "$`I-u^*u`$",
+          "old": "$I-u^*u$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\delta>c`$",
+          "old": "$\\delta>c$"
+        },
+        {
+          "count": 1,
+          "new": "$`A=\\{i:p_i>\\delta\\}`$",
+          "old": "$A=\\{i:p_i>\\delta\\}$"
+        },
+        {
+          "count": 1,
+          "new": "$`D=A^c`$",
+          "old": "$D=A^c$"
+        },
+        {
+          "count": 1,
+          "new": "$`v_\\omega=\\sum_Dv_i+\\omega\\sum_Av_i`$",
+          "old": "$v_\\omega=\\sum_Dv_i+\\omega\\sum_Av_i$"
+        },
+        {
+          "count": 1,
+          "new": "$`Q`$",
+          "old": "$Q$"
+        },
+        {
+          "count": 1,
+          "new": "$`f(x)=\\prod_A(1-p_ix)`$",
+          "old": "$f(x)=\\prod_A(1-p_ix)$"
+        },
+        {
+          "count": 1,
+          "new": "$`g(x)=\\prod_D(1-p_ix)`$",
+          "old": "$g(x)=\\prod_D(1-p_ix)$"
+        },
+        {
+          "count": 1,
+          "new": "$`g`$",
+          "old": "$g$"
+        },
+        {
+          "count": 1,
+          "new": "$`e^{-\\lambda x}`$",
+          "old": "$e^{-\\lambda x}$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_{\\emptyset}=\\mathrm{per}(I-bb^\\dagger)`$",
+          "old": "$p_{\\emptyset}=\\mathrm{per}(I-bb^\\dagger)$"
+        },
+        {
+          "count": 1,
+          "new": "$`b_i=\\sqrt{p_i/(1+\\lambda)}`$",
+          "old": "$b_i=\\sqrt{p_i/(1+\\lambda)}$"
+        },
+        {
+          "count": 1,
+          "new": "$`i\\in A`$",
+          "old": "$i\\in A$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\|b\\|^2\\le1`$",
+          "old": "$\\|b\\|^2\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`0\\le p_{\\emptyset}\\le1`$",
+          "old": "$0\\le p_{\\emptyset}\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`x\\ge0`$",
+          "old": "$x\\ge0$"
+        },
+        {
+          "count": 1,
+          "new": "$`|1-y|\\le e^{y/2}`$",
+          "old": "$|1-y|\\le e^{y/2}$"
+        },
+        {
+          "count": 1,
+          "new": "$`0\\le e^{-y}-1+y\\le y^2/2`$",
+          "old": "$0\\le e^{-y}-1+y\\le y^2/2$"
+        },
+        {
+          "count": 1,
+          "new": "$`y\\ge0`$",
+          "old": "$y\\ge0$"
+        },
+        {
+          "count": 1,
+          "new": "$`|f^{(r)}|\\le\\sigma^r e^{\\sigma x/2}`$",
+          "old": "$|f^{(r)}|\\le\\sigma^r e^{\\sigma x/2}$"
+        },
+        {
+          "count": 1,
+          "new": "$`r\\le2`$",
+          "old": "$r\\le2$"
+        },
+        {
+          "count": 1,
+          "new": "$`a_A=\\sum_Aa_i`$",
+          "old": "$a_A=\\sum_Aa_i$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\sqrt{mc p_0}`$",
+          "old": "$\\sqrt{mc p_0}$"
+        },
+        {
+          "count": 1,
+          "new": "$`Pv_\\omega=a-(1-\\omega)a_A`$",
+          "old": "$Pv_\\omega=a-(1-\\omega)a_A$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\lambda\\le1`$",
+          "old": "$\\lambda\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`m\\le1/\\delta`$",
+          "old": "$m\\le1/\\delta$"
+        },
+        {
+          "count": 1,
+          "new": "$`c\\to0`$",
+          "old": "$c\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\delta=c^{1/3}`$",
+          "old": "$\\delta=c^{1/3}$"
+        },
+        {
+          "count": 2,
+          "new": "$`1/4`$",
+          "old": "$1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`1/N`$",
+          "old": "$1/N$"
+        },
+        {
+          "count": 1,
+          "new": "$`c\\le1/R`$",
+          "old": "$c\\le1/R$"
+        },
+        {
+          "count": 1,
+          "new": "$`N\\ge R`$",
+          "old": "$N\\ge R$"
+        },
+        {
+          "count": 1,
+          "new": "$`N=\\max(3,\\lceil R\\rceil)`$",
+          "old": "$N=\\max(3,\\lceil R\\rceil)$"
+        },
+        {
+          "count": 1,
+          "new": "$`4N`$",
+          "old": "$4N$"
+        },
+        {
+          "count": 1,
+          "new": "$`c_N\\to0`$",
+          "old": "$c_N\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`s_N\\le s<1`$",
+          "old": "$s_N\\le s<1$"
+        },
+        {
+          "count": 1,
+          "new": "$`s/(1+s)^2<1/4`$",
+          "old": "$s/(1+s)^2<1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i\\ge a>0`$",
+          "old": "$p_i\\ge a>0$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\lambda\\le1-a`$",
+          "old": "$\\lambda\\le1-a$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\delta`$",
+          "old": "$\\delta$"
+        },
+        {
+          "count": 1,
+          "new": "$`(1-a)/(2-a)^2<1/4`$",
+          "old": "$(1-a)/(2-a)^2<1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`0<s\\le1`$",
+          "old": "$0<s\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\sum_i p_i\\le s`$",
+          "old": "$\\sum_i p_i\\le s$"
+        },
+        {
+          "count": 1,
+          "new": "$`s/(1+s)^2`$",
+          "old": "$s/(1+s)^2$"
+        },
+        {
+          "count": 1,
+          "new": "$`s`$",
+          "old": "$s$"
+        },
+        {
+          "count": 1,
+          "new": "$`N\\ge3`$",
+          "old": "$N\\ge3$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_0=0`$",
+          "old": "$p_0=0$"
+        },
+        {
+          "count": 2,
+          "new": "$`c=1/N`$",
+          "old": "$c=1/N$"
+        },
+        {
+          "count": 1,
+          "new": "$`8`$",
+          "old": "$8$"
+        },
+        {
+          "count": 1,
+          "new": "$`1/3`$",
+          "old": "$1/3$"
+        },
+        {
+          "count": 1,
+          "new": "$`9`$",
+          "old": "$9$"
+        },
+        {
+          "count": 1,
+          "new": "$`P_4(\\eta_*)`$",
+          "old": "$P_4(\\eta_*)$"
+        },
+        {
+          "count": 1,
+          "new": "$`4/P_4(\\eta_*)`$",
+          "old": "$4/P_4(\\eta_*)$"
+        },
+        {
+          "count": 1,
+          "new": "$`(0,1)`$",
+          "old": "$(0,1)$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\eta_*=0.783216061320573\\ldots`$",
+          "old": "$\\eta_*=0.783216061320573\\ldots$"
+        },
+        {
+          "count": 1,
+          "new": "$`P_4(\\eta_*)=0.262466988211219\\ldots`$",
+          "old": "$P_4(\\eta_*)=0.262466988211219\\ldots$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i=\\eta_*/4`$",
+          "old": "$p_i=\\eta_*/4$"
         }
       ],
       "source": "archive/research-handoff-2026-10-08/THEOREM.md",
@@ -155,7 +570,7 @@
     },
     {
       "destination": "research/PHYSICAL_MECHANISM.md",
-      "destination_sha256": "c16acdba4f647d133643468ea925b4a44d72629f09da121eab8d25211c98756f",
+      "destination_sha256": "c307df9ad66fa36bc7b56ae403ec73b52f6f64869fbeecdf153c6ff5b9a45fb2",
       "replacements": [
         {
           "count": 1,
@@ -241,6 +656,311 @@
           "count": 1,
           "new": "\\mathrm{Var}",
           "old": "\\operatorname{Var}"
+        },
+        {
+          "count": 1,
+          "new": "$`\\epsilon=0`$",
+          "old": "$\\epsilon=0$"
+        },
+        {
+          "count": 1,
+          "new": "$`c_N\\to0`$",
+          "old": "$c_N\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_{0,N}\\to1/4`$",
+          "old": "$p_{0,N}\\to1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`s_N=\\sum_i p_i\\to1`$",
+          "old": "$s_N=\\sum_i p_i\\to1$"
+        },
+        {
+          "count": 2,
+          "new": "$`\\max_i p_i\\to0`$",
+          "old": "$\\max_i p_i\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i=|U_{0i}|^2`$",
+          "old": "$p_i=|U_{0i}|^2$"
+        },
+        {
+          "count": 1,
+          "new": "$`m_g`$",
+          "old": "$m_g$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_0\\le\\Pr(n_0=1)`$",
+          "old": "$p_0\\le\\Pr(n_0=1)$"
+        },
+        {
+          "count": 3,
+          "new": "$`N`$",
+          "old": "$N$"
+        },
+        {
+          "count": 1,
+          "new": "$`x=|\\alpha|^2`$",
+          "old": "$x=|\\alpha|^2$"
+        },
+        {
+          "count": 1,
+          "new": "$`e^{-p_ix/2}(1-p_ix)`$",
+          "old": "$e^{-p_ix/2}(1-p_ix)$"
+        },
+        {
+          "count": 2,
+          "new": "$`n`$",
+          "old": "$n$"
+        },
+        {
+          "count": 1,
+          "new": "$`s=\\sum_i p_i\\le1`$",
+          "old": "$s=\\sum_i p_i\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`v_2=\\sum_i p_i^2`$",
+          "old": "$v_2=\\sum_i p_i^2$"
+        },
+        {
+          "count": 2,
+          "new": "$`L_m`$",
+          "old": "$L_m$"
+        },
+        {
+          "count": 1,
+          "new": "$`|1-y|\\le e^{y/2}`$",
+          "old": "$|1-y|\\le e^{y/2}$"
+        },
+        {
+          "count": 1,
+          "new": "$`|1-y-e^{-y}|\\le y^2/2`$",
+          "old": "$|1-y-e^{-y}|\\le y^2/2$"
+        },
+        {
+          "count": 1,
+          "new": "$`1-p_ix`$",
+          "old": "$1-p_ix$"
+        },
+        {
+          "count": 1,
+          "new": "$`e^{-sx}`$",
+          "old": "$e^{-sx}$"
+        },
+        {
+          "count": 1,
+          "new": "$`s\\le1`$",
+          "old": "$s\\le1$"
+        },
+        {
+          "count": 2,
+          "new": "$`s`$",
+          "old": "$s$"
+        },
+        {
+          "count": 1,
+          "new": "$`K\\ge0`$",
+          "old": "$K\\ge0$"
+        },
+        {
+          "count": 1,
+          "new": "$`v_2\\le s\\max_i p_i\\to0`$",
+          "old": "$v_2\\le s\\max_i p_i\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`K`$",
+          "old": "$K$"
+        },
+        {
+          "count": 1,
+          "new": "$`K\\to\\infty`$",
+          "old": "$K\\to\\infty$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\tau_{s_N}`$",
+          "old": "$\\tau_{s_N}$"
+        },
+        {
+          "count": 1,
+          "new": "$`s_N\\to1`$",
+          "old": "$s_N\\to1$"
+        },
+        {
+          "count": 2,
+          "new": "$`N-1`$",
+          "old": "$N-1$"
+        },
+        {
+          "count": 1,
+          "new": "$`P_N(1)`$",
+          "old": "$P_N(1)$"
+        },
+        {
+          "count": 2,
+          "new": "$`0<s\\le1`$",
+          "old": "$0<s\\le1$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i=s/N`$",
+          "old": "$p_i=s/N$"
+        },
+        {
+          "count": 1,
+          "new": "$`x`$",
+          "old": "$x$"
+        },
+        {
+          "count": 1,
+          "new": "$`P_N(s)>0`$",
+          "old": "$P_N(s)>0$"
+        },
+        {
+          "count": 1,
+          "new": "$`c_{\\rm Fourier}=1/N`$",
+          "old": "$c_{\\rm Fourier}=1/N$"
+        },
+        {
+          "count": 1,
+          "new": "$`N\\ge3`$",
+          "old": "$N\\ge3$"
+        },
+        {
+          "count": 1,
+          "new": "$`s=1`$",
+          "old": "$s=1$"
+        },
+        {
+          "count": 5,
+          "new": "$`1/4`$",
+          "old": "$1/4$"
+        },
+        {
+          "count": 3,
+          "new": "$`c`$",
+          "old": "$c$"
+        },
+        {
+          "count": 2,
+          "new": "$`1/2`$",
+          "old": "$1/2$"
+        },
+        {
+          "count": 1,
+          "new": "$`3/2`$",
+          "old": "$3/2$"
+        },
+        {
+          "count": 2,
+          "new": "$`1`$",
+          "old": "$1$"
+        },
+        {
+          "count": 2,
+          "new": "$`1/3`$",
+          "old": "$1/3$"
+        },
+        {
+          "count": 1,
+          "new": "$`5/3`$",
+          "old": "$5/3$"
+        },
+        {
+          "count": 1,
+          "new": "$`17/8`$",
+          "old": "$17/8$"
+        },
+        {
+          "count": 1,
+          "new": "$`4/5`$",
+          "old": "$4/5$"
+        },
+        {
+          "count": 1,
+          "new": "$`164/625`$",
+          "old": "$164/625$"
+        },
+        {
+          "count": 1,
+          "new": "$`74/41`$",
+          "old": "$74/41$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_1=1/2`$",
+          "old": "$p_1=1/2$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_i=1/(2n)`$",
+          "old": "$p_i=1/(2n)$"
+        },
+        {
+          "count": 1,
+          "new": "$`e^{-x}(1-x/2)`$",
+          "old": "$e^{-x}(1-x/2)$"
+        },
+        {
+          "count": 1,
+          "new": "$`e^{-3x/2}`$",
+          "old": "$e^{-3x/2}$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\lambda=1/2`$",
+          "old": "$\\lambda=1/2$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\omega=1/3`$",
+          "old": "$\\omega=1/3$"
+        },
+        {
+          "count": 1,
+          "new": "$`Q_* =4/27`$",
+          "old": "$Q_* =4/27$"
+        },
+        {
+          "count": 1,
+          "new": "$`R\\to\\infty`$",
+          "old": "$R\\to\\infty$"
+        },
+        {
+          "count": 1,
+          "new": "$`c\\le1/R`$",
+          "old": "$c\\le1/R$"
+        },
+        {
+          "count": 1,
+          "new": "$`N/(Rp_0)\\to4`$",
+          "old": "$N/(Rp_0)\\to4$"
+        },
+        {
+          "count": 1,
+          "new": "$`N/R\\ge1`$",
+          "old": "$N/R\\ge1$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\limsup p_0\\le1/4`$",
+          "old": "$\\limsup p_0\\le1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`Nc\\to1`$",
+          "old": "$Nc\\to1$"
+        },
+        {
+          "count": 1,
+          "new": "$`6\\times6`$",
+          "old": "$6\\times6$"
         }
       ],
       "source": "archive/research-handoff-2026-10-08/PHYSICAL_MECHANISM.md",
@@ -248,7 +968,7 @@
     },
     {
       "destination": "research/CONTRIBUTION_REVIEW.md",
-      "destination_sha256": "23f4a04941800bbf95e5d2bebd75cf9727123d008a1530dde454de3de7df643b",
+      "destination_sha256": "0348a50fe795a34df8af4b7f3a45fa0d61c9468bdfcfc0316e5c0f214d4cddf6",
       "replacements": [
         {
           "count": 1,
@@ -294,6 +1014,71 @@
           "count": 1,
           "new": "together with asymptotically vanishing normalized mean-square deviation among the accepted input-origin amplitudes.",
           "old": "together with normalized mean-square equality of the accepted input-origin amplitudes."
+        },
+        {
+          "count": 1,
+          "new": "$`1/N`$",
+          "old": "$1/N$"
+        },
+        {
+          "count": 2,
+          "new": "$`1/4`$",
+          "old": "$1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`4N`$",
+          "old": "$4N$"
+        },
+        {
+          "count": 2,
+          "new": "$`(4+o(1))R`$",
+          "old": "$(4+o(1))R$"
+        },
+        {
+          "count": 1,
+          "new": "$`R`$",
+          "old": "$R$"
+        },
+        {
+          "count": 2,
+          "new": "$`c_N\\to0`$",
+          "old": "$c_N\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`c\\to0`$",
+          "old": "$c\\to0$"
+        },
+        {
+          "count": 1,
+          "new": "$`\\limsup p_0\\le1/4`$",
+          "old": "$\\limsup p_0\\le1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`c=1/N`$",
+          "old": "$c=1/N$"
+        },
+        {
+          "count": 1,
+          "new": "$`p_{0,N}\\to1/4`$",
+          "old": "$p_{0,N}\\to1/4$"
+        },
+        {
+          "count": 1,
+          "new": "$`4R`$",
+          "old": "$4R$"
+        },
+        {
+          "count": 1,
+          "new": "$`N/R\\to1`$",
+          "old": "$N/R\\to1$"
+        },
+        {
+          "count": 1,
+          "new": "$`Nc\\to1`$",
+          "old": "$Nc\\to1$"
         }
       ],
       "source": "archive/research-handoff-2026-10-08/CLAIMS_AND_REVIEW.md",
