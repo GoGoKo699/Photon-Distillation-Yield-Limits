@@ -21,6 +21,8 @@ operations, or outcome-dependent survivor choices.
 
 ## Objectives and limits
 
+For the conditional internal state, define
+$\epsilon_{\mathrm{out}}=1-\langle g|\rho_{\mathrm{out}}|g\rangle$.
 At fixed apparatus, $p_{\mathrm{herald}}(\epsilon)=p_0+O(\epsilon)$ and
 $\epsilon_{\mathrm{out}}=c\epsilon+O(\epsilon^2)$, with $p_0>0$.
 The derivative at zero error precedes the sequence in $N$ or the requested
@@ -38,7 +40,10 @@ Independent attempts consume $N/p_0$ input photons per success in this ideal lim
 
 Thermal number statistics concern the unconditional designated output for ideal
 inputs, not the internal purity of the heralded photon. The four-photon vacuum
-tap is monitored; its vacuum coupling is not unobserved loss.
+tap is monitored; its count contributes to the accepted total and may be nonzero.
+The [construction](OPTICAL_CONSTRUCTION.md) specifies the complete rule.
+The [physical interpretation](PHYSICAL_INTERPRETATION.md) derives the corresponding
+first-order two-copy interference visibility and explains each hypothesis.
 
 ## Assessment boundary
 

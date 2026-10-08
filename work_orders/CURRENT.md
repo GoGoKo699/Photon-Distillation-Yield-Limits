@@ -3,8 +3,11 @@
 **Maintain the stable photon-distillation yield and cost contribution at its
 established scientific scope.**
 
-The repository is initialized, and the author-facing contribution assessment and
-claims-first exposition are in place. Maintenance begins with live main and
+The scoped pre-manuscript scientific audit is complete: the central converse,
+finite certificates, attainment, physical interpretation, and closest primary
+sources have been re-examined. See [SCIENTIFIC_AUDIT.md](../research/SCIENTIFIC_AUDIT.md)
+for findings and the active proof supplements. The contribution assessment and
+claims-first exposition remain the entry point. Maintenance begins with live main and
 [WORKSPACE.md](../WORKSPACE.md), using [THEOREM.md](../research/THEOREM.md),
 [PHYSICAL_MECHANISM.md](../research/PHYSICAL_MECHANISM.md), and
 [CONTRIBUTION_REVIEW.md](../research/CONTRIBUTION_REVIEW.md).

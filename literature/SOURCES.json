@@ -1,0 +1,183 @@
+{
+  "review_date": "2026-10-08",
+  "scope": "Targeted comparison of the fixed-output passive photon-distillation yield and derivative-level cost converse; no exhaustive priority or independent-review claim.",
+  "version_boundary": "Dates and versions describe returned primary records, not an exhaustive assurance of the latest published or preprint revision.",
+  "sources": [
+    {
+      "id": "S26",
+      "title": "Below-threshold error reduction in single photons through photon distillation",
+      "authors": "F. H. B. Somhorst et al.",
+      "version": "arXiv:2601.05947v1",
+      "version_date": "2026-01-09",
+      "url": "https://arxiv.org/html/2601.05947v1",
+      "version_record_url": "https://arxiv.org/abs/2601.05947",
+      "sections": [
+        "Section II, Eq. (2)",
+        "Appendix B, Theorem 1, Eqs. (10)-(24)"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Primary arXiv HTML and abstract/version record",
+      "role": "Inherited coefficient optimum; success is a separate optimization."
+    },
+    {
+      "id": "SMAR25",
+      "title": "General protocols for the efficient distillation of indistinguishable photons",
+      "authors": "J. Saied, J. Marshall, N. Anand, E. G. Rieffel",
+      "version": "arXiv:2404.14217v4",
+      "version_date": "2025-03-26",
+      "journal_reference": "Phys. Rev. Applied 23, 034079 (2025)",
+      "url": "https://arxiv.org/html/2404.14217v4",
+      "version_record_url": "https://arxiv.org/abs/2404.14217v4",
+      "sections": [
+        "Section II.2, Eqs. (II.8)-(II.14)",
+        "Protocol III.1",
+        "Theorems III.2, III.4, III.5, III.9",
+        "Eqs. (III.4), (III.8)-(III.12)",
+        "Appendix D, Eqs. (D.1)-(D.4) and following discussion",
+        "Theorem III.11 and ideal-pattern discussion"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Primary arXiv HTML; versioned abstract lists history through v4",
+      "access_limit": "Unversioned abstract returned HTTP 503. No figure values were extracted; prior screenshot failure remains archived.",
+      "role": "Inherited attainment and count-only failure."
+    },
+    {
+      "id": "S24_25",
+      "title": "Photon distillation schemes with reduced resource costs based on multiphoton Fourier interference",
+      "authors": "F. H. B. Somhorst, B. K. Sauër, S. N. van den Hoven, J. J. Renema",
+      "version": "arXiv:2404.14262v4",
+      "version_date": "2025-04-03",
+      "journal_reference": "Phys. Rev. Applied 23, 044003 (2025)",
+      "url": "https://arxiv.org/html/2404.14262v4",
+      "version_record_url": "https://arxiv.org/abs/2404.14262",
+      "sections": [
+        "Sections II-IV, Eqs. (1)-(20)",
+        "Section V, Eqs. (21)-(24)",
+        "Appendix C, Eqs. (33)-(35)"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Primary arXiv HTML and abstract/version record",
+      "role": "Construction, cost scaling, and prior optimality language compared at its stated scope."
+    },
+    {
+      "id": "H25",
+      "title": "Optimal distillation of photonic indistinguishability",
+      "authors": "F. Hoch et al.",
+      "version": "arXiv:2509.02296v1",
+      "version_date": "2025-09-02",
+      "url": "https://arxiv.org/html/2509.02296v1",
+      "version_record_url": "https://arxiv.org/abs/2509.02296",
+      "sections": [
+        "Optimal distillation protocol, Eqs. (2)-(4)",
+        "Appendix A, Eqs. (16)-(17)",
+        "Appendix B, Eqs. (18)-(25)",
+        "Discussion"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Primary arXiv HTML and abstract/version record",
+      "role": "Visibility optimization with two active photons and an untouched reference; a distinct task."
+    },
+    {
+      "id": "M22",
+      "title": "Distillation of Indistinguishable Photons",
+      "authors": "J. Marshall",
+      "version": "arXiv:2203.15197v3",
+      "version_date": "2022-11-17",
+      "journal_reference": "Phys. Rev. Lett. 129, 213601 (2022)",
+      "url": "https://arxiv.org/pdf/2203.15197v3",
+      "retrieved_url": "https://arxiv.org/pdf/2203.15197",
+      "version_record_url": "https://arxiv.org/abs/2203.15197",
+      "sections": [
+        "Main text Eqs. (6)-(7)",
+        "Appendix C",
+        "Appendix D, Eq. (D1) and success/error statements"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Parsed primary PDF text; current abstract identifies v3",
+      "access_limit": "HTML unavailable; no visual or plotted data used.",
+      "role": "Inherited small-batch attaining circuits."
+    },
+    {
+      "id": "SR25_26",
+      "title": "Mitigating quantum operation infidelity through engineering the distribution of photon losses",
+      "authors": "F. H. B. Somhorst, J. J. Renema",
+      "version": "arXiv:2507.04805v2",
+      "version_date": "2025-12-15",
+      "journal_reference": "Optica Quantum 4, 130-137 (2026)",
+      "url": "https://arxiv.org/html/2507.04805v2",
+      "version_record_url": "https://arxiv.org/abs/2507.04805",
+      "sections": [
+        "Section II.1, Eqs. (1)-(3)",
+        "Section III.2, Eqs. (12)-(14)"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Primary arXiv HTML and abstract/version record",
+      "role": "Lossy Fourier-layout comparison; different resources from a monitored vacuum extension."
+    },
+    {
+      "id": "BDLR21",
+      "title": "Convergence Rates for the Quantum Central Limit Theorem",
+      "authors": "S. Becker, N. Datta, L. Lami, C. Rouze",
+      "version": "Commun. Math. Phys. 383, 223-279 (2021)",
+      "url": "https://doi.org/10.1007/s00220-021-03988-1",
+      "sections": [
+        "Introduction",
+        "Section 2.4, characteristic-function convolution, Eq. (38)",
+        "Trace-norm convergence discussion"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Publisher primary full text re-read in the physical-scope audit; earlier reading retained in the immutable source record",
+      "record_path": "archive/research-handoff-2026-10-08/SOURCES.json",
+      "access_limit": "Publisher text readable. Earlier arXiv HTML/PDF retrieval failures remain archived.",
+      "role": "Inherited passive-mixing central-limit interpretation; no new CLT claim."
+    },
+    {
+      "id": "E05",
+      "title": "Optimizing linear optics quantum gates",
+      "authors": "J. Eisert",
+      "version": "Phys. Rev. Lett. 95, 040502 (2005); arXiv:quant-ph/0409156",
+      "url": "https://arxiv.org/pdf/quant-ph/0409156",
+      "sections": [
+        "Problem specification",
+        "Nonlinear-sign-shift success-bound conclusion"
+      ],
+      "reading_status": "inherited_primary_reading",
+      "read_method": "Earlier primary PDF text reading documented in the immutable global-proof record; not re-read in this pass",
+      "record_path": "archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md",
+      "access_limit": "Earlier PDF screenshot failed; no visual information used.",
+      "role": "Different optical task; no reduction from distillation established."
+    },
+    {
+      "id": "R26_SCREEN",
+      "title": "Optimal interferometric certification of multi-photon indistinguishability",
+      "authors": "M. Robbio, M. Oszmaniec, N. J. Cerf, E. Galvao, L. Novo",
+      "version": "arXiv:2609.37620; version history not retrieved",
+      "date_from_search_abstract": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.37620",
+      "sections": [
+        "Search-retrieved primary abstract only"
+      ],
+      "reading_status": "abstract_screen_only",
+      "read_method": "Web search returned arXiv abstract metadata and text",
+      "access_limit": "Direct abstract, HTML, and PDF requests, including attempted v1 endpoints, failed. No full-text exclusion or version assurance.",
+      "role": "Abstract describes certification/sample complexity; not used as theorem evidence."
+    }
+  ],
+  "bounded_search": {
+    "date": "2026-10-08",
+    "method": "Two search engines, exact titles and topic queries, plus relevant references in the core primary papers. Search hits supported discovery only; scientific comparisons relied on primary texts.",
+    "representative_queries": [
+      "photon indistinguishability distillation optimal success probability bound passive 2026",
+      "\"photon\" \"distillation\" \"converse\"",
+      "\"photon distillation\" \"success probability\" optimality",
+      "\"photon distillation\" \"quarter\" bound",
+      "photon indistinguishability distillation theorem optimal success probability",
+      "\"photon distillation\" \"yield\"",
+      "\"photon indistinguishability\" \"success probability\" \"upper\"",
+      "\"Optimal interferometric certification of multi-photon indistinguishability\""
+    ],
+    "result": "No directly covering stable arbitrary-row success converse or sharp batch-optimized cost lower bound was identified in the inspected primary texts.",
+    "limits": "Search coverage was uneven and some queries returned irrelevant material. No exhaustive citing-paper graph, patent search, thesis survey, or priority certification is claimed. The certification preprint remains abstract-screened only."
+  },
+  "handling": "No third-party PDFs are redistributed. No figure values were extracted. Archived reading records remain unchanged."
+}

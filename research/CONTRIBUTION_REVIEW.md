@@ -41,49 +41,26 @@ purity: the detector selection rule is essential.
 
 ## Source attribution and reading boundaries
 
-**Somhorst et al., [arXiv:2601.05947v1](https://arxiv.org/html/2601.05947v1).**
-Section II distinguishes the error coefficient optimum from the then-open
-success optimum. Appendix B's theorem is for an $N\times N$ passive matrix.
-The amplitude identity here explicitly includes vacuum enlargement. The source's
-experimental conclusions do not establish attainment of this first-order bound
-by imperfect hardware.
+The [updated attribution map](../literature/ATTRIBUTION.md) and
+[version-pinned reading record](../literature/SOURCES.json) record the targeted
+primary-source audit of 8 October 2026. It inspected the coefficient optimum in
+Somhorst et al. (2601.05947v1), Fourier attainment and its cost in Saied et al.
+(2404.14217v4), and the resource-scaling and multiphoton-slope optimality arguments
+in Somhorst et al. (2404.14262v4). None of those inspected arguments supplies the
+stable arbitrary-row success converse. The inference is bounded by those sources
+and the documented search, not an exhaustive priority claim.
 
-**Saied et al., [arXiv:2404.14217v4](https://arxiv.org/pdf/2404.14217v4),
-Phys. Rev. Applied 23, 034079 (2025).** Theorem III.5 assumes a uniformly coupled
-first row and proves the attainable quarter limit. Theorem III.9 states the $4N$
-cost for error sufficiently small relative to $N$. Appendix D obtains the
-Haar-averaged one-photon probability approaching a quarter and explicitly warns
-that accepting all one-survivor patterns amplifies error, reporting the same
-behavior numerically for Fourier interference. Neither common number statistics
-nor the need for pattern selection is a separate first-discovery claim here.
-Those selected random-matrix calculations do not supply the uniform
-arbitrary-network converse. The parsed theorem and appendix text were read;
-PDF page rendering was unavailable, and no source figure data were extracted.
+Hoch et al. (2509.02296v1) optimizes pairwise visibility using two active photons
+and an untouched reference, followed by success optimization at the best
+visibility. Its three-photon experiment is not the same three-input common-target
+problem. Marshall's small-batch constructions, the established quantum central
+limit background, and Saied's count-only failure mechanism retain their attribution.
 
-**Somhorst et al., [arXiv:2404.14262v4](https://arxiv.org/html/2404.14262v4).**
-Sections II–III were read for the scalable Fourier construction,
-zero-transmission character rule, internal-error distinctions, and finite-error
-qualification. These are inherited; the source's finite-error performance is
-not substituted for the derivative objective.
-
-**Becker, Datta, Lami and Rouze, Communications in Mathematical Physics 383,
-223–279 (2021), [DOI 10.1007/s00220-021-03988-1](https://doi.org/10.1007/s00220-021-03988-1).**
-The publisher's full text, Introduction and characteristic-function discussion,
-was read for the Cushen-Hudson optical central limit interpretation, passive
-characteristic factorization, and trace-norm convergence. The arXiv PDF/HTML was
-unavailable. The Fock-input weighted-row proof here supplies an exact
-characteristic function and direct coefficient/tail estimate under the row
-condition forced by the converse. It does not claim a new CLT or an optimal rate.
-
-The earlier Hoch et al. comparison is preserved in the
-[source review](../archive/research-handoff-2026-10-08/prior/REVIEW.md); the
-nonlinear-sign-shift comparison is in the
-[global proof](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md).
-These are inherited readings, not fresh audits. The version checks recorded in
-the [original assessment](../archive/research-handoff-2026-10-08/CLAIMS_AND_REVIEW.md)
-returned v4 for 2404.14217 and v1 for 2601.05947. Its bounded search found no
-directly covering stable all-row converse; this is not exhaustive priority clearance.
-No unviewed image or plotted number supports the claims.
+The fresh core readings used primary HTML text; Marshall was read as parsed PDF
+text. Earlier source-access limitations remain in the immutable archive and are
+not retroactively changed. The new record distinguishes fresh full-text readings,
+inherited comparisons, and an abstract-only screen whose full text was unavailable.
+No unviewed figure or extracted plot value supports the result.
 
 ## Significance, scope, and audit status
 
