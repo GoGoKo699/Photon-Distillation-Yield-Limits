@@ -7,7 +7,7 @@ four-photon certificate, failures, and recorded repairs.
 
 The archived statements about repository creation and earlier task boundaries
 are historical. For current reading use the [root README](../README.md); for
-takeover use [WORKSPACE.md](../WORKSPACE.md).
+maintenance use the [maintenance guide](../maintenance/README.md).
 
 [IMPORT.json](../provenance/IMPORT.json) pins every original byte and the owner's
 license. Nested manifests are also checked. Never regenerate an archived report,

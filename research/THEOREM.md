@@ -43,12 +43,10 @@ $$
 
 The same target mode $|g\rangle$ is shared. The single-error analysis is independent
 of whether distinct errors share a bad mode. Higher-order terms need not be.
-A fixed passive unitary acts identically on every internal mode. Additional inputs
-may be vacuum. One spatial output is designated before the attempt; every other
+A fixed, lossless passive unitary acts identically on every internal mode.
+Every additional input is vacuum. One spatial output is designated before the attempt; every other
 output is measured by ideal photon-number-resolving, internal-mode-insensitive
-detectors. Accepted records contain $N-1$ measured photons. No loss, added
-nonvacuum resources, internal-mode filters, intermediate adaptation, or
-outcome-dependent choice of retained output is allowed.
+detectors. Accepted records contain $N-1$ measured photons.
 
 Define $\epsilon_{\rm out}=1-\langle g|\rho_{\rm out}|g\rangle$ for the
 conditional single-photon internal state. For each fixed apparatus, with $p_0>0$,
@@ -59,10 +57,9 @@ p_{\rm herald}(\epsilon)=p_0+O(\epsilon),\qquad
 $$
 
 The derivative is taken at zero error first. The large-$N$ or large-$R$ limit is
-taken afterward. No uniform finite-$\epsilon$ remainder is asserted. Independent
-repeated attempts cost $N/p_0$ photons in this ideal limit, including rejected
-batches. Source-generation overhead, loss, clock rate, and detection footprint
-are different resources and are not inferred from this cost.
+taken afterward; the expansion remainder is controlled at each fixed apparatus.
+Independent repeated attempts cost $N/p_0$ photons in this ideal limit, including
+rejected batches.
 
 ## 2. Accepted amplitudes constrain purification
 
@@ -91,8 +88,8 @@ $$
 In particular $c\ge1/N$. At equality, all accepted amplitudes $a_i$ coincide.
 The coefficient optimum is established in the literature; (1) gives a direct
 vacuum-extended formulation. The stable converse does not assume equality.
-Allowing a general detector-space contraction only enlarges the comparison class.
-It does not assert that arbitrary coherent projections are physically available.
+General detector-space contractions form a mathematical relaxation of the
+number-pattern acceptance rule used by the apparatus.
 
 The complete optical Gram matrix depends only on the survivor intensities:
 
@@ -102,9 +99,8 @@ G_{ij}=-p_ip_j\sum_{k=0}^{N-2}(-1)^k(k+1)!e_k(p_{\setminus i,j}).
 \tag{2}
 $$
 
-This follows by expanding permanents of minors of $I-u^*u$. The original
-creation-operator proof and independent Fock checks are preserved in
-[the initial pilot](../archive/research-handoff-2026-10-08/prior/prior/prior/PILOT.md).
+This follows by expanding permanents of minors of $I-u^*u$; see the
+[Gram derivation](PROOF_DETAILS.md#2-gram-reduction-without-inverses-or-factor-denominators).
 
 ## 3. The uniform bound over arbitrary output rows
 
@@ -169,8 +165,6 @@ This estimate includes all zeros and sign changes of the factors, with no divisi
 by them. It is uniform in $N$, row imbalance, and the number of empty ports.
 The [proof details](PROOF_DETAILS.md) give the mixed-error reduction, complete
 telescoping and integration-by-parts algebra, and uniform cost-infimum argument.
-The [original stable proof](../archive/research-handoff-2026-10-08/prior/THEOREM.md)
-is preserved unchanged.
 
 ## 4. Stable converse and sharpness
 
@@ -189,8 +183,8 @@ p_0\le\min\left\{1,
 \tag{6}
 $$
 
-For $c\to0$, use $\delta=c^{1/3}$. This proves T1. The constant 96 is a coarse
-uniformity certificate, not a useful small-batch engineering estimate.
+For $c\to0$, use $\delta=c^{1/3}$. This proves T1. The constant 96 supplies
+a uniform bound over apparatuses.
 
 The Fourier protocol and its ideal success approaching $1/4$ are inherited from
 Saied et al., Theorem III.5. Its suppression of the coefficient to $1/N$ supplies
@@ -219,8 +213,8 @@ asymptotic ceiling is $s/(1+s)^2$, attained by a Fourier output with a monitored
 tap of transmissivity $s$. The tap may register photons; its count contributes
 to the accepted total $N-1$. The [optical construction](OPTICAL_CONSTRUCTION.md)
 specifies the acceptance rule and proves positive success for all $N\ge3$.
-The zero-coupling endpoint has no positive-success protocol, as explained in the
-[scientific audit](SCIENTIFIC_AUDIT.md).
+At the zero-coupling endpoint, $p_0=0$; the conditional coefficient is defined
+for positive success.
 
 The [mechanism note](PHYSICAL_MECHANISM.md) translates (7) into trace-norm
 convergence of the unconditional survivor marginal to a mean-one thermal number
@@ -229,7 +223,7 @@ state and derives the complementary need for the detector selection rule.
 ## 6. Sharp finite-resource companion
 
 At the exactly optimal coefficient $c=1/N$, the known achieving circuits and the
-preserved all-network converses give
+all-network converses give
 
 | $N$ | Maximum ideal success | Ideal mean input consumption |
 |---:|---:|---:|
@@ -251,21 +245,18 @@ A Fourier network with one monitored vacuum tap attains it. An exact degree-ten
 polynomial with 613 positive monomials certifies the converse; an independent
 integer implementation verifies every coefficient and the equality condition
 $p_i=\eta_*/4$. The full network is not uniquely fixed by that condition.
-See [global proof](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md) and [independent audit](../archive/research-handoff-2026-10-08/prior/THEOREM.md).
+See the [finite-size derivation](OPTICAL_CONSTRUCTION.md#5-sharp-two--three--and-four-photon-bounds)
+and [integer certificate verification](../archive/research-handoff-2026-10-08/prior/check_review.py).
 
-The targets differ between rows. This is not a comparison at common final purity.
-No exact optimum for all $N\ge5$ is asserted.
+Each row uses its own target coefficient $c=1/N$.
 
-## Contribution and scope
+## Contribution
 
-The central claim is the stable all-network cost limit. The thermal marginal is
-its physical interpretation and necessary consequence, not a new central limit
-theorem. The four-photon certificate is a finite-size companion. All claims use
-the fixed-output, ideal first-order resource class stated in Section 1.
+The central claim is the stable all-network cost limit. The necessary thermal
+number marginal and the four-photon certificate describe its asymptotic
+structure and finite-size companion. All claims use the fixed-output, ideal
+first-order resource class in Section 1.
 
-The [contribution assessment](CONTRIBUTION_REVIEW.md) separates the converse from
-known attaining constructions and records the source-reading boundaries. The
-proofs and [reproducibility checks](../VERIFICATION.md) are author-side evidence;
-they do not constitute independent proof review, exhaustive priority clearance,
-or a hardware-performance guarantee. Detailed original derivations remain in the
-[research archive](../archive/README.md).
+[The result in context](CONTRIBUTION_REVIEW.md) relates the converse to known
+attaining constructions. Complete derivations and verification evidence are
+indexed in the [proof map](PROOF_MAP.md).

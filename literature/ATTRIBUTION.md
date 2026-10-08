@@ -3,9 +3,8 @@
 The comparison concerns the fixed-output, passive, vacuum-extended,
 independent-internal-error model in [MODEL_AND_CLAIMS](../research/MODEL_AND_CLAIMS.md).
 The derivative at zero input error is taken at each fixed apparatus before the
-large-size limit. [SOURCES.json](SOURCES.json) records versions, exact reading
-locations, methods, and access limits; the original
-[source record](../archive/research-handoff-2026-10-08/SOURCES.json) is preserved.
+large-size limit. [SOURCES.json](SOURCES.json) records the versions, sections,
+and access limits used in this comparison.
 
 ## Learning source
 
@@ -32,45 +31,20 @@ does not bound competitors' success. Strongly coupled inputs can have raw
 single-photon probabilities above one quarter. The converse controls their
 accepted error amplitudes before taking a uniform limit over apparatuses.
 
-## Related results with different roles
+## Related results
 
 The passive-mixing central-limit framework of
-[Becker, Datta, Lami and Rouze, CMP 383, 223–279 (2021)](https://doi.org/10.1007/s00220-021-03988-1)
-is inherited. Its publisher Introduction and Section 2.4 characteristic-function
-discussion were re-read in the physical-scope audit; the earlier reading is also
-preserved in the original source record.
-The additional distillation statement forces near-ceiling apparatuses into a
-diffuse-row limit. The ensuing unconditional thermal number marginal does not
-certify the heralded photon's internal purity.
-
-The nonlinear-sign-shift comparison with
-[Eisert, quant-ph/0409156](https://arxiv.org/pdf/quant-ph/0409156)
-remains an inherited reading in the
-[global proof's source record](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md).
-That task prescribes a phase operation on number-state superpositions with
-ancillary resources. No reduction from internal-state purification to that task
-is established; its quarter constant is not evidence for this converse.
+[Becker, Datta, Lami and Rouze, CMP 383, 223–279 (2021)](https://doi.org/10.1007/s00220-021-03988-1),
+Introduction and Section 2.4, supplies the characteristic-function background.
+The distillation theorem forces sequences with $c_N\to0$ and $p_{0,N}\to1/4$
+into a diffuse-row limit, from which the unconditional thermal number marginal
+follows. Heralded internal quality is governed by the accepted error amplitudes.
 
 [Somhorst and Renema, 2507.04805v2](https://arxiv.org/html/2507.04805v2),
 Section III.2, Eqs. (12)–(14), compares lossy Fourier implementations and
-conditional transmission. Those inaccessible loss modes differ from a monitored
-vacuum tap; that comparison is not an ideal all-network success theorem.
+conditional transmission. The tap here is a measured output of the lossless
+apparatus, and its count contributes to the accepted detector record.
 
-## Reading boundary
-
-The targeted primary-source comparison did not identify a directly covering
-stable all-row converse. It includes the core papers' relevant references and
-bounded title/topic searches for related work. It is not an exhaustive citation
-graph search, priority certificate, or external independent review.
-
-The retrieved arXiv search abstract for
-[Robbio et al., 2609.37620](https://arxiv.org/abs/2609.37620), dated 29 September
-2026, concerns interferometric certification and sample complexity. Direct
-abstract, HTML, and PDF retrieval failed. It is recorded as abstract-screened,
-not full-text reviewed or conclusively excluded.
-
-Fresh core comparisons used primary HTML text; Marshall used parsed PDF text.
-No figure values were extracted. Version records are evidence of the returned
-versions, not a guarantee that every subsequent or separately published revision
-has been found. The detailed contribution assessment is in
-[CONTRIBUTION_REVIEW](../research/CONTRIBUTION_REVIEW.md).
+The comparison is bounded by the sources recorded in [SOURCES.json](SOURCES.json).
+[The result in context](../research/CONTRIBUTION_REVIEW.md) explains how the
+coefficient bound, attainment, and yield converse determine the optimal cost.

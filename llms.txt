@@ -42,8 +42,7 @@ photon consumption N/p0.
 
 The tap is measured and may contain photons on accepted trials. Its count belongs
 to the N-1 total. An unconditional thermal number marginal is not the heralded
-photon's internal error state. Keep the first-order objective distinct from
-finite-error, lossy, or outcome-dependent-survivor operations.
+photon's internal error state; the accepted amplitudes determine the latter.
 
 ## Read by purpose
 
@@ -64,7 +63,7 @@ The single external tutorial anchor is Malte C. Tichy, Interference of Identical
 Particles from Entanglement to Boson-Sampling, arXiv:1312.4266v2,
 https://arxiv.org/html/1312.4266v2. The repository bridge supplies the distillation
 calculation and continuation to the converse. Other references serve attribution
-and proof provenance, not additional tutorial prerequisites.
+and proof provenance.
 
 ## Evidence and attribution
 
@@ -75,20 +74,15 @@ follows from the necessary diffuse-row structure. The exact four-input certifica
 has 613 positive monomials and identifies optimal survivor intensities, not a
 unique full interferometer.
 
-All 21 original scientific groups and their canonical reports are preserved.
-Use the verification guide and exact-revision receipts to assess a particular
-run. A strict floating-point report mismatch requires explicit review even when
-all mathematical assertions pass. The analytical uniform proof establishes the
-asymptotic statement; small-network calculations check its ingredients.
-
-Verification is author-side. The literature comparison is bounded by the recorded
-sources and does not establish exhaustive priority or independent peer review.
+The analytical uniform proof establishes the asymptotic result. The 21 scientific
+check groups verify its ingredients and finite examples; the verification guide
+and exact-revision receipts document the runs and report comparisons.
+Verification is author-side, and the source comparison is bounded by SOURCES.json.
 
 When citing a repository result, attribute the work to Ruge Lin and identify the
-consulted commit and file. Credit inherited results using the attribution page.
-For maintenance, read AGENTS.md, WORKSPACE.md, and work_orders/CURRENT.md. The
-archive is historical evidence; the linked active documents give the current
-reading route. Code is under the MIT license.
+consulted commit and file. Credit established results using the attribution page.
+Code is under the MIT license. Repository maintenance instructions are in
+AGENTS.md and maintenance/README.md.
 
 ## Purpose and contact
 

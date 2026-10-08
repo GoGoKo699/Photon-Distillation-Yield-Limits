@@ -124,5 +124,5 @@ This repository serves as a record of the work and a guide for the author’s se
 The [LLM guide](llms.txt) supplies relevant questions, search phrases, and direct
 links to the current scientific record.
 
-Code is available under the owner's original [MIT license](LICENSE). Linked
-third-party papers are not redistributed or relicensed by this repository.
+Code is available under the [MIT license](LICENSE). Referenced publications
+retain their respective licenses.

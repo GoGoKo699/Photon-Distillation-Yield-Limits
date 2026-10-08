@@ -6,7 +6,6 @@ necessary consequence of the distillation bound, using established
 quantum-central-limit behavior. All statements about the number distribution
 refer to ideal inputs
 ($\epsilon=0$) and the selected output *before conditioning on the detector record*.
-They do not describe the internal-state errors of a finite-noise input.
 
 ## 1. What an apparatus approaching the optimum must produce
 
@@ -31,9 +30,9 @@ $$
 $$
 
 Here $m_g$ photons occupy the same good internal mode. "Thermal" specifies the
-geometric number law of a single mode. No thermal bath, thermal input, heating,
-internal-state mixture, or thermodynamic time evolution has been introduced.
-The complete optical state can remain pure; a single-mode marginal is mixed.
+geometric number law of a single mode, obtained by tracing the other outputs
+of the pure optical state. Internal quality after heralding is determined by
+the accepted error amplitudes.
 
 For every allowed protocol, $p_0\le\Pr(n_0=1)$. At the ceiling, (2) implies
 
@@ -68,8 +67,7 @@ The factorization of characteristic functions under passive mixing and its
 Gaussian limit are established quantum-central-limit machinery. Becker, Datta,
 Lami and Rouze review the Cushen-Hudson result, with its optical $n$-splitter
 interpretation and trace-norm convergence. We give the elementary fixed-Fock-input
-weighted-row argument here rather than import a rate theorem with unmatched
-hypotheses.
+weighted-row argument here.
 
 Let $s=\sum_i p_i\le1$ and $v_2=\sum_i p_i^2$. The Laguerre polynomial $L_m$
 and the trace-overlap formula give the exact photon probability
@@ -115,7 +113,6 @@ $$
 If $\max_i p_i\to0$, then $v_2\le s\max_i p_i\to0$. First take the network
 limit at fixed $K$, then let $K\to\infty$. This proves convergence to $\tau_{s_N}$.
 If $s_N\to1$, continuity of the geometric probabilities proves (1).
-The bounds are deliberately coarse; no optimal convergence rate is claimed.
 
 Two useful exact identities are
 
@@ -206,7 +203,6 @@ amplitude constraint prevents using the strongly coupled photon to maintain a
 vanishing error coefficient at that yield. In fact the grouped norm in the
 stable proof has $\lambda=1/2$, $\omega=1/3$, and limiting upper bound
 $Q_* =4/27$ for any vanishing-$c$ acceptance rule with this sequence of rows.
-No attainability of that stronger row-specific bound is claimed.
 
 The essential order of reasoning is therefore: first constrain purification's
 accepted amplitudes for all networks; then infer diffuse rows for networks
@@ -248,8 +244,7 @@ them with a distinct factorial-moment expansion and direct normalized Fock
 amplitudes, verifies the characteristic and moment identities, and checks the
 count-only/character-selected comparison with explicit bad photons. Its largest
 optical matrix is $6\times6$; the largest full occupation list has 252 entries.
-The 128-input number distributions are scalar rational recursions, not many-mode
-Fock-state simulations.
+Exact scalar rational recursions evaluate number distributions through 128 inputs.
 
 These derivations interpret the stable distillation bound within its stated
 resources and first-order qualification. The thermalization principle, Fourier

@@ -5,10 +5,10 @@ established scientific scope.**
 
 The scoped pre-manuscript scientific audit is complete: the central converse,
 finite certificates, attainment, physical interpretation, and closest primary
-sources have been re-examined. See [SCIENTIFIC_AUDIT.md](../research/SCIENTIFIC_AUDIT.md)
+sources have been re-examined. See [SCIENTIFIC_AUDIT.md](../provenance/SCIENTIFIC_AUDIT.md)
 for findings and the active proof supplements. The contribution assessment and
 claims-first exposition remain the entry point. Maintenance begins with live main and
-[WORKSPACE.md](../WORKSPACE.md), using [THEOREM.md](../research/THEOREM.md),
+[maintenance guide](README.md), using [THEOREM.md](../research/THEOREM.md),
 [PHYSICAL_MECHANISM.md](../research/PHYSICAL_MECHANISM.md), and
 [CONTRIBUTION_REVIEW.md](../research/CONTRIBUTION_REVIEW.md).
 
@@ -35,3 +35,7 @@ with backtick-wrapped expressions and fenced `math` display blocks. Keep the
 source-to-repository matrix transpose explicit.
 
 Use [AGENTS.md](../AGENTS.md) and [VERIFICATION.md](../VERIFICATION.md) for edits.
+
+Reader-facing documents present the completed result. Keep development chronology,
+review history, and work planning in maintenance or provenance records. State the
+model through its positive hypotheses; avoid catalogues of unrelated work.
