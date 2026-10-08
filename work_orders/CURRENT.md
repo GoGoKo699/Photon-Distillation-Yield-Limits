@@ -3,14 +3,16 @@
 **Maintain the stable photon-distillation yield and cost contribution at its
 established scientific scope.**
 
-First establish publication and exact-revision verification using
-[WORKSPACE.md](../WORKSPACE.md). An unpublished local initialization is not a merged
-repository. Do not reinitialize an already published tree.
-
-The scientific next task is focused author-facing contribution review and
-claims-first exposition, using [THEOREM.md](../research/THEOREM.md),
+The repository is initialized, and the author-facing contribution assessment and
+claims-first exposition are in place. Maintenance begins with live main and
+[WORKSPACE.md](../WORKSPACE.md), using [THEOREM.md](../research/THEOREM.md),
 [PHYSICAL_MECHANISM.md](../research/PHYSICAL_MECHANISM.md), and
 [CONTRIBUTION_REVIEW.md](../research/CONTRIBUTION_REVIEW.md).
+
+The strict hosted report comparison can return status 2 despite passing all
+scientific assertions. Inspect the exact differences and source manifest as
+described in [VERIFICATION.md](../VERIFICATION.md); prior review is evidence,
+not an automatic exemption for a new run.
 
 Preserve the fixed apparatus / zero-error derivative order, independent internal
 errors, passive internal-blind network, arbitrary vacuum inputs, ideal counting,

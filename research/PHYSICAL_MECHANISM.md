@@ -1,8 +1,10 @@
 # Why the limiting yield is one quarter
 
-The stable converse is the central result. This note completes its physical
-interpretation without adding a noise model or claiming a new thermalization
-principle. All statements about the number distribution refer to ideal inputs
+For a sequence with vanishing first-order error coefficient, approaching the
+quarter yield ceiling forces a thermal number marginal in the limit. This is a
+necessary consequence of the distillation bound, using established
+quantum-central-limit behavior. All statements about the number distribution
+refer to ideal inputs
 ($\epsilon=0$) and the selected output *before conditioning on the detector record*.
 They do not describe the internal-state errors of a finite-noise input.
 
@@ -175,13 +177,15 @@ Exact finite controls:
 | 4 | $1$ | $1/4$ | $17/8$ | $1/4$ |
 | 4 | $4/5$ | $164/625$ | $74/41$ | $1/4$ |
 
-The tapped-four-photon countercontrol was already present in the initial pilot.
+The [four-photon derivation](../archive/research-handoff-2026-10-08/prior/prior/prior/PILOT.md)
+also gives the tapped-four-photon countercontrol.
 Saied et al., Appendix D, already report error amplification approaching twice the
 input error when all one-survivor patterns are accepted, including numerical
 checks for the Fourier case. This failure mechanism is therefore inherited.
-The present note supplies the explicit uniform-row integral and weighted-row
-interpretation, and verifies the finite examples by a separate Fock expansion. Selecting Fourier-compatible detector records
-is essential; treating every single-survivor event as purified is incorrect.
+The explicit uniform-row integral and weighted-row interpretation above are
+checked against a separate Fock expansion for the finite examples. Selecting
+Fourier-compatible detector records is essential; treating every single-survivor
+event as purified is incorrect.
 
 ## 4. Why the central limit theorem alone is not the converse
 
@@ -228,17 +232,17 @@ batch and saturate input-origin erasure in this normalized mean-square sense.
 Yield optimality alone did not require $Nc\to1$. Equation (12) is not a separate
 per-input relative convergence assertion.
 
-## Verification and status
+## Verification
 
-The new driver evaluates complete number distributions using exact rational
-recursion, checks them against a distinct factorial-moment expansion and direct
-normalized Fock amplitudes, verifies the characteristic and moment identities,
-and checks the count-only/character-selected comparison with explicit bad photons.
-The largest new optical matrix is $6\times6$; the largest full occupation list
-has 252 entries. The 128-input number distributions are scalar rational recursions,
-not many-mode Fock-state simulations.
+The [physical-mechanism checker](../archive/research-handoff-2026-10-08/check_consolidation.py)
+evaluates complete number distributions using exact rational recursion, compares
+them with a distinct factorial-moment expansion and direct normalized Fock
+amplitudes, verifies the characteristic and moment identities, and checks the
+count-only/character-selected comparison with explicit bad photons. Its largest
+optical matrix is $6\times6$; the largest full occupation list has 252 entries.
+The 128-input number distributions are scalar rational recursions, not many-mode
+Fock-state simulations.
 
-These derivations complete the interpretation of the existing limit. They do not
-change its resources, first-order qualification, or central novelty claim. A
-thermalization theorem, suppression law, or single-photon success constant is
-not separately reclaimed as a discovery.
+These derivations interpret the stable distillation bound within its stated
+resources and first-order qualification. The thermalization principle, Fourier
+suppression law, and Fourier single-photon success constant are inherited.

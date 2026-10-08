@@ -25,12 +25,11 @@ $$
 \tag{T2}
 $$
 
-These statements are inherited from the immediately preceding research checkpoint,
-not new exponents derived during this consolidation. The new
-[physical mechanism account](PHYSICAL_MECHANISM.md) proves that every sequence
-approaching T1 must have a thermal photon-number marginal of mean one at the
-selected output before conditioning. It explains where the quarter comes from,
-while distinguishing number statistics from actual internal-mode purification.
+Every sequence with vanishing first-order error coefficient and success
+approaching the quarter ceiling must also approach a thermal photon-number
+marginal of mean one at the selected output before conditioning. The
+[physical mechanism account](PHYSICAL_MECHANISM.md) explains this necessary
+structure and distinguishes number statistics from internal-mode purification.
 
 ## 1. Operational contract
 
@@ -249,16 +248,16 @@ See [global proof](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.m
 The targets differ between rows. This is not a comparison at common final purity.
 No exact optimum for all $N\ge5$ is asserted.
 
-## Assessment and boundaries
+## Contribution and scope
 
 The central claim is the stable all-network cost limit. The thermal marginal is
 its physical interpretation and necessary consequence, not a new central limit
-theorem. The four-photon certificate is one finite-size companion. The result
-is ready for a separate project record and author-facing contribution review.
-It is not an independent proof report, exhaustive priority certificate, hardware
-proposal, or claim about every adaptive optical resource model.
+theorem. The four-photon certificate is a finite-size companion. All claims use
+the fixed-output, ideal first-order resource class stated in Section 1.
 
-[Source comparison](CONTRIBUTION_REVIEW.md) distinguishes the matching construction
-from the missing converse. [Handoff](../WORKSPACE.md) fixes the scope and
-preservation rules. The original research record is preserved unchanged under
-`archive/research-handoff-2026-10-08/`.
+The [contribution assessment](CONTRIBUTION_REVIEW.md) separates the converse from
+known attaining constructions and records the source-reading boundaries. The
+proofs and [reproducibility checks](../VERIFICATION.md) are author-side evidence;
+they do not constitute independent proof review, exhaustive priority clearance,
+or a hardware-performance guarantee. Detailed original derivations remain in the
+[research archive](../archive/README.md).

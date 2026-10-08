@@ -1,20 +1,21 @@
-# Workspace takeover
+# Repository maintenance
 
 The destination is **GoGoKo699/Photon-Distillation-Yield-Limits**. This repository
-contains the complete research handoff; do not rebuild or re-explore its result.
+contains the established research record. Start from live main and preserve its
+scientific scope.
 
 ## Establish the live state
 
 Read the live `main` commit and repository instructions before edits. Verify the
 latest relevant PR and its actual head; do not infer merged-main verification from
 a PR check. Check the workflow artifact's source manifest against the exact tree.
-The session handoff receipt states whether publication and merging have completed.
-Local completion alone is not remote completion.
-
-For an unpublished Git bundle, verify its base and import its initialization branch,
-then publish that branch. Do not overwrite a newer main or force-push over work.
-The first remote task is a PR, actual-head checks, expected-head merge, and separate
-main verification. Once published and verified, continue with the bounded task below.
+Do not overwrite a newer main or force-push over work. Use a reviewable PR,
+inspect actual-head evidence, merge its expected head, and verify main separately.
+The original initialization is merged through
+[PR #1](https://github.com/GoGoKo699/Photon-Distillation-Yield-Limits/pull/1).
+Its hosted numerical report differences were explicitly reviewed and are recorded
+in [the report review](provenance/HOSTED_REPORT_REVIEW.json). Status 2 remains a
+review requirement; it is never an automatic pass.
 
 ## Read
 
@@ -26,13 +27,13 @@ main verification. Once published and verified, continue with the bounded task b
 5. [Verification](VERIFICATION.md), [preservation metadata](provenance/IMPORT.json),
    and [current work boundary](work_orders/CURRENT.md).
 
-## Next bounded task
+## Current boundary
 
-Prepare author-facing contribution review and claims-first exposition of the stable
-yield and photon-cost theorem. Preserve the distinction between the converse and
-known Fourier attainment, and between number statistics and purification. Additional
-work should answer a named objection rather than add equivalent checkpoints.
+The [contribution assessment](research/CONTRIBUTION_REVIEW.md) and claims-first
+exposition are in place. Preserve the distinction between the converse and known
+Fourier attainment, and between number statistics and purification. Further
+scientific work should answer a named objection or explicitly selected claim.
 
-This handoff does not select loss, adaptive routing, finite input error, or all
-larger finite-batch optima as prerequisites. The mathematical record remains
+Loss, adaptive routing, finite input error, and larger finite-batch optima are
+separate research questions. The mathematical record remains
 subject to independent scrutiny and its source comparison is targeted, not exhaustive.
