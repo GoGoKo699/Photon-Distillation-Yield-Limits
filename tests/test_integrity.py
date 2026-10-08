@@ -15,6 +15,39 @@ from integrity import (ROOT, check_entry, current_metadata, reproduce_active, sa
                        source_files, verify_active, verify_archive, verify_links, verify_metadata)
 import sync_active
 
+
+def display_equations(text):
+    """Read both supported display delimiters in document order."""
+    matches = re.finditer(r'\$\$(.*?)\$\$|^```math[^\S\n]*\n(.*?)^```[^\S\n]*$',
+                          text, re.S | re.M)
+    return [m.group(1) if m.group(1) is not None else m.group(2) for m in matches]
+
+
+def mathematical_content(tex):
+    """Ignore display layout, retaining matrix/cases/array structure and math tokens."""
+    tex = re.sub(r'\\tag\{[^{}]*\}', '', tex)
+    parts = re.split(r'(\\(?:begin|end)\{[^{}]+\}|\\\\|(?<!\\)&)', tex)
+    stack, kept = [], []
+    layout = {'aligned', 'gathered', 'split'}
+    for part in parts:
+        environment = re.fullmatch(r'\\(begin|end)\{([^{}]+)\}', part)
+        if environment:
+            kind, name = environment.groups()
+            if kind == 'begin':
+                stack.append(name)
+            else:
+                assert stack and stack.pop() == name, 'Unbalanced TeX environment'
+            if name not in layout:
+                kept.append(part)
+        elif part in ('&', '\\\\') and stack and all(name in layout for name in stack):
+            continue
+        else:
+            kept.append(part)
+    assert not stack, 'Unclosed TeX environment'
+    result = re.sub(r'\\(?:qquad\b|quad\b|[,;!: ])', '', ''.join(kept))
+    return re.sub(r'\s+', '', result)
+
+
 class IntegrityTests(unittest.TestCase):
     def test_archive_inventory(self):
         self.assertEqual(verify_archive()['archive_files'], 89)
@@ -35,8 +68,15 @@ class IntegrityTests(unittest.TestCase):
         for row in json.loads((ROOT/'provenance/ACTIVE_EDITS.json').read_text())['copies']:
             source = (ROOT/row['source']).read_text()
             active = reproduce_active(row)
-            self.assertEqual(re.findall(r'\$\$(.*?)\$\$', source, re.S),
-                             re.findall(r'\$\$(.*?)\$\$', active, re.S))
+            self.assertEqual([mathematical_content(eq) for eq in display_equations(source)],
+                             [mathematical_content(eq) for eq in display_equations(active)])
+            for tag in re.findall(r'\\tag\{([^{}]+)\}', source):
+                self.assertIn(f'**({tag})**', active)
+        # Matrix row/column structure and mathematical relations stay significant.
+        matrix = r'\begin{pmatrix}a&b\\c&d\end{pmatrix}'
+        self.assertNotEqual(mathematical_content(matrix),
+                            mathematical_content(r'\begin{pmatrix}a&b&c&d\end{pmatrix}'))
+        self.assertNotEqual(mathematical_content('a=b'), mathematical_content('a<b'))
 
     def test_metadata(self):
         self.assertGreaterEqual(verify_metadata(), 18)

@@ -12,18 +12,20 @@ saturating the best coefficient at each batch size.
 For the class specified below, write $p_0$ for ideal-input success and $c$ for the
 first-order output-error coefficient. Then
 
-$$
+**(T1)**
+
+```math
 c_N\to0\quad\Longrightarrow\quad\limsup p_{0,N}\le\frac14.
-\tag{T1}
-$$
+```
 
 The known Fourier sequence has $c_N=1/N$ and $p_{0,N}\to1/4$. If $R$ is a requested
 first-order error-reduction factor, optimizing both batch size and apparatus gives
 
-$$
+**(T2)**
+
+```math
 \mathcal C(R):=\inf_{c\le1/R}\frac{N}{p_0}=(4+o(1))R.
-\tag{T2}
-$$
+```
 
 Every sequence with vanishing first-order error coefficient and success
 approaching the quarter ceiling must also approach a thermal photon-number
@@ -36,10 +38,10 @@ structure and distinguishes number statistics from internal-mode purification.
 At each fixed finite $N\ge2$, prepare one photon in each of $N$ occupied spatial
 inputs. Their independent internal states are
 
-$$
+```math
 \rho_i(\epsilon)=(1-\epsilon)|g\rangle\langle g|+\epsilon\sigma_i,
 \qquad \operatorname{supp}\sigma_i\perp |g\rangle.
-$$
+```
 
 The same target mode $|g\rangle$ is shared. The single-error analysis is independent
 of whether distinct errors share a bad mode. Higher-order terms need not be.
@@ -51,10 +53,10 @@ detectors. Accepted records contain $N-1$ measured photons.
 Define $\epsilon_{\rm out}=1-\langle g|\rho_{\rm out}|g\rangle$ for the
 conditional single-photon internal state. For each fixed apparatus, with $p_0>0$,
 
-$$
+```math
 p_{\rm herald}(\epsilon)=p_0+O(\epsilon),\qquad
 \epsilon_{\rm out}=c\epsilon+O(\epsilon^2).
-$$
+```
 
 The derivative is taken at zero error first. The large-$N$ or large-$R$ limit is
 taken afterward; the expansion remainder is controlled at each fixed apparatus.
@@ -68,22 +70,25 @@ $\widetilde a_i^\dagger=\sum_{r\ne0}U_{ri}b_r^\dagger$. The $N$ occupied columns
 are orthonormal, so $p_i\ge0$ and $\sum_i p_i\le1$. In the detected
 $(N-1)$-photon Fock space define
 
-$$
+```math
 v_i=u_i\prod_{j\ne i}\widetilde a_j^\dagger|0\rangle,\qquad
 v=\sum_i v_i.
-$$
+```
 
 Let $P$ select accepted number patterns, and put $a_i=Pv_i$, $a=Pv$.
 The all-good input has one-photon survivor amplitude $v$. When input $i$ alone is
 bad and survives, the detected photons are all good, with amplitude $v_i$.
 Thus
 
-$$
-p_0=\|a\|^2,\qquad cp_0=\sum_i\|a_i\|^2,
-\qquad
-\sum_i\|a_i-a/N\|^2=p_0(c-1/N).
-\tag{1}
-$$
+**(1)**
+
+```math
+\begin{aligned}
+p_0&=\|a\|^2,\\
+cp_0&=\sum_i\|a_i\|^2,\\
+\sum_i\|a_i-a/N\|^2&=p_0(c-1/N).
+\end{aligned}
+```
 
 In particular $c\ge1/N$. At equality, all accepted amplitudes $a_i$ coincide.
 The coefficient optimum is established in the literature; (1) gives a direct
@@ -93,11 +98,14 @@ number-pattern acceptance rule used by the apparatus.
 
 The complete optical Gram matrix depends only on the survivor intensities:
 
-$$
-G_{ii}=p_i\sum_{k=0}^{N-1}(-1)^k k!e_k(p_{\setminus i}),\qquad
-G_{ij}=-p_ip_j\sum_{k=0}^{N-2}(-1)^k(k+1)!e_k(p_{\setminus i,j}).
-\tag{2}
-$$
+**(2)**
+
+```math
+\begin{aligned}
+G_{ii}&=p_i\sum_{k=0}^{N-1}(-1)^k k!e_k(p_{\setminus i}),\\
+G_{ij}&=-p_ip_j\sum_{k=0}^{N-2}(-1)^k(k+1)!e_k(p_{\setminus i,j}).
+\end{aligned}
+```
 
 This follows by expanding permanents of minors of $I-u^*u$; see the
 [Gram derivation](PROOF_DETAILS.md#2-gram-reduction-without-inverses-or-factor-denominators).
@@ -106,30 +114,32 @@ This follows by expanding permanents of minors of $I-u^*u$; see the
 
 Choose $\delta>c$. Put $A=\{i:p_i>\delta\}$ and $D=A^c$, and define
 
-$$
+```math
 m=|A|\le1/\delta,\quad \sigma=\sum_Ap_i,\quad
 \lambda=\sum_Dp_i,\quad v_2=\sum_Dp_i^2\le\delta,
 \quad \omega=\frac\lambda{1+\lambda}.
-$$
+```
 
 Consider the unnormalized detector vector
 $v_\omega=\sum_Dv_i+\omega\sum_Av_i$, with squared norm $Q$.
 For $f(x)=\prod_A(1-p_ix)$ and $g(x)=\prod_D(1-p_ix)$, expansion of (2) gives
 
-$$
+**(3)**
+
+```math
 Q=\int_0^\infty e^{-x}
 \{-f(g'+xg'')-2\omega xf'g'-\omega^2g(f'+xf'')\}\,dx.
-\tag{3}
-$$
+```
 
 Replacing $g$ by $e^{-\lambda x}$ and integrating by parts gives
 
-$$
+**(4)**
+
+```math
 Q_* =\frac{\lambda}{1+\lambda}
 \int_0^\infty e^{-(1+\lambda)x}f(x)\,dx
 =\frac{\lambda}{(1+\lambda)^2}p_{\emptyset}.
-\tag{4}
-$$
+```
 
 Here $p_{\emptyset}=\operatorname{per}(I-bb^\dagger)$ with
 $b_i=\sqrt{p_i/(1+\lambda)}$ for $i\in A$. Since $\|b\|^2\le1$, this is an
@@ -140,26 +150,27 @@ auxiliary probability is a mathematical bound, not an added optical resource.
 For every $x\ge0$, telescoping the products and differentiating the finite
 products gives
 
-$$
+```math
 |g-e^{-\lambda x}|\le v_2(x^2/2)e^{\lambda x/2},
-$$
-$$
+```
+```math
 |g'+\lambda e^{-\lambda x}|\le v_2(x+\lambda x^2/2)e^{\lambda x/2},
-$$
-$$
+```
+```math
 |g''-\lambda^2e^{-\lambda x}|\le
 v_2(1+2\lambda x+\lambda^2x^2/2)e^{\lambda x/2}.
-$$
+```
 
 Use $|1-y|\le e^{y/2}$ and $0\le e^{-y}-1+y\le y^2/2$ for $y\ge0$,
 plus $|f^{(r)}|\le\sigma^r e^{\sigma x/2}$, $r\le2$. The complete replacement
 error is bounded by
 
-$$
+**(5)**
+
+```math
 |Q-Q_*|\le v_2\int_0^\infty e^{-x/2}
 (2x+\tfrac52x^2+\tfrac12x^3)\,dx=96v_2.
-\tag{5}
-$$
+```
 
 This estimate includes all zeros and sign changes of the factors, with no division
 by them. It is uniform in $N$, row imbalance, and the number of empty ports.
@@ -171,17 +182,18 @@ telescoping and integration-by-parts algebra, and uniform cost-infimum argument.
 By (1), $a_A=\sum_Aa_i$ has norm at most $\sqrt{mc p_0}$. Since
 $Pv_\omega=a-(1-\omega)a_A$, the triangle inequality yields
 
-$$
+```math
 p_0[1-(1-\omega)\sqrt{mc}]_+^2\le Q.
-$$
+```
 
 Combining (4)-(5), $\lambda\le1$, and $m\le1/\delta$ gives
 
-$$
+**(6)**
+
+```math
 p_0\le\min\left\{1,
 \frac{1/4+96\delta}{(1-\sqrt{c/\delta})^2}\right\},\qquad\delta>c.
-\tag{6}
-$$
+```
 
 For $c\to0$, use $\delta=c^{1/3}$. This proves T1. The constant 96 supplies
 a uniform bound over apparatuses.
@@ -198,10 +210,11 @@ the added implication.
 
 If $c_N\to0$ and $p_{0,N}\to1/4$, then
 
-$$
+**(7)**
+
+```math
 s_N:=\sum_i p_i\to1,\qquad\max_i p_i\to0.
-\tag{7}
-$$
+```
 
 If $s_N\le s<1$ on a subsequence, (4)-(6) give an upper limit
 $s/(1+s)^2<1/4$. If some $p_i\ge a>0$, then $\lambda\le1-a$ for vanishing
@@ -233,10 +246,10 @@ all-network converses give
 
 Here
 
-$$
+```math
 P_4(\eta)=\eta-\tfrac32\eta^2+\tfrac98\eta^3-\tfrac38\eta^4,
 \qquad 8-24\eta_*+27\eta_*^2-12\eta_*^3=0,
-$$
+```
 
 with the unique root in $(0,1)$,
 $\eta_*=0.783216061320573\ldots$ and

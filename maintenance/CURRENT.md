@@ -30,8 +30,10 @@ separate questions. A passing test is not independent review or a novelty certif
 
 The selected learning source is Tichy, arXiv:1312.4266v2. Maintain the
 [tutorial bridge](../research/TUTORIAL_BRIDGE.md), reader-focused README, and
-[LLM guide](../llms.txt) together. The README and bridge use GitHub inline math
-with backtick-wrapped expressions and fenced `math` display blocks. Keep the
+[LLM guide](../llms.txt) together. Use fenced `math` display blocks in the current reading pages, with explicit
+aligned rows for long formulas. Keep equation labels in ordinary Markdown
+rather than TeX `\tag` commands. The README and bridge use backtick-wrapped
+inline math expressions. Keep the
 source-to-repository matrix transpose explicit.
 
 Use [AGENTS.md](../AGENTS.md) and [VERIFICATION.md](../VERIFICATION.md) for edits.

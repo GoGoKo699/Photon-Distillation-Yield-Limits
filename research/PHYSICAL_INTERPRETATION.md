@@ -13,10 +13,10 @@ specified in [OPTICAL_CONSTRUCTION.md](OPTICAL_CONSTRUCTION.md).
 For a successful trial, let $\rho_{\mathrm{out}}(\epsilon)$ be the normalized
 internal density operator of the surviving photon. Define
 
-$$
+```math
 \epsilon_{\mathrm{out}}(\epsilon)
 =1-\langle g|\rho_{\mathrm{out}}(\epsilon)|g\rangle.
-$$
+```
 
 There is exactly one survivor: the apparatus conserves photon number, starts
 with exactly $N$ photons, and accepts only records containing $N-1$ detected
@@ -34,15 +34,17 @@ cannot create coherence between $|g\rangle$ and its orthogonal complement.
 
 Normalizing by the success probability $p_0+O(\epsilon)$ therefore gives
 
-$$
+**(1)**
+
+```math
+\begin{aligned}
 \rho_{\mathrm{out}}(\epsilon)
-=(1-c\epsilon)|g\rangle\langle g|
-+\frac{\epsilon}{p_0}\sum_i\|a_i\|^2\sigma_i
-+O(\epsilon^2),
-\qquad
-c=\frac{\sum_i\|a_i\|^2}{p_0}.
-\tag{1}
-$$
+&=(1-c\epsilon)|g\rangle\langle g|\\
+&\quad+\frac{\epsilon}{p_0}\sum_i\|a_i\|^2\sigma_i
++O(\epsilon^2),\\
+c&=\frac{\sum_i\|a_i\|^2}{p_0}.
+\end{aligned}
+```
 
 The remainder is in trace norm for each fixed apparatus with $p_0>0$. The
 coefficient of the good-state term follows from normalization. No assumption
@@ -53,10 +55,11 @@ to the apparatus, which acts identically on every internal mode.
 
 The Cauchy--Schwarz identity
 
-$$
+**(2)**
+
+```math
 \sum_i\|a_i-a/N\|^2=p_0(c-1/N),\qquad a=\sum_i a_i,
-\tag{2}
-$$
+```
 
 expresses the coefficient optimum operationally. On accepted records, ideal
 survivor amplitudes add coherently, whereas the independent single-error
@@ -73,10 +76,11 @@ probability $(1-\operatorname{Tr}(\rho\rho'))/2$, hence visibility
 $V=\operatorname{Tr}(\rho\rho')$. For two independent successful repetitions
 of the same distillation protocol, (1) implies
 
-$$
+**(3)**
+
+```math
 V_{\mathrm{out}}=1-2c\epsilon+O(\epsilon^2).
-\tag{3}
-$$
+```
 
 Two raw input photons sharing the common good mode have
 $V_{\mathrm{in}}=1-2\epsilon+O(\epsilon^2)$ even when their bad states differ.
@@ -120,19 +124,21 @@ a mathematical relaxation of the apparatus's number-pattern acceptance rule.
 
 Suppose $c_N\to0$ and $p_{0,N}\to1/4$. The theorem first forces
 
-$$
+**(4)**
+
+```math
 s_N=\sum_i p_i\to1,\qquad \max_i p_i\to0.
-\tag{4}
-$$
+```
 
 Only then does the thermal interpretation follow. At ideal input
 ($\epsilon=0$), the designated output before conditioning has Weyl
 characteristic function
 
-$$
+**(5)**
+
+```math
 \chi_N(\alpha)=e^{-x/2}\prod_i(1-p_i x),\qquad x=|\alpha|^2.
-\tag{5}
-$$
+```
 
 The Gaussian vacuum factors include every input column, so their exponent uses
 the full normalized row even when $s_N<1$. For diffuse occupied couplings,
@@ -148,13 +154,15 @@ bounds the difference of each fixed number probability by $C_m v_2$.
 Both the actual and thermal distributions have exact mean $s_N\le1$.
 Consequently, for every fixed cutoff $K$,
 
-$$
+**(6)**
+
+```math
+\begin{aligned}
 \|\rho_{0,N}-\tau_{s_N}\|_1
-\le v_2\sum_{m=0}^K C_m+\frac{2s_N}{K+1},
-\qquad
-\tau_s=\sum_{m\ge0}\frac{s^m}{(1+s)^{m+1}}|m_g\rangle\langle m_g|.
-\tag{6}
-$$
+&\le v_2\sum_{m=0}^K C_m+\frac{2s_N}{K+1},\\
+\tau_s&=\sum_{m\ge0}\frac{s^m}{(1+s)^{m+1}}|m_g\rangle\langle m_g|.
+\end{aligned}
+```
 
 The first term vanishes because $v_2\le s_N\max_i p_i\to0$.
 Taking the network limit before sending $K$ to infinity controls the entire
@@ -179,12 +187,15 @@ have the same success probability and unconditional number marginal.
 For a uniform row $p_i=s/N$ with fixed $0<s\le1$ and positive ideal success,
 the direct integrals in [PHYSICAL_MECHANISM.md](PHYSICAL_MECHANISM.md) give
 
-$$
-P_N(s)\longrightarrow\frac{s}{(1+s)^2},\qquad
-A_N(s)\longrightarrow\frac{s}{1+s},\qquad
-c_{\mathrm{count}}=\frac{A_N(s)}{P_N(s)}\longrightarrow1+s.
-\tag{7}
-$$
+**(7)**
+
+```math
+\begin{aligned}
+P_N(s)&\longrightarrow\frac{s}{(1+s)^2},\\
+A_N(s)&\longrightarrow\frac{s}{1+s},\\
+c_{\mathrm{count}}&=\frac{A_N(s)}{P_N(s)}\longrightarrow1+s.
+\end{aligned}
+```
 
 The character-selected rule instead has $c=1/N$. At $s=1$, count-only acceptance
 therefore asymptotically doubles the leading error while character selection suppresses it.
@@ -212,21 +223,23 @@ Its limiting characteristic function is
 $e^{-x}(1-x/2)$, rather than the thermal $e^{-3x/2}$. Laguerre inversion gives
 the raw single-photon probability
 
-$$
+**(8)**
+
+```math
 P_1\longrightarrow
 \int_0^\infty e^{-3x/2}(1-x)(1-x/2)\,dx
 =\frac8{27}>\frac14.
-\tag{8}
-$$
+```
 
 Thus a bound on raw single-photon probability alone cannot establish the
 distillation theorem. Grouping the one strongly coupled input separately in
 the accepted-amplitude proof gives $\lambda=1/2$, $\omega=1/3$, and
 
-$$
+**(9)**
+
+```math
 Q_*=\frac13\int_0^\infty e^{-3x/2}(1-x/2)\,dx=\frac4{27}.
-\tag{9}
-$$
+```
 
 The diffuse group's squared intensities sum to $1/(4n)$, so the uniform
 replacement error vanishes. The accepted-amplitude inequality becomes
