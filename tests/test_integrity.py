@@ -24,8 +24,9 @@ def display_equations(text):
 
 
 def mathematical_content(tex):
-    """Ignore display layout, retaining matrix/cases/array structure and math tokens."""
+    """Ignore layout and named-function typography, retaining structure and tokens."""
     tex = re.sub(r'\\tag\{[^{}]*\}', '', tex)
+    tex = re.sub(r'\\operatorname\{(Tr|per|supp|Var)\}', r'\\mathrm{\1}', tex)
     parts = re.split(r'(\\(?:begin|end)\{[^{}]+\}|\\\\|(?<!\\)&)', tex)
     stack, kept = [], []
     layout = {'aligned', 'gathered', 'split'}
@@ -77,6 +78,12 @@ class IntegrityTests(unittest.TestCase):
         self.assertNotEqual(mathematical_content(matrix),
                             mathematical_content(r'\begin{pmatrix}a&b&c&d\end{pmatrix}'))
         self.assertNotEqual(mathematical_content('a=b'), mathematical_content('a<b'))
+        self.assertEqual(mathematical_content(r'\operatorname{Tr}(\rho)'),
+                         mathematical_content(r'\mathrm{Tr}(\rho)'))
+        self.assertNotEqual(mathematical_content(r'\operatorname{Tr}(A)'),
+                            mathematical_content(r'\operatorname{Tr}(B)'))
+        self.assertNotEqual(mathematical_content(r'\operatorname{per}(A)'),
+                            mathematical_content(r'\operatorname{Tr}(A)'))
 
     def test_metadata(self):
         self.assertGreaterEqual(verify_metadata(), 18)

@@ -174,7 +174,7 @@ Let $b_i=\sqrt{p_i/t}$ for $i\in A$. Expanding the permanent, or changing
 variables to $y=tx$ in $J_0$, shows that
 
 ```math
-tJ_0=\operatorname{per}(I-bb^\dagger)=:p_{\emptyset}.
+tJ_0=\mathrm{per}(I-bb^\dagger)=:p_{\emptyset}.
 ```
 
 Here $\|b\|^2=\sigma/t\le1$. Complete this occupied-input row by a vacuum

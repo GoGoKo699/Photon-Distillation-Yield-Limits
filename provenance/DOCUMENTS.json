@@ -44,8 +44,8 @@
     "sha256": "26a86ae111c98eecd347a893427140c858421088b18fa496ad581b6d7496af19"
   },
   "provenance/ACTIVE_EDITS.json": {
-    "bytes": 89647,
-    "sha256": "9d302d7e6940c76b1d56ea82dcb00a26d3983066003dff9b4fe03c2ccb271c35"
+    "bytes": 89997,
+    "sha256": "1c307451dbc1e9ff3e1675272100fbb7455c8250bc1aefa462ffe495307edc22"
   },
   "provenance/HOSTED_REPORT_REVIEW.json": {
     "bytes": 19096,
@@ -64,40 +64,40 @@
     "sha256": "23f4a04941800bbf95e5d2bebd75cf9727123d008a1530dde454de3de7df643b"
   },
   "research/MODEL_AND_CLAIMS.md": {
-    "bytes": 2777,
-    "sha256": "3be761ab28abd710f4480f8ec16453598ca1bfb599c9f129592a4f3937f57a01"
+    "bytes": 2771,
+    "sha256": "77dd60dbf206dd1e549b61f481b75cb2fd4e292d3eb64b8c67dbad630c20124a"
   },
   "research/OPTICAL_CONSTRUCTION.md": {
     "bytes": 10564,
     "sha256": "77c6887fed9f8ea110a8fc4d23159c3a2ba5aa539e917ff4066efdd0ab6322b5"
   },
   "research/PHYSICAL_INTERPRETATION.md": {
-    "bytes": 12056,
-    "sha256": "62b6fb34fef494ce5c5af655801f35608ec101c273f5fa85e42da8166304fa67"
+    "bytes": 12044,
+    "sha256": "79966bdfc7ee4e6c0e9229676dbfea0bb7b083523f5acee15172f4bf4dd65635"
   },
   "research/PHYSICAL_MECHANISM.md": {
-    "bytes": 9647,
-    "sha256": "63c66042e3a5b77d582614bcad4d9f93b6808a351793cb7576fc9ff4283cd6d1"
+    "bytes": 9641,
+    "sha256": "c16acdba4f647d133643468ea925b4a44d72629f09da121eab8d25211c98756f"
   },
   "research/PROOF_DETAILS.md": {
-    "bytes": 10752,
-    "sha256": "99c60da66bd9a95a38a14dfcca4c4b45f868540c30cff0fa1397a680923c5d38"
+    "bytes": 10746,
+    "sha256": "421fb28e14f8804fa59cf51346b571f98252b7b4f500bb100ba4626997a79027"
   },
   "research/PROOF_MAP.md": {
     "bytes": 1239,
     "sha256": "fec74fb2386f4109a7cc361f6529b84259c403220ffd2e333c49c252d8bc1c2c"
   },
   "research/THEOREM.md": {
-    "bytes": 9938,
-    "sha256": "0166c0e6f8a21c0901810c3c121d78e04849be40091cca95d7c91b8dfefcc289"
+    "bytes": 9926,
+    "sha256": "b8f9de46538e2d972023efce7a45a65cf8d0e292b05c671969de7a0205ab2acb"
   },
   "research/TUTORIAL_BRIDGE.md": {
-    "bytes": 9600,
-    "sha256": "0a5dfda0b04ad50375caf82e5e11dd516e99c57b4277607ee944dacb072ebb68"
+    "bytes": 9594,
+    "sha256": "9eb2f2936e2b4e37c9a0f16af1d1533751189a329156248268253ff8d4fc2e1f"
   },
   "tests/test_integrity.py": {
-    "bytes": 7965,
-    "sha256": "f6b9c21ba3af55b8bb038941c918a1903240be029a652a4b8d5aad9b7ce95252"
+    "bytes": 8487,
+    "sha256": "b5f7a63017d185513d0e43e39373c14d37b5ad8a90402b9b49aa59a600d32477"
   },
   "tools/integrity.py": {
     "bytes": 5110,

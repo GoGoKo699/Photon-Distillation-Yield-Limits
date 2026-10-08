@@ -40,7 +40,7 @@ inputs. Their independent internal states are
 
 ```math
 \rho_i(\epsilon)=(1-\epsilon)|g\rangle\langle g|+\epsilon\sigma_i,
-\qquad \operatorname{supp}\sigma_i\perp |g\rangle.
+\qquad \mathrm{supp}\sigma_i\perp |g\rangle.
 ```
 
 The same target mode $|g\rangle$ is shared. The single-error analysis is independent
@@ -141,7 +141,7 @@ Q_* =\frac{\lambda}{1+\lambda}
 =\frac{\lambda}{(1+\lambda)^2}p_{\emptyset}.
 ```
 
-Here $p_{\emptyset}=\operatorname{per}(I-bb^\dagger)$ with
+Here $p_{\emptyset}=\mathrm{per}(I-bb^\dagger)$ with
 $b_i=\sqrt{p_i/(1+\lambda)}$ for $i\in A$. Since $\|b\|^2\le1$, this is an
 actual zero-photon probability for an auxiliary passive optical port. Thus
 $0\le p_{\emptyset}\le1$. The integrand itself can have either sign. The

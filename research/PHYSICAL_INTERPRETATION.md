@@ -72,8 +72,8 @@ otherwise identical photons.
 
 For two independently prepared exact single photons with internal states
 $\rho$ and $\rho'$, ideal balanced-beamsplitter interference gives coincidence
-probability $(1-\operatorname{Tr}(\rho\rho'))/2$, hence visibility
-$V=\operatorname{Tr}(\rho\rho')$. For two independent successful repetitions
+probability $(1-\mathrm{Tr}(\rho\rho'))/2$, hence visibility
+$V=\mathrm{Tr}(\rho\rho')$. For two independent successful repetitions
 of the same distillation protocol, (1) implies
 
 **(3)**

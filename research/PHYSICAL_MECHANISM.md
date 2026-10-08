@@ -129,7 +129,7 @@ Two useful exact identities are
 ```math
 \langle n_0\rangle=s,\qquad
 \langle n_0(n_0-1)\rangle=2(s^2-v_2),\qquad
-\operatorname{Var}(n_0)=s+s^2-2v_2.
+\mathrm{Var}(n_0)=s+s^2-2v_2.
 ```
 
 In particular a near-ceiling apparatus has ideal mean one and variance tending

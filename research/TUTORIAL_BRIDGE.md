@@ -64,7 +64,7 @@ Each input has independent internal state
 ```math
 \rho_i(\epsilon)=(1-\epsilon)\lvert g\rangle\langle g\rvert
 +\epsilon\sigma_i,\qquad
-\operatorname{supp}\sigma_i\perp\lvert g\rangle.
+\mathrm{supp}\sigma_i\perp\lvert g\rangle.
 ```
 
 Retain output zero and measure all other outputs. Accepted records contain

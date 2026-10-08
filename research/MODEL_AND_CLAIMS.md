@@ -11,7 +11,7 @@ spatial inputs. Their internal states share a good mode and have the form
 
 ```math
 \rho_i(\epsilon)=(1-\epsilon)|g\rangle\langle g|+\epsilon\sigma_i,
-\qquad \operatorname{supp}\sigma_i\perp|g\rangle.
+\qquad \mathrm{supp}\sigma_i\perp|g\rangle.
 ```
 
 A fixed, lossless passive spatial unitary acts identically on internal modes.
