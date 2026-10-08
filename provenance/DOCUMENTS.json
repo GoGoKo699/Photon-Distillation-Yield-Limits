@@ -12,8 +12,8 @@
     "sha256": "e88022d321f44bce72762e5b3e0028d7eb8117ee2b113b76fdc3657c4270b345"
   },
   "README.md": {
-    "bytes": 4091,
-    "sha256": "8eecdb28b226ec7cf02f5b7e757a1c3e2019d1ef946c224b909e90719437663e"
+    "bytes": 4456,
+    "sha256": "45937b61f89f3481a35c1ed807730944c79dea99504c960f54768e96608f26e1"
   },
   "VERIFICATION.md": {
     "bytes": 4091,
@@ -28,16 +28,20 @@
     "sha256": "d6a67b899ff5d00ea865aaaed744de33c3bb23867086d898c93a6da74f61d93e"
   },
   "literature/ATTRIBUTION.md": {
-    "bytes": 2031,
-    "sha256": "8adc834dda6988566e05d856c8b5b0c46d46a9362b02c46b632e98631de412f1"
+    "bytes": 6404,
+    "sha256": "7c7e091e67cadbeff81b470515c712caee891ad6f43bfdf1d2cfa0455e4ab320"
+  },
+  "literature/SOURCES.json": {
+    "bytes": 9335,
+    "sha256": "fc8c6183c53cd66c30b78c380132843bc73d3121ba99aab00c4a3ec249042eb9"
   },
   "llms.txt": {
     "bytes": 1337,
     "sha256": "96112c527db72b20463b2720f65a417032171722660669fd2dccc0b5558ec142"
   },
   "provenance/ACTIVE_EDITS.json": {
-    "bytes": 25837,
-    "sha256": "caafe2baa5658e8bc84bdd8ba1d2f745ab7a0adb78c7155823ae5293e2599778"
+    "bytes": 33372,
+    "sha256": "814046225d0dc55d4b6e2ef13159c6ae2ea010d77966ba425298c9899e2d29ba"
   },
   "provenance/HOSTED_REPORT_REVIEW.json": {
     "bytes": 19096,
@@ -48,24 +52,40 @@
     "sha256": "f7308e5b60ea62603b458da5fadbb55614b46fbb4d083200fa2cc9843085ceef"
   },
   "research/CONTRIBUTION_REVIEW.md": {
-    "bytes": 7760,
-    "sha256": "256a01027bc903ad08a77167e61dcf9fdc997e833e883d5642400ad73c6427a5"
+    "bytes": 6270,
+    "sha256": "f6877e25cb08e342927c385838d8746c11021ecc1230f9d8b4879d06208cb68b"
   },
   "research/MODEL_AND_CLAIMS.md": {
-    "bytes": 2438,
-    "sha256": "a5538afdf04958f011d3996338d7404d5188242d37fabc681ced0dc7f19d0200"
+    "bytes": 2801,
+    "sha256": "fb6a7d1d1d9c6af323ac1529ee2567889e83407bae3b7629ec53c898f5ab0166"
+  },
+  "research/OPTICAL_CONSTRUCTION.md": {
+    "bytes": 10419,
+    "sha256": "ac05f302f0499f288f06972a11cfe5dcfadca7b3f51888748886729c5d967194"
+  },
+  "research/PHYSICAL_INTERPRETATION.md": {
+    "bytes": 12406,
+    "sha256": "80fdd9ac0263993bd92abd89de4db025ca6c47a4b80f4cde7a70939219452aa4"
   },
   "research/PHYSICAL_MECHANISM.md": {
-    "bytes": 9414,
-    "sha256": "834a07e33cc144008253ab94d395b913c0a1e812e32f69087e2022656d34d5d6"
+    "bytes": 9883,
+    "sha256": "1effd7fab7951a61e72f2e797186572e024d273a3de987e1c39983622f4503d9"
+  },
+  "research/PROOF_DETAILS.md": {
+    "bytes": 10557,
+    "sha256": "f70cde0ef276ec6661b514f6e4207b027aa62f8ed343087e01a15daae60625ff"
   },
   "research/PROOF_MAP.md": {
-    "bytes": 1865,
-    "sha256": "7be07a76d21f0f96bb09cdcda3b8f6c6c72217357dd661648c75cc7846f3c783"
+    "bytes": 2394,
+    "sha256": "29b7800e07f07a3039f9b0c641e05ba9c0ca2ad423a7e8dd702eee45d8a28a92"
+  },
+  "research/SCIENTIFIC_AUDIT.md": {
+    "bytes": 6116,
+    "sha256": "5367d0744f91d3e07e3ca19c8c1740a31fa34f7a774af6ae7b13de36b0ffb750"
   },
   "research/THEOREM.md": {
-    "bytes": 10111,
-    "sha256": "cbad315edfdd7660548fd789ac3b9648306c7b58d40a225e9a182ce83b17f44f"
+    "bytes": 10646,
+    "sha256": "617fdd12effd28d64e8608038623a7905b6458635d3805e5ce04cecfdc0e5f45"
   },
   "tests/test_integrity.py": {
     "bytes": 6083,
@@ -88,7 +108,7 @@
     "sha256": "88b9b6f0c1741de7032c2c9ce4f532c1e4a4f648b7e4e9efd8eb3799ad7a3c39"
   },
   "work_orders/CURRENT.md": {
-    "bytes": 1540,
-    "sha256": "478dd28512265164b61e50ecc43f086644eb007943b900aac004348acfe1c1e5"
+    "bytes": 1794,
+    "sha256": "d80f00e938d3737244afa934276e514d009cdc58123f87a685263f773f43291d"
   }
 }

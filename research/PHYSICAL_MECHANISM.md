@@ -142,7 +142,9 @@ Every all-good one-survivor amplitude already has character zero. Thus both rule
 have exactly the same ideal success $P_N(1)$. But errors populate the otherwise
 suppressed records.
 
-With a monitored tap of transmissivity $s$, the uniform row has $p_i=s/N$.
+With a monitored tap of fixed transmissivity $0<s\le1$, the uniform row has
+$p_i=s/N$. The tap count is included in the accepted $N-1$ total and need not
+be zero; see the [optical construction](OPTICAL_CONSTRUCTION.md).
 For the count-only rule, the bad-survivor numerator is
 
 $$
@@ -163,8 +165,10 @@ c_{\rm count}=\frac{A_N(s)}{P_N(s)}\longrightarrow1+s.
 \tag{10}
 $$
 
-By contrast, the Fourier-character rule has $c_{\rm Fourier}=1/N$ exactly at
-first order. At $s=1$, the count-only rule tends to *twice* the input error,
+The ratios are defined only when $P_N(s)>0$. By contrast, the Fourier-character
+rule has $c_{\rm Fourier}=1/N$ exactly at first order whenever this condition
+holds (in particular for $N\ge3$, $0<s\le1$). At $s=1$, the count-only rule
+tends to *twice* the input error,
 while the properly selected rule suppresses that coefficient to zero. Both have
 ideal success tending to $1/4$ and the same unconditional thermal number limit.
 
@@ -231,6 +235,10 @@ Thus a leading-cost-optimal protocol must asymptotically use the smallest allowe
 batch and saturate input-origin erasure in this normalized mean-square sense.
 Yield optimality alone did not require $Nc\to1$. Equation (12) is not a separate
 per-input relative convergence assertion.
+
+The [physical interpretation details](PHYSICAL_INTERPRETATION.md) connect the
+coefficient to a conditional internal-state observable and two-copy visibility,
+and explain the role of each apparatus hypothesis.
 
 ## Verification
 

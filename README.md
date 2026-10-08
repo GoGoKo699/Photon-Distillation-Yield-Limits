@@ -42,6 +42,9 @@ not a new Fourier mechanism or a new attainable quarter constant.
 | [Model and claims](research/MODEL_AND_CLAIMS.md) | Resources, objectives, and order of limits. |
 | [Theorem](research/THEOREM.md) | Stable yield bound and matching photon-cost law. |
 | [Physical mechanism](research/PHYSICAL_MECHANISM.md) | Necessary output statistics and why counting a survivor is not purification. |
+| [Proof details](research/PROOF_DETAILS.md) | Mixed-error reduction, uniform estimates, and the cost infimum. |
+| [Optical construction](research/OPTICAL_CONSTRUCTION.md) | Exact tap acceptance, all-size attainment, and finite certificates. |
+| [Scientific audit](research/SCIENTIFIC_AUDIT.md) | Resolved proof, physical-scope, and literature questions. |
 | [Proof map](research/PROOF_MAP.md) | Detailed derivations, counterexamples, and the exact four-photon certificate. |
 | [Contribution review](research/CONTRIBUTION_REVIEW.md) | Positive and skeptical cases, without inflating inherited ingredients. |
 | [Attribution](literature/ATTRIBUTION.md) | Version-pinned source roles and recorded reading boundaries. |
@@ -65,10 +68,10 @@ required by the central asymptotic theorem.
 
 The complete original research package is preserved in
 [the dated archive](archive/README.md), including proofs, unchanged checkers,
-canonical reports, and failed attempts. Active documents use the declared, reviewed
-navigation and presentation changes recorded in
-[ACTIVE_EDITS.json](provenance/ACTIVE_EDITS.json), preserving the scientific claims,
-proofs, scope, attribution, and audit status. The proofs remain author-side;
+canonical reports, and failed attempts. Changes to active documents are declared
+in [ACTIVE_EDITS.json](provenance/ACTIVE_EDITS.json), with the endpoint precision
+and fresh source readings explained in the scientific audit. Original proofs
+and evidence remain unchanged. The proofs remain author-side;
 passing checks establish neither independent proof review nor exhaustive priority.
 
 ```bash

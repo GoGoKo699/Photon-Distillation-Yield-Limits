@@ -50,7 +50,8 @@ detectors. Accepted records contain $N-1$ measured photons. No loss, added
 nonvacuum resources, internal-mode filters, intermediate adaptation, or
 outcome-dependent choice of retained output is allowed.
 
-For each fixed apparatus, with $p_0>0$,
+Define $\epsilon_{\rm out}=1-\langle g|\rho_{\rm out}|g\rangle$ for the
+conditional single-photon internal state. For each fixed apparatus, with $p_0>0$,
 
 $$
 p_{\rm herald}(\epsilon)=p_0+O(\epsilon),\qquad
@@ -166,7 +167,10 @@ $$
 
 This estimate includes all zeros and sign changes of the factors, with no division
 by them. It is uniform in $N$, row imbalance, and the number of empty ports.
-The full algebra and coefficient estimates are in [the stable proof](../archive/research-handoff-2026-10-08/prior/THEOREM.md).
+The [proof details](PROOF_DETAILS.md) give the mixed-error reduction, complete
+telescoping and integration-by-parts algebra, and uniform cost-infimum argument.
+The [original stable proof](../archive/research-handoff-2026-10-08/prior/THEOREM.md)
+is preserved unchanged.
 
 ## 4. Stable converse and sharpness
 
@@ -210,9 +214,13 @@ $s/(1+s)^2<1/4$. If some $p_i\ge a>0$, then $\lambda\le1-a$ for vanishing
 $\delta$, giving upper limit $(1-a)/(2-a)^2<1/4$. These contradictions prove (7).
 Exact balance is not necessary; many individually weak contributions are.
 
-Under a fixed constraint $\sum_i p_i\le s\le1$, the sharp asymptotic ceiling is
-$s/(1+s)^2$, attained by a Fourier output with a monitored tap of transmissivity
-$s$. This is coupling to vacuum inputs, not unobserved photon loss.
+For fixed $0<s\le1$ under the constraint $\sum_i p_i\le s$, the sharp
+asymptotic ceiling is $s/(1+s)^2$, attained by a Fourier output with a monitored
+tap of transmissivity $s$. The tap may register photons; its count contributes
+to the accepted total $N-1$. The [optical construction](OPTICAL_CONSTRUCTION.md)
+specifies the acceptance rule and proves positive success for all $N\ge3$.
+The zero-coupling endpoint has no positive-success protocol, as explained in the
+[scientific audit](SCIENTIFIC_AUDIT.md).
 
 The [mechanism note](PHYSICAL_MECHANISM.md) translates (7) into trace-norm
 convergence of the unconditional survivor marginal to a mean-one thermal number
