@@ -52,9 +52,9 @@ class IntegrityTests(unittest.TestCase):
             self.assertIn(notice, (ROOT/name).read_text())
             self.assertIn('(mailto:gogoko699@gmail.com)', (ROOT/name).read_text())
         text = (ROOT/'research/MODEL_AND_CLAIMS.md').read_text()
-        self.assertIn('outcome-dependent', text)
+        self.assertIn('One output is retained in advance', text)
         self.assertIn('zero error precedes', text)
-        self.assertIn('known Fourier', (ROOT/'work_orders/CURRENT.md').read_text())
+        self.assertIn('known Fourier', (ROOT/'maintenance/CURRENT.md').read_text())
 
     def test_readonly_pinned_workflow(self):
         text = (ROOT/'.github/workflows/verify.yml').read_text()

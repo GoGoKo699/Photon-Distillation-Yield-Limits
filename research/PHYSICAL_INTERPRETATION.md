@@ -85,9 +85,8 @@ this comparison. Against a perfect reference $|g\rangle$, the output visibility
 is instead $1-c\epsilon+O(\epsilon^2)$; the factor two belongs to comparing two
 imperfect photons.
 
-These relations assume independent preparations and the exact single-photon,
-ideal-interference setting. They do not identify an uncorrected experimental
-visibility with $\epsilon$ in the presence of multiphoton or detection errors.
+These relations use independent exact single-photon preparations and ideal
+interference measurements.
 The connection between visibility and the independent random-source error
 models is discussed in [Saied et al., Section II.2](https://arxiv.org/html/2404.14217v4).
 
@@ -114,12 +113,8 @@ part of the apparatus, as detailed in the
 [construction](OPTICAL_CONSTRUCTION.md); its detected photons belong to the
 heralding record.
 
-The proof also bounds an enlarged mathematical class of contractions on the
-detected all-good photon space. This strengthens the converse without asserting
-that arbitrary coherent detector projections are physically implemented.
-Internal-mode filtering, correlated source preparation, or choosing a survivor
-after observing outcomes changes the resource model and is not covered by that
-enlargement.
+The proof bounds all contractions on the detected all-good photon space,
+a mathematical relaxation of the apparatus's number-pattern acceptance rule.
 
 ## 3. What the necessary thermal marginal says
 
@@ -192,7 +187,7 @@ c_{\mathrm{count}}=\frac{A_N(s)}{P_N(s)}\longrightarrow1+s.
 $$
 
 The character-selected rule instead has $c=1/N$. At $s=1$, count-only acceptance
-therefore doubles the leading error while character selection suppresses it.
+therefore asymptotically doubles the leading error while character selection suppresses it.
 For example, the four-photon untapped network has ideal success $1/4$ under
 both rules, but the respective coefficients are $17/8$ and $1/4$.
 The failure of count-only selection is already discussed in
@@ -252,6 +247,4 @@ derivative-level error reduction $R$.
 
 This order matters: the probability of multiple input errors and the expansion
 remainder need not remain small uniformly as $N$ grows at fixed nonzero
-$\epsilon$. Equations (1), (3), and (7) do not reverse those limits. The result
-settles the stated static, single-survivor optimization; finite-error operation
-or a different optical resource class requires a separate claim.
+$\epsilon$. Equations (1), (3), and (7) use the derivative-first order stated above.

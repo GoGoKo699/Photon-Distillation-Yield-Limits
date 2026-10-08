@@ -10,7 +10,7 @@ scientific inputs here.
 ## Scientific contract
 
 Read `research/MODEL_AND_CLAIMS.md`, `research/THEOREM.md`, and
-`work_orders/CURRENT.md`. Preserve the independent internal-error model, passive
+`maintenance/CURRENT.md`. Preserve the independent internal-error model, passive
 internal-blind unitary, arbitrary vacuum extensions, ideal PNR detection, and
 predetermined survivor. The zero-error derivative precedes the large-size limit.
 A thermal number marginal is not a heralded internal-state-purity assertion.

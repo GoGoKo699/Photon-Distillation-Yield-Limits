@@ -212,7 +212,7 @@ $`a_i`$ coincide and $`c=1/N`$ whenever $`p_0>0`$.
 The [optical construction](OPTICAL_CONSTRUCTION.md) gives the complete unitary,
 positive-success cases, and exact success formula.
 
-## 6. Locate the remaining theorem
+## 6. From attainment to optimality
 
 The Fourier family attains $`p_0\to1/4`$. Proving optimality requires controlling
 every allowed network, including unbalanced survivor couplings: a large raw
@@ -232,6 +232,5 @@ in trace norm, as derived in [the physical mechanism](PHYSICAL_MECHANISM.md).
 That number distribution precedes heralding; the internal quality of the
 heralded photon is governed by the accepted amplitudes instead.
 
-The [source attribution](../literature/ATTRIBUTION.md) separates established
-optical constructions from the converse. It is a reference map, not an
-additional prerequisite for this reading route.
+The [attribution map](../literature/ATTRIBUTION.md) documents the research sources
+underlying the construction and converse.

@@ -2,7 +2,7 @@
   "copies": [
     {
       "destination": "research/THEOREM.md",
-      "destination_sha256": "617fdd12effd28d64e8608038623a7905b6458635d3805e5ce04cecfdc0e5f45",
+      "destination_sha256": "090970d8ab9692e731e0bb5825b931bb601ee49da4aed94ad895293267d2cb9d",
       "replacements": [
         {
           "count": 1,
@@ -63,6 +63,76 @@
           "count": 1,
           "new": "For fixed $0<s\\le1$ under the constraint $\\sum_i p_i\\le s$, the sharp\nasymptotic ceiling is $s/(1+s)^2$, attained by a Fourier output with a monitored\ntap of transmissivity $s$. The tap may register photons; its count contributes\nto the accepted total $N-1$. The [optical construction](OPTICAL_CONSTRUCTION.md)\nspecifies the acceptance rule and proves positive success for all $N\\ge3$.\nThe zero-coupling endpoint has no positive-success protocol, as explained in the\n[scientific audit](SCIENTIFIC_AUDIT.md).",
           "old": "Under a fixed constraint $\\sum_i p_i\\le s\\le1$, the sharp asymptotic ceiling is\n$s/(1+s)^2$, attained by a Fourier output with a monitored tap of transmissivity\n$s$. This is coupling to vacuum inputs, not unobserved photon loss."
+        },
+        {
+          "count": 1,
+          "new": "A fixed, lossless passive unitary acts identically on every internal mode.",
+          "old": "A fixed passive unitary acts identically on every internal mode."
+        },
+        {
+          "count": 1,
+          "new": "detectors. Accepted records contain $N-1$ measured photons.",
+          "old": "detectors. Accepted records contain $N-1$ measured photons. No loss, added\nnonvacuum resources, internal-mode filters, intermediate adaptation, or\noutcome-dependent choice of retained output is allowed."
+        },
+        {
+          "count": 1,
+          "new": "taken afterward; the expansion remainder is controlled at each fixed apparatus.\nIndependent repeated attempts cost $N/p_0$ photons in this ideal limit, including\nrejected batches.",
+          "old": "taken afterward. No uniform finite-$\\epsilon$ remainder is asserted. Independent\nrepeated attempts cost $N/p_0$ photons in this ideal limit, including rejected\nbatches. Source-generation overhead, loss, clock rate, and detection footprint\nare different resources and are not inferred from this cost."
+        },
+        {
+          "count": 1,
+          "new": "General detector-space contractions form a mathematical relaxation of the\nnumber-pattern acceptance rule used by the apparatus.",
+          "old": "Allowing a general detector-space contraction only enlarges the comparison class.\nIt does not assert that arbitrary coherent projections are physically available."
+        },
+        {
+          "count": 1,
+          "new": "This follows by expanding permanents of minors of $I-u^*u$; see the\n[Gram derivation](PROOF_DETAILS.md#2-gram-reduction-without-inverses-or-factor-denominators).",
+          "old": "This follows by expanding permanents of minors of $I-u^*u$. The original\ncreation-operator proof and independent Fock checks are preserved in\n[the initial pilot](../archive/research-handoff-2026-10-08/prior/prior/prior/PILOT.md)."
+        },
+        {
+          "count": 1,
+          "new": "",
+          "old": "The [original stable proof](../archive/research-handoff-2026-10-08/prior/THEOREM.md)\nis preserved unchanged.\n"
+        },
+        {
+          "count": 1,
+          "new": "For $c\\to0$, use $\\delta=c^{1/3}$. This proves T1. The constant 96 supplies\na uniform bound over apparatuses.",
+          "old": "For $c\\to0$, use $\\delta=c^{1/3}$. This proves T1. The constant 96 is a coarse\nuniformity certificate, not a useful small-batch engineering estimate."
+        },
+        {
+          "count": 1,
+          "new": "At the zero-coupling endpoint, $p_0=0$; the conditional coefficient is defined\nfor positive success.",
+          "old": "The zero-coupling endpoint has no positive-success protocol, as explained in the\n[scientific audit](SCIENTIFIC_AUDIT.md)."
+        },
+        {
+          "count": 1,
+          "new": "all-network converses give",
+          "old": "preserved all-network converses give"
+        },
+        {
+          "count": 1,
+          "new": "See the [finite-size derivation](OPTICAL_CONSTRUCTION.md#5-exact-four-input-optimum)\nand [integer certificate verification](../archive/research-handoff-2026-10-08/prior/check_review.py).",
+          "old": "See [global proof](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md) and [independent audit](../archive/research-handoff-2026-10-08/prior/THEOREM.md)."
+        },
+        {
+          "count": 1,
+          "new": "Each row uses its own target coefficient $c=1/N$.",
+          "old": "The targets differ between rows. This is not a comparison at common final purity.\nNo exact optimum for all $N\\ge5$ is asserted."
+        },
+        {
+          "count": 1,
+          "new": "## Contribution\n\nThe central claim is the stable all-network cost limit. The necessary thermal\nnumber marginal and the four-photon certificate describe its asymptotic\nstructure and finite-size companion. All claims use the fixed-output, ideal\nfirst-order resource class in Section 1.\n\n[The result in context](CONTRIBUTION_REVIEW.md) relates the converse to known\nattaining constructions. Complete derivations and verification evidence are\nindexed in the [proof map](PROOF_MAP.md).\n",
+          "old": "## Contribution and scope\n\nThe central claim is the stable all-network cost limit. The thermal marginal is\nits physical interpretation and necessary consequence, not a new central limit\ntheorem. The four-photon certificate is a finite-size companion. All claims use\nthe fixed-output, ideal first-order resource class stated in Section 1.\n\nThe [contribution assessment](CONTRIBUTION_REVIEW.md) separates the converse from\nknown attaining constructions and records the source-reading boundaries. The\nproofs and [reproducibility checks](../VERIFICATION.md) are author-side evidence;\nthey do not constitute independent proof review, exhaustive priority clearance,\nor a hardware-performance guarantee. Detailed original derivations remain in the\n[research archive](../archive/README.md).\n"
+        },
+        {
+          "count": 1,
+          "new": "OPTICAL_CONSTRUCTION.md#5-sharp-two--three--and-four-photon-bounds",
+          "old": "OPTICAL_CONSTRUCTION.md#5-exact-four-input-optimum"
+        },
+        {
+          "count": 1,
+          "new": "A fixed, lossless passive unitary acts identically on every internal mode.\nEvery additional input is vacuum.",
+          "old": "A fixed, lossless passive unitary acts identically on every internal mode. Additional inputs\nmay be vacuum."
         }
       ],
       "source": "archive/research-handoff-2026-10-08/THEOREM.md",
@@ -70,7 +140,7 @@
     },
     {
       "destination": "research/PHYSICAL_MECHANISM.md",
-      "destination_sha256": "1effd7fab7951a61e72f2e797186572e024d273a3de987e1c39983622f4503d9",
+      "destination_sha256": "9a9afc3e6ae602ee1105e819ae43de932e357f8128d2a841c2662ee3f8c43cbb",
       "replacements": [
         {
           "count": 1,
@@ -116,6 +186,36 @@
           "count": 1,
           "new": "holds (in particular for $N\\ge3$, $0<s\\le1$). At $s=1$, the count-only rule\ntends to *twice* the input error,",
           "old": "holds (in particular for $N\\ge3$, $0<s\\le1$). At $s=1$, the count-only rule tends to *twice* the input error,"
+        },
+        {
+          "count": 1,
+          "new": "",
+          "old": "They do not describe the internal-state errors of a finite-noise input.\n"
+        },
+        {
+          "count": 1,
+          "new": "geometric number law of a single mode, obtained by tracing the other outputs\nof the pure optical state. Internal quality after heralding is determined by\nthe accepted error amplitudes.",
+          "old": "geometric number law of a single mode. No thermal bath, thermal input, heating,\ninternal-state mixture, or thermodynamic time evolution has been introduced.\nThe complete optical state can remain pure; a single-mode marginal is mixed."
+        },
+        {
+          "count": 1,
+          "new": "weighted-row argument here.",
+          "old": "weighted-row argument here rather than import a rate theorem with unmatched\nhypotheses."
+        },
+        {
+          "count": 1,
+          "new": "",
+          "old": "The bounds are deliberately coarse; no optimal convergence rate is claimed.\n"
+        },
+        {
+          "count": 1,
+          "new": "",
+          "old": "No attainability of that stronger row-specific bound is claimed.\n"
+        },
+        {
+          "count": 1,
+          "new": "Exact scalar rational recursions evaluate number distributions through 128 inputs.",
+          "old": "The 128-input number distributions are scalar rational recursions, not many-mode\nFock-state simulations."
         }
       ],
       "source": "archive/research-handoff-2026-10-08/PHYSICAL_MECHANISM.md",
@@ -123,7 +223,7 @@
     },
     {
       "destination": "research/CONTRIBUTION_REVIEW.md",
-      "destination_sha256": "f6877e25cb08e342927c385838d8746c11021ecc1230f9d8b4879d06208cb68b",
+      "destination_sha256": "23f4a04941800bbf95e5d2bebd75cf9727123d008a1530dde454de3de7df643b",
       "replacements": [
         {
           "count": 1,
@@ -144,11 +244,36 @@
           "count": 1,
           "new": "The [updated attribution map](../literature/ATTRIBUTION.md) and\n[version-pinned reading record](../literature/SOURCES.json) record the targeted\nprimary-source audit of 8 October 2026. It inspected the coefficient optimum in\nSomhorst et al. (2601.05947v1), Fourier attainment and its cost in Saied et al.\n(2404.14217v4), and the resource-scaling and multiphoton-slope optimality arguments\nin Somhorst et al. (2404.14262v4). None of those inspected arguments supplies the\nstable arbitrary-row success converse. The inference is bounded by those sources\nand the documented search, not an exhaustive priority claim.\n\nHoch et al. (2509.02296v1) optimizes pairwise visibility using two active photons\nand an untouched reference, followed by success optimization at the best\nvisibility. Its three-photon experiment is not the same three-input common-target\nproblem. Marshall's small-batch constructions, the established quantum central\nlimit background, and Saied's count-only failure mechanism retain their attribution.\n\nThe fresh core readings used primary HTML text; Marshall was read as parsed PDF\ntext. Earlier source-access limitations remain in the immutable archive and are\nnot retroactively changed. The new record distinguishes fresh full-text readings,\ninherited comparisons, and an abstract-only screen whose full text was unavailable.\nNo unviewed figure or extracted plot value supports the result.\n\n",
           "old": "**Somhorst et al., [arXiv:2601.05947v1](https://arxiv.org/html/2601.05947v1).**\nSection II distinguishes the error coefficient optimum from the then-open\nsuccess optimum. Appendix B's theorem is for an $N\\times N$ passive matrix.\nThe amplitude identity here explicitly includes vacuum enlargement. The source's\nexperimental conclusions do not establish attainment of this first-order bound\nby imperfect hardware.\n\n**Saied et al., [arXiv:2404.14217v4](https://arxiv.org/pdf/2404.14217v4),\nPhys. Rev. Applied 23, 034079 (2025).** Theorem III.5 assumes a uniformly coupled\nfirst row and proves the attainable quarter limit. Theorem III.9 states the $4N$\ncost for error sufficiently small relative to $N$. Appendix D obtains the\nHaar-averaged one-photon probability approaching a quarter and explicitly warns\nthat accepting all one-survivor patterns amplifies error, reporting the same\nbehavior numerically for Fourier interference. Neither common number statistics\nnor the need for pattern selection is a separate first-discovery claim here.\nThose selected random-matrix calculations do not supply the uniform\narbitrary-network converse. The parsed theorem and appendix text were read;\nPDF page rendering was unavailable, and no source figure data were extracted.\n\n**Somhorst et al., [arXiv:2404.14262v4](https://arxiv.org/html/2404.14262v4).**\nSections II\u2013III were read for the scalable Fourier construction,\nzero-transmission character rule, internal-error distinctions, and finite-error\nqualification. These are inherited; the source's finite-error performance is\nnot substituted for the derivative objective.\n\n**Becker, Datta, Lami and Rouze, Communications in Mathematical Physics 383,\n223\u2013279 (2021), [DOI 10.1007/s00220-021-03988-1](https://doi.org/10.1007/s00220-021-03988-1).**\nThe publisher's full text, Introduction and characteristic-function discussion,\nwas read for the Cushen-Hudson optical central limit interpretation, passive\ncharacteristic factorization, and trace-norm convergence. The arXiv PDF/HTML was\nunavailable. The Fock-input weighted-row proof here supplies an exact\ncharacteristic function and direct coefficient/tail estimate under the row\ncondition forced by the converse. It does not claim a new CLT or an optimal rate.\n\nThe earlier Hoch et al. comparison is preserved in the\n[source review](../archive/research-handoff-2026-10-08/prior/REVIEW.md); the\nnonlinear-sign-shift comparison is in the\n[global proof](../archive/research-handoff-2026-10-08/prior/prior/FOLLOWUP.md).\nThese are inherited readings, not fresh audits. The version checks recorded in\nthe [original assessment](../archive/research-handoff-2026-10-08/CLAIMS_AND_REVIEW.md)\nreturned v4 for 2404.14217 and v1 for 2601.05947. Its bounded search found no\ndirectly covering stable all-row converse; this is not exhaustive priority clearance.\nNo unviewed image or plotted number supports the claims.\n\n"
+        },
+        {
+          "count": 1,
+          "new": "# The result in context",
+          "old": "# Contribution assessment"
+        },
+        {
+          "count": 1,
+          "new": "Known Fourier attainment, the necessary",
+          "old": "This is a bounded resource theorem. Known Fourier attainment, the necessary"
+        },
+        {
+          "count": 1,
+          "new": "With $c_N\\to0$, approaching the ceiling forces diffuse occupied-input couplings and total",
+          "old": "Approaching the ceiling forces diffuse occupied-input couplings and total"
+        },
+        {
+          "count": 1,
+          "new": "## How the results fit together\n\n| Role | Result |\n|---|---|\n| Converse | Every allowed sequence with $c\\to0$ has $\\limsup p_0\\le1/4$; optimizing batch size gives cost $(4+o(1))R$. |\n| Attainment | Established Fourier-family protocols attain the leading cost. |\n| Finite companion | Sharp success optima for two, three, and four photons at $c=1/N$; a monitored vacuum tap attains the four-photon value. |\n| Necessary structure | Sequences with $c_N\\to0$ and $p_{0,N}\\to1/4$ have diffuse survivor couplings, a mean-one thermal number marginal, and asymptotically complete acceptance of the ideal one-survivor probability. |\n| Selection control | Count-only acceptance has the same ideal yield as character selection but amplifies the leading error, as discussed in Saied et al., Appendix D. |\n| Cost equality | Approaching cost $4R$ requires $N/R\\to1$ and $Nc\\to1$, together with normalized mean-square equality of the accepted input-origin amplitudes. |\n\n## Relation to established results\n\nThe coefficient bound in Somhorst et al. (2601.05947v1) fixes the smallest\npossible batch size for a requested first-order reduction. Fourier attainment\nin Saied et al. (2404.14217v4) and Somhorst et al. (2404.14262v4) supplies an\nachievable cost. The converse here bounds every allowed competitor's success,\nwhich makes the leading factor of four an optimum over apparatus and batch size.\n\nHoch et al. (2509.02296v1) optimizes pairwise visibility with two active photons\nand an untouched reference. Marshall (2203.15197v3) supplies small-batch\nconstructions. The [attribution map](../literature/ATTRIBUTION.md) compares the\nobjectives and credits these constructions, the coefficient optimum, and the\nquantum-central-limit background. The comparison uses the versions and sections\nrecorded in [SOURCES.json](../literature/SOURCES.json).\n\n## Physical meaning and evidence\n\nThe known Fourier scheme already pays the asymptotically minimum photon cost\namong fixed, passive, vacuum-extended apparatuses with a predetermined survivor.\nThe result identifies both an unavoidable resource cost and the output structure\nof protocols approaching it. The cost counts every input photon in repeated\nattempts, including rejected batches, with the zero-error derivative taken\nbefore increasing the requested reduction.\n\nThe [proof details](PROOF_DETAILS.md) establish the uniform converse; the\n[optical construction](OPTICAL_CONSTRUCTION.md) gives attainment and the exact\nfinite certificates. The [physical interpretation](PHYSICAL_INTERPRETATION.md)\nconnects the coefficient to heralded internal quality and interference visibility.\n[Verification](../VERIFICATION.md) reproduces the 21 scientific check groups\nand records revision-specific report comparisons.\n",
+          "old": "## Claim hierarchy\n\n| Role | Content | Boundary |\n|---|---|---|\n| Central | Stable all-network $1/4$ success ceiling as $c\\to0$; matching $(4+o(1))R$ input cost. | Each fixed network is expanded at $\\epsilon=0$ before the sequence is taken. |\n| Sharpness | Known Fourier-family protocols. | Not a new achieving architecture or a new quarter constant for that family. |\n| Finite companion | All-network two-, three-, and four-photon optima at $c=1/N$; a monitored vacuum tap attains the four-photon value. | No full finite-$N\\ge5$ classification. |\n| Interpretation | Necessary diffuse-row structure; thermal number marginal for every near-ceiling sequence; asymptotically complete acceptance of ideal one-survivor probability. | A number law is not an internal-purity certificate. |\n| Control | Count-only acceptance has the same ideal yield but fails to purify; the uniform-row coefficient tends to $1+s$. | This failure mechanism already appears in Saied Appendix D. |\n| Cost equality | Approaching cost $4R$ requires $N/R\\to1$ and $Nc\\to1$, in addition to yield optimality. | Normalized mean-square amplitude erasure, not a unique complete interferometer. |\n\n## Source attribution and reading boundaries\n\nThe [updated attribution map](../literature/ATTRIBUTION.md) and\n[version-pinned reading record](../literature/SOURCES.json) record the targeted\nprimary-source audit of 8 October 2026. It inspected the coefficient optimum in\nSomhorst et al. (2601.05947v1), Fourier attainment and its cost in Saied et al.\n(2404.14217v4), and the resource-scaling and multiphoton-slope optimality arguments\nin Somhorst et al. (2404.14262v4). None of those inspected arguments supplies the\nstable arbitrary-row success converse. The inference is bounded by those sources\nand the documented search, not an exhaustive priority claim.\n\nHoch et al. (2509.02296v1) optimizes pairwise visibility using two active photons\nand an untouched reference, followed by success optimization at the best\nvisibility. Its three-photon experiment is not the same three-input common-target\nproblem. Marshall's small-batch constructions, the established quantum central\nlimit background, and Saied's count-only failure mechanism retain their attribution.\n\nThe fresh core readings used primary HTML text; Marshall was read as parsed PDF\ntext. Earlier source-access limitations remain in the immutable archive and are\nnot retroactively changed. The new record distinguishes fresh full-text readings,\ninherited comparisons, and an abstract-only screen whose full text was unavailable.\nNo unviewed figure or extracted plot value supports the result.\n\n## Significance, scope, and audit status\n\nThe positive case is an unavoidable leading resource cost for a specified\nphysical operation: the known Fourier scheme already pays the asymptotically\nminimum photon cost among the allowed static apparatuses. The main claim is the\nconverse, rather than a thermalization principle, known Fourier suppression,\nor the small percentage gain in the four-photon example.\n\nThe skeptical case is the ideal first-order, predetermined-survivor scope.\nFinite-error yield, loss tolerance, clock rate, encoded logical performance,\nand adaptive-output optimization require different claims. The proof uses\nelementary tools but needs uniform control across apparatuses; exactness,\nproof length, and the thermal interpretation alone do not settle broad physical\nsignificance. The analytical proof and its checks remain author-side evidence,\nsubject to independent scrutiny.\n\nThe recorded four suites passed all 21 groups (4+5+6+6), with canonical reports\nreproduced byte-for-byte. [Verification](../VERIFICATION.md) gives the reproducible\nprocedure; the original [run record](../archive/research-handoff-2026-10-08/RUN_RECORD.json)\nand [report comparisons](../archive/research-handoff-2026-10-08/evidence/report_comparisons.json)\npreserve the audit evidence. The physical-mechanism checks use optical matrices\nup to $6\\times6$ and at most 252 occupation amplitudes; number-law calculations\nthrough 128 inputs use scalar exact rational recursions. Earlier small-network\nchecks reach dimension 8. No large optical Fock-state simulation or experiment\nunderlies these results, and no scientific assertion or tolerance was changed to\nobtain a pass.\n\nThe established contribution is retained at this scope. Finite error, photon\nloss, adaptive survivor routing, correlated inputs, internal-mode manipulation,\nextra nonvacuum ancillas, and every finite-batch optimum are separate questions.\nA named proof objection, directly covering source, or explicitly selected new\nclaim can reopen the research.\n"
+        },
+        {
+          "count": 1,
+          "new": "together with asymptotically vanishing normalized mean-square deviation among the accepted input-origin amplitudes.",
+          "old": "together with normalized mean-square equality of the accepted input-origin amplitudes."
         }
       ],
       "source": "archive/research-handoff-2026-10-08/CLAIMS_AND_REVIEW.md",
       "source_sha256": "9fa16bafc698f08d0f3550f2f35694b28a4f749ccfc8d7e4bd0849d6c126eb2b"
     }
   ],
-  "policy": "Only listed, reviewed replacements are applied. Navigation and presentation edits preserve scientific claims and displayed equations. The endpoint clarification and operational definitions from the 2026-10-08 scientific audit are separately explained in research/SCIENTIFIC_AUDIT.md; the source-reading update is recorded in literature/SOURCES.json. Original source bytes and protected scientific hashes are immutable."
+  "policy": "Only listed, reviewed replacements are applied. Navigation and presentation edits preserve scientific claims and displayed equations. The endpoint clarification and operational definitions from the 2026-10-08 scientific audit are separately explained in provenance/SCIENTIFIC_AUDIT.md; the source-reading update is recorded in literature/SOURCES.json. Original source bytes and protected scientific hashes are immutable."
 }

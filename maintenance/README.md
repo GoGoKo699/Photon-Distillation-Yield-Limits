@@ -14,22 +14,22 @@ inspect actual-head evidence, merge its expected head, and verify main separatel
 The original initialization is merged through
 [PR #1](https://github.com/GoGoKo699/Photon-Distillation-Yield-Limits/pull/1).
 Its hosted numerical report differences were explicitly reviewed and are recorded
-in [the report review](provenance/HOSTED_REPORT_REVIEW.json). Status 2 remains a
+in [the report review](../provenance/HOSTED_REPORT_REVIEW.json). Status 2 remains a
 review requirement; it is never an automatic pass.
 
 ## Read
 
-1. [Model and claims](research/MODEL_AND_CLAIMS.md).
-2. [Theorem](research/THEOREM.md) and [proof map](research/PROOF_MAP.md).
-3. [Physical mechanism](research/PHYSICAL_MECHANISM.md).
-4. [Contribution review](research/CONTRIBUTION_REVIEW.md) and
-   [attribution](literature/ATTRIBUTION.md).
-5. [Verification](VERIFICATION.md), [preservation metadata](provenance/IMPORT.json),
-   and [current work boundary](work_orders/CURRENT.md).
+1. [Model and claims](../research/MODEL_AND_CLAIMS.md).
+2. [Theorem](../research/THEOREM.md) and [proof map](../research/PROOF_MAP.md).
+3. [Physical mechanism](../research/PHYSICAL_MECHANISM.md).
+4. [Contribution review](../research/CONTRIBUTION_REVIEW.md) and
+   [attribution](../literature/ATTRIBUTION.md).
+5. [Verification](../VERIFICATION.md), [preservation metadata](../provenance/IMPORT.json),
+   and [current work boundary](CURRENT.md).
 
 ## Current boundary
 
-The [contribution assessment](research/CONTRIBUTION_REVIEW.md) and claims-first
+The [contribution assessment](../research/CONTRIBUTION_REVIEW.md) and claims-first
 exposition are in place. Preserve the distinction between the converse and known
 Fourier attainment, and between number statistics and purification. Further
 scientific work should answer a named objection or explicitly selected claim.
