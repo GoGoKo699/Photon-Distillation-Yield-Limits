@@ -1,6 +1,8 @@
 # Proof and evidence map
 
-Read the [model](MODEL_AND_CLAIMS.md) before the [active theorem](THEOREM.md).
+Start with the [tutorial bridge](TUTORIAL_BRIDGE.md) for the single-source
+learning route and a hand calculation. Read the [model](MODEL_AND_CLAIMS.md)
+before the [theorem](THEOREM.md).
 
 | Claim or issue | Detailed source |
 |---|---|

@@ -161,6 +161,28 @@
       "read_method": "Web search returned arXiv abstract metadata and text",
       "access_limit": "Direct abstract, HTML, and PDF requests, including attempted v1 endpoints, failed. No full-text exclusion or version assurance.",
       "role": "Abstract describes certification/sample complexity; not used as theorem evidence."
+    },
+    {
+      "id": "T14",
+      "title": "Interference of Identical Particles from Entanglement to Boson-Sampling",
+      "authors": "M. C. Tichy",
+      "version": "arXiv:1312.4266v2",
+      "version_date": "2014-05-08",
+      "journal_reference": "J. Phys. B: At. Mol. Opt. Phys. 47, 103001 (2014)",
+      "url": "https://arxiv.org/html/1312.4266v2",
+      "version_record_url": "https://arxiv.org/abs/1312.4266v2",
+      "doi": "10.1088/0953-4075/47/10/103001",
+      "sections": [
+        "Sections 2.1.2, 2.2.1, 2.3.2",
+        "Sections 3.1-3.2",
+        "Section 3.4",
+        "Section 3.7.1",
+        "Section 4.3"
+      ],
+      "reading_status": "fresh_primary_text",
+      "read_method": "Versioned primary arXiv text; section numbering checked against v2 PDF",
+      "access_limit": "Selected sections inspected; no figure values extracted. The illustrative Fourier proof treats occupations at most one.",
+      "role": "Single pedagogical anchor for optical interference; repository supplies the heralded-purification bridge and converse."
     }
   ],
   "bounded_search": {

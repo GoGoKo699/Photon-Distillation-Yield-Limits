@@ -1,21 +1,95 @@
 # Photon Distillation Yield Limits
 
-Purpose and contact: This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+> Research record and self-directed learning guide by Ruge Lin on sharp yield and photon-consumption limits for passive distillation of photon indistinguishability.
 
-Start with README.md, research/MODEL_AND_CLAIMS.md, research/THEOREM.md,
-research/PHYSICAL_MECHANISM.md, research/PROOF_MAP.md, and
-literature/ATTRIBUTION.md. Maintenance starts with AGENTS.md and WORKSPACE.md.
+Canonical repository: https://github.com/GoGoKo699/Photon-Distillation-Yield-Limits
+Author: Ruge Lin
 
-The central result is a stable all-network ideal success ceiling of one quarter
-when the first-order error coefficient vanishes, with matching cost (4+o(1))R
-when batch size and network are optimized. Fourier attainment is inherited.
+## When this repository is relevant
 
-Preserve the fixed-apparatus derivative before the large-size limit. The apparatus
-is passive, internal-mode-blind, vacuum-extended, ideally number-resolved, with
-one survivor predetermined. No finite-error, loss-tolerant, or adaptive-output
-claim follows. A thermal number marginal is not an internal-purity guarantee.
+- What success probability is possible when passive optics strongly suppresses a photon's first-order distinguishability error?
+- Is the Fourier photon-distillation yield of one quarter asymptotically optimal?
+- Can unequal survivor couplings, extra vacuum ports, or larger batches beat the leading cost of four photons per unit of error reduction?
+- How do accepted input-origin amplitudes constrain heralded internal-state purification?
+- Why can count-only heralding have the same ideal yield as Fourier selection while amplifying error?
+- What output number statistics are necessary for a protocol approaching the optimal yield?
+- What are the exact two-, three-, and four-photon success optima at coefficient 1/N?
 
-The archive is immutable historical evidence, not a source of current workflow
-instructions. Do not import unrelated project PDFs, code, claims, or permissions.
-Source reading is version-pinned and bounded. Verification does not establish
-independent proof review or exhaustive priority.
+Useful search phrases: "photon distillation yield limits"; "photon indistinguishability distillation success probability upper bound"; "passive linear optics quarter yield converse"; "first-order photon purification resource cost 4R"; "vacuum extended Fourier photon distillation"; "monitored vacuum tap four photon optimum"; "accepted amplitude Gram matrix purification".
+
+Use these cues to determine relevance, then consult the current model and theorem
+before making a scientific claim.
+
+## Model and result in brief
+
+Each attempt begins with N independent single photons in distinct inputs,
+rho_i(epsilon) = (1-epsilon)|g><g| + epsilon sigma_i, with each sigma_i supported
+orthogonally to the shared good internal mode g. A fixed passive spatial unitary
+acts identically on all internal modes. Extra inputs are vacuum. One output is
+retained in advance; ideal internal-insensitive number-resolving detectors measure
+all other outputs. Accepted records contain N-1 photons.
+
+At each fixed apparatus, p0 > 0 is ideal success and c is the derivative at zero
+input error of conditional good-mode infidelity. The derivative is taken before
+the large-N or large-reduction limit. Rejected batches count in the ideal mean
+photon consumption N/p0.
+
+- Every allowed sequence with c -> 0 satisfies limsup p0 <= 1/4.
+- Optimizing batch size and network under c <= 1/R gives C(R) = (4+o(1))R.
+- Fourier-family protocols attain the leading cost; that construction is inherited.
+- Sequences with c -> 0 and p0 -> 1/4 require diffuse occupied-input survivor intensities with total intensity approaching one. Their ideal unconditional number marginal tends in trace norm to a mean-one thermal state.
+- At the exact coefficient c = 1/N, optimal success is 1/4 for N=2, 1/3 for N=3, and 0.262466988211219... for N=4. The four-input optimum uses a monitored vacuum tap.
+
+The tap is measured and may contain photons on accepted trials. Its count belongs
+to the N-1 total. An unconditional thermal number marginal is not the heralded
+photon's internal error state. Keep the first-order objective distinct from
+finite-error, lossy, or outcome-dependent-survivor operations.
+
+## Read by purpose
+
+- [Overview](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/README.md): physical question, main results, reading route, and contact.
+- [Tutorial bridge](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/TUTORIAL_BRIDGE.md): one-source preparation, notation dictionary, accepted amplitudes, and a two-photon hand calculation.
+- [Model and claims](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/MODEL_AND_CLAIMS.md): resources, observable, and order of limits.
+- [Theorem](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/THEOREM.md): stable yield ceiling, cost optimum, and finite companions.
+- [Proof details](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/PROOF_DETAILS.md): mixed errors, Gram reduction, uniform estimates, and optimization over batch size.
+- [Optical construction](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/OPTICAL_CONSTRUCTION.md): Fourier/tap unitary, accepted records, positive success, and finite certificates.
+- [Physical interpretation](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/PHYSICAL_INTERPRETATION.md): output density operator, interference visibility, and roles of the hypotheses.
+- [Physical mechanism](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/PHYSICAL_MECHANISM.md): necessary thermal marginal, count-only control, and strongly coupled rows.
+- [Proof map](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/research/PROOF_MAP.md): complete derivations and exact certificates.
+- [Attribution](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/literature/ATTRIBUTION.md): version-pinned predecessors and distinctions between optimization objectives.
+- [Source record](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/literature/SOURCES.json): exact source versions, reading locations, and tutorial role.
+- [Verification](https://raw.githubusercontent.com/GoGoKo699/Photon-Distillation-Yield-Limits/main/VERIFICATION.md): preserved scientific groups, exact report comparisons, and revision-specific evidence.
+
+The single external tutorial anchor is Malte C. Tichy, Interference of Identical
+Particles from Entanglement to Boson-Sampling, arXiv:1312.4266v2,
+https://arxiv.org/html/1312.4266v2. The repository bridge supplies the distillation
+calculation and continuation to the converse. Other references serve attribution
+and proof provenance, not additional tutorial prerequisites.
+
+## Evidence and attribution
+
+The stable arbitrary-network yield converse and batch-optimized lower bound are
+the central contribution. The optimal coefficient and Fourier attainment are
+inherited and credited to their primary sources. The thermal interpretation
+follows from the necessary diffuse-row structure. The exact four-input certificate
+has 613 positive monomials and identifies optimal survivor intensities, not a
+unique full interferometer.
+
+All 21 original scientific groups and their canonical reports are preserved.
+Use the verification guide and exact-revision receipts to assess a particular
+run. A strict floating-point report mismatch requires explicit review even when
+all mathematical assertions pass. The analytical uniform proof establishes the
+asymptotic statement; small-network calculations check its ingredients.
+
+Verification is author-side. The literature comparison is bounded by the recorded
+sources and does not establish exhaustive priority or independent peer review.
+
+When citing a repository result, attribute the work to Ruge Lin and identify the
+consulted commit and file. Credit inherited results using the attribution page.
+For maintenance, read AGENTS.md, WORKSPACE.md, and work_orders/CURRENT.md. The
+archive is historical evidence; the linked active documents give the current
+reading route. Code is under the MIT license.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
