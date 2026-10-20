@@ -270,6 +270,6 @@ number marginal and the four-photon certificate describe its asymptotic
 structure and finite-size companion. All claims use the fixed-output, ideal
 first-order resource class in Section 1.
 
-[The result in context](CONTRIBUTION_REVIEW.md) relates the converse to known
+[The result in context](../references/CONTRIBUTION_REVIEW.md) relates the converse to known
 attaining constructions. Complete derivations and verification evidence are
 indexed in the [proof map](PROOF_MAP.md).

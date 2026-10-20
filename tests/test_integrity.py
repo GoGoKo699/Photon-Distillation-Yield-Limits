@@ -98,7 +98,7 @@ class IntegrityTests(unittest.TestCase):
         for name in ['README.md', 'llms.txt']:
             self.assertIn(notice, (ROOT/name).read_text())
             self.assertIn('(mailto:gogoko699@gmail.com)', (ROOT/name).read_text())
-        text = (ROOT/'research/MODEL_AND_CLAIMS.md').read_text()
+        text = (ROOT/'science/MODEL_AND_CLAIMS.md').read_text()
         self.assertIn('One output is retained in advance', text)
         self.assertIn('zero error precedes', text)
         self.assertIn('known Fourier', (ROOT/'maintenance/CURRENT.md').read_text())
@@ -132,7 +132,7 @@ class IntegrityTests(unittest.TestCase):
             root = Path(tmp)
             protected = ['LICENSE', 'archive/research-handoff-2026-10-08/THEOREM.md',
                          'provenance/IMPORT.json', 'tools/verify.py']
-            for name in ['research/active.md', *protected]:
+            for name in ['science/active.md', *protected]:
                 path = root/name
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text('original\n')
@@ -141,7 +141,7 @@ class IntegrityTests(unittest.TestCase):
                        'source_sha256': hashlib.sha256(b'original\n').hexdigest(),
                        'destination_sha256': '',
                        'replacements': [{'old': 'original', 'new': 'changed', 'count': 1}]}
-                      for name in ['research/active.md', second_destination]]
+                      for name in ['science/active.md', second_destination]]
             (root/'provenance/ACTIVE_EDITS.json').write_text(json.dumps({'copies': copies}))
             before = {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()}
             with patch.object(sync_active, 'ROOT', root), patch('integrity.ROOT', root), \
@@ -160,6 +160,6 @@ class IntegrityTests(unittest.TestCase):
                 self.assert_active_write_rejected(destination)
 
     def test_active_sync_rejects_duplicate_destinations_before_writing(self):
-        self.assert_active_write_rejected('research/active.md')
+        self.assert_active_write_rejected('science/active.md')
 
 if __name__=='__main__':unittest.main()

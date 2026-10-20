@@ -2,9 +2,9 @@
 
 ## Full check
 
-Use Python 3.13.5 and the versions pinned in [requirements.txt](requirements.txt).
+Run all commands from the repository root. Use Python 3.13.5 and the versions pinned in [requirements.txt](../requirements.txt).
 The original environment is preserved in
-[the research archive](archive/research-handoff-2026-10-08/environment.json).
+[the research archive](../archive/research-handoff-2026-10-08/environment.json).
 
 ```bash
 python -m pip install -r requirements.txt
@@ -39,7 +39,7 @@ Do not treat status 2 as a verified pass or refresh the original reference to hi
 No separate numerical tolerance is used to silently accept a mismatch.
 
 Floating-point report bytes can depend on the numerical runtime even with pinned
-Python and package versions. The [hosted report review](provenance/HOSTED_REPORT_REVIEW.json)
+Python and package versions. The [hosted report review](../provenance/HOSTED_REPORT_REVIEW.json)
 records the initial PR and merged-main evidence: all 21 scientific groups passed,
 while 60 floating-point leaves differed by at most $`6.11\times10^{-16}`$.
 A local BLAS-dispatch experiment reproduced 58 of those differences exactly;
@@ -55,7 +55,7 @@ for the analytical uniform proof or an independent novelty assessment.
 
 ## Hosted checks
 
-The [workflow](.github/workflows/verify.yml) checks out the actual PR head, not only
+The [workflow](../.github/workflows/verify.yml) checks out the actual PR head, not only
 a synthetic merge revision, and separately runs on merged main. It uses pinned
 actions, read-only contents permission, and does not retain checkout credentials.
 Inspect the artifact and compare every source hash with the reviewed tree before
@@ -77,5 +77,15 @@ python -m unittest discover -s tests -v
 Both commands first verify protected sources. Only active destination hashes and
 active-document/infrastructure metadata may be regenerated. The import manifest,
 archived scientific sources, canonical reports, and license remain protected.
-Active-copy destinations must be distinct Markdown files under `research/`; all
+Active-copy destinations must be distinct Markdown files under `science/` or `references/`; all
 destinations and replacement specifications are checked before any file is written.
+
+## Reading-route checks
+
+The infrastructure suite also checks the topic-based layout, exactly 30 ordered
+project milestones, their source links and earlier dependencies, the retained
+single Tichy anchor, and mathematical payload preservation for relocated pages.
+These are documentation and integrity checks, not additional scientific theorems.
+Inspect the actual hosted README, learning bridge, milestone map and substantial
+mathematical pages separately before claiming a complete visual rendering review.
+Record the exact revision, pages and any access limitations in the PR evidence.

@@ -49,10 +49,10 @@ which makes the leading factor of four an optimum over apparatus and batch size.
 
 Hoch et al. (2509.02296v1) optimizes pairwise visibility with two active photons
 and an untouched reference. Marshall (2203.15197v3) supplies small-batch
-constructions. The [attribution map](../literature/ATTRIBUTION.md) compares the
+constructions. The [attribution map](ATTRIBUTION.md) compares the
 objectives and credits these constructions, the coefficient optimum, and the
 quantum-central-limit background. The comparison uses the versions and sections
-recorded in [SOURCES.json](../literature/SOURCES.json).
+recorded in [SOURCES.json](SOURCES.json).
 
 ## Physical meaning and evidence
 
@@ -63,9 +63,9 @@ of protocols approaching it. The cost counts every input photon in repeated
 attempts, including rejected batches, with the zero-error derivative taken
 before increasing the requested reduction.
 
-The [proof details](PROOF_DETAILS.md) establish the uniform converse; the
-[optical construction](OPTICAL_CONSTRUCTION.md) gives attainment and the exact
-finite certificates. The [physical interpretation](PHYSICAL_INTERPRETATION.md)
+The [proof details](../science/PROOF_DETAILS.md) establish the uniform converse; the
+[optical construction](../science/OPTICAL_CONSTRUCTION.md) gives attainment and the exact
+finite certificates. The [physical interpretation](../science/PHYSICAL_INTERPRETATION.md)
 connects the coefficient to heralded internal quality and interference visibility.
-[Verification](../VERIFICATION.md) reproduces the 21 scientific check groups
+[Verification](../verification/README.md) reproduces the 21 scientific check groups
 and records revision-specific report comparisons.

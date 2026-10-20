@@ -184,7 +184,7 @@ leading photon cost $`(4+o(1))R`$.
 
 The Fourier circuit, character selection, and untapped asymptotic yield are
 established constructions; their attribution is detailed in
-[the source comparison](../literature/ATTRIBUTION.md). The purpose of (1)–(5) is
+[the source comparison](../references/ATTRIBUTION.md). The purpose of (1)–(5) is
 to make the physical attainment explicit in the vacuum-extended resource class.
 
 ## 5. Sharp two-, three-, and four-photon bounds

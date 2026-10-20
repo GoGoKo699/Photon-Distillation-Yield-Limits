@@ -13,8 +13,8 @@ def active_destinations(rows):
     for row in rows:
         path = safe_path(ROOT, row['destination'])
         resolved = path.resolve()
-        if path.suffix != '.md' or not resolved.is_relative_to(ROOT/'research'):
-            raise ValueError(f'Active destination must be a research Markdown document: {path}')
+        if path.suffix != '.md' or not any(resolved.is_relative_to(ROOT/name) for name in ('science', 'references')):
+            raise ValueError(f'Active destination must be a science or references Markdown document: {path}')
         if resolved in seen:
             raise ValueError(f'Duplicate active destination: {path}')
         seen.add(resolved)

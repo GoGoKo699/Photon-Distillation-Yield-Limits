@@ -19,17 +19,17 @@ review requirement; it is never an automatic pass.
 
 ## Read
 
-1. [Model and claims](../research/MODEL_AND_CLAIMS.md).
-2. [Theorem](../research/THEOREM.md) and [proof map](../research/PROOF_MAP.md).
-3. [Physical mechanism](../research/PHYSICAL_MECHANISM.md).
-4. [Contribution review](../research/CONTRIBUTION_REVIEW.md) and
-   [attribution](../literature/ATTRIBUTION.md).
-5. [Verification](../VERIFICATION.md), [preservation metadata](../provenance/IMPORT.json),
+1. [Model and claims](../science/MODEL_AND_CLAIMS.md).
+2. [Theorem](../science/THEOREM.md) and [proof map](../science/PROOF_MAP.md).
+3. [Physical mechanism](../science/PHYSICAL_MECHANISM.md).
+4. [Contribution review](../references/CONTRIBUTION_REVIEW.md) and
+   [attribution](../references/ATTRIBUTION.md).
+5. [Verification](../verification/README.md), [preservation metadata](../provenance/IMPORT.json),
    and [current work boundary](CURRENT.md).
 
 ## Current boundary
 
-The [contribution assessment](../research/CONTRIBUTION_REVIEW.md) and claims-first
+The [contribution assessment](../references/CONTRIBUTION_REVIEW.md) and claims-first
 exposition are in place. Preserve the distinction between the converse and known
 Fourier attainment, and between number statistics and purification. Further
 scientific work should answer a named objection or explicitly selected claim.

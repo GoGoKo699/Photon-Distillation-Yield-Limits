@@ -1,7 +1,7 @@
 # Attribution and source comparison
 
 The comparison concerns the fixed-output, passive, vacuum-extended,
-independent-internal-error model in [MODEL_AND_CLAIMS](../research/MODEL_AND_CLAIMS.md).
+independent-internal-error model in [MODEL_AND_CLAIMS](../science/MODEL_AND_CLAIMS.md).
 The derivative at zero input error is taken at each fixed apparatus before the
 large-size limit. [SOURCES.json](SOURCES.json) records the versions, sections,
 and access limits used in this comparison.
@@ -9,7 +9,7 @@ and access limits used in this comparison.
 ## Learning source
 
 [Tichy, arXiv:1312.4266v2](https://arxiv.org/html/1312.4266v2) is the single
-external tutorial for the [learning bridge](../research/TUTORIAL_BRIDGE.md).
+external tutorial for the [learning bridge](../learning/TICHY_BRIDGE.md).
 It supplies interference prerequisites; the repository supplies the
 distillation-specific steps. The research sources below serve attribution
 and proof context.
@@ -46,5 +46,5 @@ conditional transmission. The tap here is a measured output of the lossless
 apparatus, and its count contributes to the accepted detector record.
 
 The comparison is bounded by the sources recorded in [SOURCES.json](SOURCES.json).
-[The result in context](../research/CONTRIBUTION_REVIEW.md) explains how the
+[The result in context](CONTRIBUTION_REVIEW.md) explains how the
 coefficient bound, attainment, and yield converse determine the optimal cost.

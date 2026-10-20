@@ -7,7 +7,12 @@ to Boson-Sampling*, **J. Phys. B 47, 103001 (2014)**,
 [DOI](https://doi.org/10.1088/0953-4075/47/10/103001)).
 This tutorial supplies the optical language. The route below selects what is
 needed here; the subsequent derivations connect it to the
-[photon-distillation model](MODEL_AND_CLAIMS.md).
+[photon-distillation model](../science/MODEL_AND_CLAIMS.md).
+
+Use the [30-milestone map](MILESTONES.md) alongside this bridge. Its ten
+background milestones build the optical task; its twenty narrative milestones
+connect accepted amplitudes, the uniform converse, attainment, and physical meaning.
+The anchor supplies interference foundations; it does not contain the new yield converse.
 
 ## 1. Read with a specific question
 
@@ -102,7 +107,7 @@ The second equality follows by expanding the squares and using
 $`\sum_i a_i=a`$. Thus $`c\ge1/N`$, with equality exactly when all accepted
 vectors equal $`a/N`$. Overlaps between different bad states do not enter this
 first-order calculation: each contributing alternative contains just one bad
-photon. The [physical interpretation](PHYSICAL_INTERPRETATION.md) derives the
+photon. The [physical interpretation](../science/PHYSICAL_INTERPRETATION.md) derives the
 conditional density operator and its connection to interference visibility.
 
 ## 4. Work through two photons and one monitored vacuum tap
@@ -209,7 +214,7 @@ and zero character. Define the detector amplitudes from Section 3 by
 $`V_i(\mathbf n)=\langle\mathbf n\vert v_i\rangle`$. Cyclicity gives
 $`V_{i+1}(\mathbf n)=\omega^{\sum_r rn_r}V_i(\mathbf n)`$. Thus all accepted
 $`a_i`$ coincide and $`c=1/N`$ whenever $`p_0>0`$.
-The [optical construction](OPTICAL_CONSTRUCTION.md) gives the complete unitary,
+The [optical construction](../science/OPTICAL_CONSTRUCTION.md) gives the complete unitary,
 positive-success cases, and exact success formula.
 
 ## 6. From attainment to optimality
@@ -217,7 +222,7 @@ positive-success cases, and exact success formula.
 The Fourier family attains $`p_0\to1/4`$. Proving optimality requires controlling
 every allowed network, including unbalanced survivor couplings: a large raw
 one-photon probability alone does not guarantee purification. The
-[central theorem](THEOREM.md) and [proof details](PROOF_DETAILS.md) combine the
+[central theorem](../science/THEOREM.md) and [proof details](../science/PROOF_DETAILS.md) combine the
 accepted-amplitude constraint with a uniform bound on strongly and weakly
 coupled inputs, proving $`c_N\to0\Rightarrow\limsup p_{0,N}\le1/4`$.
 
@@ -228,9 +233,9 @@ $`p_{0,N}\to1/4`$, the occupied-input survivor intensities
 $`p_i=|U_{0i}|^2`$ satisfy $`\max_i p_i\to0`$ and $`\sum_i p_i\to1`$.
 Their ideal
 unconditional output then approaches a mean-one thermal number distribution
-in trace norm, as derived in [the physical mechanism](PHYSICAL_MECHANISM.md).
+in trace norm, as derived in [the physical mechanism](../science/PHYSICAL_MECHANISM.md).
 That number distribution precedes heralding; the internal quality of the
 heralded photon is governed by the accepted amplitudes instead.
 
-The [attribution map](../literature/ATTRIBUTION.md) documents the research sources
+The [attribution map](../references/ATTRIBUTION.md) documents the research sources
 underlying the construction and converse.
