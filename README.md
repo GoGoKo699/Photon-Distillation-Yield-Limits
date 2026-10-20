@@ -1,45 +1,21 @@
 # Photon Distillation Yield Limits
 
-**Passive purification of photon indistinguishability has an unavoidable leading photon cost.**
+**How many imperfect photons must passive optics consume to herald one photon with a much smaller distinguishability error?** This project gives a sharp leading photon-cost law, a stable success ceiling and exact small-batch optima for an ideal, predetermined-survivor task.
 
-How many imperfect photons must a passive optical network consume to herald one
-photon with a much smaller distinguishability error? Established Fourier
-protocols approach four photons consumed per unit of first-order error reduction.
-This repository proves the matching limit across the stated apparatus class,
-including unequal couplings and additional vacuum ports.
+One attempt uses $`N`$ independent single photons with a common good internal mode, a lossless passive interferometer acting identically on internal modes, arbitrary additional vacuum inputs, and ideal internal-insensitive photon-number-resolving detectors. One output is retained in advance; an accepted record contains $`N-1`$ detected photons.
 
-| Read next | Purpose |
-|---|---|
-| [Tutorial bridge](research/TUTORIAL_BRIDGE.md) · [Physical interpretation](research/PHYSICAL_INTERPRETATION.md) | Learn from one external tutorial, calculate a small example, and identify the measured quantities. |
-| [Theorem](research/THEOREM.md) · [Proof details](research/PROOF_DETAILS.md) | Follow the stable yield bound and optimized photon-cost law. |
-| [Model and claims](research/MODEL_AND_CLAIMS.md) · [Optical construction](research/OPTICAL_CONSTRUCTION.md) | Check the resources, accepted detector records, and attaining networks. |
-| [Physical mechanism](research/PHYSICAL_MECHANISM.md) | Understand the necessary number statistics and the role of pattern selection. |
-| [The result in context](research/CONTRIBUTION_REVIEW.md) · [Attribution](literature/ATTRIBUTION.md) | Separate the converse from established constructions and related bounds. |
-| [Proof map](research/PROOF_MAP.md) · [Verification](VERIFICATION.md) | Locate complete derivations and reproduce the checks. |
-| [LLM guide](llms.txt) | Find relevant research questions, search phrases, and authoritative files. |
-
-## What is being optimized
-
-One attempt uses $`N`$ independent single photons with a shared good internal mode,
-a fixed passive interferometer that acts identically on internal modes, and any
-number of vacuum inputs. One output is retained in advance. Ideal number-resolving
-detectors measure all other outputs; accepted records contain $`N-1`$ photons.
-
-Let $`p_0>0`$ be the ideal-input success probability and $`c`$ the first-order
-coefficient of the retained photon's internal-mode error:
+For each fixed apparatus, define ideal success $`p_0>0`$ and the first-order output-error coefficient $`c`$ by
 
 ```math
 p_{\mathrm{herald}}(\epsilon)=p_0+O(\epsilon),
 \qquad \epsilon_{\mathrm{out}}=c\epsilon+O(\epsilon^2).
 ```
 
-The error derivative is taken at fixed apparatus, before increasing the batch
-size or requested reduction. Independent attempts consume $`N/p_0`$ photons per
-success in this ideal limit, including rejected batches.
+The zero-error derivative is taken before increasing the batch size or requested reduction. Counting rejected attempts, the ideal mean input cost is $`N/p_0`$.
 
-## Yield and photon cost
+## The resource law
 
-Every allowed sequence obeys the stable bound
+Every allowed sequence satisfies
 
 ```math
 c_N\longrightarrow0
@@ -47,82 +23,65 @@ c_N\longrightarrow0
 \limsup_{N\to\infty}p_{0,N}\le\frac14.
 ```
 
-For a requested first-order reduction factor $`R`$, optimizing both the network
-and the batch size therefore gives
+Optimizing both the interferometer and batch size for a requested first-order reduction $`R`$ gives
 
 ```math
 \mathcal C(R):=\inf_{c\le1/R}\frac{N}{p_0}=(4+o(1))R.
 ```
 
-Known Fourier protocols attain this leading cost. The converse controls
-arbitrary survivor couplings, vacuum enlargement, and batches whose error
-coefficient vanishes without attaining $`1/N`$ at each size.
+[Known Fourier protocols](references/ATTRIBUTION.md) attain the quarter yield and approximately $`4N`$ cost at coefficient $`1/N`$. The contribution here is the matching converse over arbitrary survivor rows and vacuum extensions. It also covers coefficients that vanish without attaining $`1/N`$ at every size.
 
-| Consequence | Meaning |
+| Resource regime | Optimal ideal success | Ideal mean photon consumption |
+|---|---:|---:|
+| Two inputs, $`c=1/2`$ | $`1/4`$ | $`8`$ |
+| Three inputs, $`c=1/3`$ | $`1/3`$ | $`9`$ |
+| Four inputs, $`c=1/4`$ | $`0.262466988\ldots`$ | $`15.24001181\ldots`$ |
+| Requested reduction $`R\to\infty`$, batch size optimized | Sharp asymptotic ceiling $`1/4`$ | $`(4+o(1))R`$ |
+
+The small rows have different purification targets. A [monitored vacuum tap](science/OPTICAL_CONSTRUCTION.md) attains the two- and four-input optima; its detected photons are part of the heralding record, not unobserved loss.
+
+## Read the science
+
+The [scientific entrypoint](science/README.md) connects the full account. Each topic has a direct route:
+
+| Question | Authoritative account |
 |---|---|
-| Sharp leading cost | Stronger first-order purification cannot improve on the asymptotic Fourier photon-consumption rate in this class. |
-| Necessary output structure | With $`c_N\to0`$, approaching the quarter ceiling forces the occupied-input survivor couplings to become individually weak, with total intensity approaching one. |
-| Exact small batches | At $`c=1/N`$, the sharp success probabilities are $`1/4`$ for two photons, $`1/3`$ for three, and $`0.262466988\ldots`$ for four. |
+| What resources and order of limits define the claim? | [Model and claims](science/MODEL_AND_CLAIMS.md) |
+| Why can no competing network improve the leading cost? | [Theorem](science/THEOREM.md) and [uniform proof details](science/PROOF_DETAILS.md) |
+| Which apparatus attains the bounds? | [Fourier construction and exact small batches](science/OPTICAL_CONSTRUCTION.md) |
+| Why does one quarter appear, and why is counting insufficient? | [Output-number mechanism](science/PHYSICAL_MECHANISM.md) |
+| What internal state and interference visibility are heralded? | [Physical interpretation](science/PHYSICAL_INTERPRETATION.md) |
+| Which ingredients are inherited? | [Result in context](references/CONTRIBUTION_REVIEW.md), [attribution](references/ATTRIBUTION.md) and [structured bibliography](references/SOURCES.json) |
+| Where are the certificates and reproducible checks? | [Proof map](science/PROOF_MAP.md) and [verification](verification/README.md) |
 
-The [optical construction](research/OPTICAL_CONSTRUCTION.md) specifies the
-monitored vacuum tap that attains the two- and four-photon optima. Its detector
-may register photons; those counts contribute to the heralding record.
+Approaching the ceiling with vanishing $`c_N`$ forces many individually weak survivor couplings whose total intensity approaches one. The ideal unconditional output then has vacuum, single-photon and multiphoton probabilities approaching $`1/2`$, $`1/4`$ and $`1/4`$. This thermal number marginal precedes heralding: **it does not certify the internal purity of the retained photon**. Equal ideal yield can accompany purification or error amplification, depending on which detector patterns are accepted.
 
-## Why counting one photon is not enough
+## Learn the project
 
-A network can have a raw one-photon output probability larger than one quarter.
-The purification requirement constrains which of those events can be accepted.
-The proof first controls accepted amplitudes associated with different input
-origins, then establishes the uniform yield bound.
+The single educational anchor is **Malte C. Tichy, Interference of Identical Particles from Entanglement to Boson-Sampling**, *Journal of Physics B* **47**, 103001 (2014), arXiv:1312.4266v2.
 
-For a sequence with $`c_N\to0`$ and $`p_{0,N}\to1/4`$, the ideal unconditional output number
-law becomes thermal, with vacuum, one-photon, and multiphoton probabilities
-approaching $`1/2`$, $`1/4`$, and $`1/4`$. The
-[physical mechanism](research/PHYSICAL_MECHANISM.md) derives this consequence.
-The same ideal yield can accompany very different output errors: accepting every
-one-survivor count in the Fourier network amplifies the leading error, while
-Fourier-character selection suppresses it. Number statistics alone do not
-certify internal-state purification.
+Use the [Tichy bridge](learning/TICHY_BRIDGE.md) for selected sections, translated notation and a complete two-photon example. The [30-milestone map](learning/MILESTONES.md) supplies a common understanding route: **10 background/preliminaries milestones** assemble the optical task, and **20 narrative/innovation milestones** connect the amplitude constraints, attaining circuits, uniform converse and physical consequences. The [learning entrypoint](learning/README.md) explains how the two resources fit together.
 
-## One tutorial, then this result
+The [LLM reading guide](llms.txt) maps scientific questions and study intentions to these authoritative files. The map is independent of any reader’s assessment history.
 
-The selected learning anchor is:
+## Reproduce the checks
 
-> Malte C. Tichy, **Interference of Identical Particles from Entanglement to Boson-Sampling**,
-> *Journal of Physics B* **47**, 103001 (2014).
-> [Tutorial, arXiv:1312.4266v2](https://arxiv.org/html/1312.4266v2) ·
-> [Published article](https://doi.org/10.1088/0953-4075/47/10/103001)
+From the repository root:
 
-The [tutorial bridge](research/TUTORIAL_BRIDGE.md) selects a short route through
-that source, translates its conventions, works out a two-photon herald by hand,
-and connects accepted amplitudes to the yield theorem. It assumes basic quantum
-mechanics and linear algebra. Other references document attribution and proof
-inputs; the learning route uses this one external source.
-
-## Evidence and reproduction
-
-```sh
+```bash
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
 python tools/verify.py --output-dir build/verification
 ```
 
-Use a new output directory. The 21 scientific groups check identities, optical
-examples, and exact certificates. The large-size result rests on the uniform
-analytical proof. [Verification](VERIFICATION.md) explains source preservation,
-strict report comparisons, and numerical-runtime differences; the
-[proof map](research/PROOF_MAP.md) links the complete evidence.
+Use a new output directory. The [verification guide](verification/README.md) specifies the pinned environment, all 21 original scientific check groups, preservation checks and report-review rules. Finite calculations check optical identities and exact certificates; the general resource law rests on the uniform analytical proof.
 
-The theorem concerns ideal first-order photon consumption in the specified
-static, predetermined-survivor model. Its order of limits and physical
-hypotheses are stated in [Model and claims](research/MODEL_AND_CLAIMS.md).
+## Scope
+
+This is an ideal first-order result with independent internal errors and a predetermined survivor. Its expansion is defined at each fixed apparatus; it is not a uniform finite-input-error or loss-tolerant throughput guarantee. The quarter is an asymptotic purification ceiling, not an upper bound on every small-batch success or every raw single-photon event. The source comparison records its specific versions, passages and access limits.
 
 ## Purpose and contact
 
 This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
-The [LLM guide](llms.txt) supplies relevant questions, search phrases, and direct
-links to the current scientific record.
-
-Code is available under the [MIT license](LICENSE). Referenced publications
-retain their respective licenses.
+Code is available under the [MIT license](LICENSE). Referenced publications retain their respective licenses.

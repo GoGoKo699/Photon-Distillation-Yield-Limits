@@ -1,0 +1,110 @@
+{
+  "baseline_commit": "99074550e4955891cae2c2630c2da7570ec34269",
+  "baseline_tree": "32a7f15b6af4701bf2fbd6d7f532be640f148d47",
+  "organization_reference": {
+    "repository": "GoGoKo699/Universal-Entanglement-Readout",
+    "release": "v1.0.0",
+    "commit": "b29a9d73a886bffb940fe3020330ab4b165fde95"
+  },
+  "purpose": "Topic-based scientific reading paths, one selected educational anchor, and a project-defined 30-milestone map. No scientific claims are changed.",
+  "learning": {
+    "anchor": "Tichy, arXiv:1312.4266v2",
+    "map": "learning/MILESTONES.md",
+    "background": 10,
+    "narrative": 20,
+    "personal_coaching_included": false
+  },
+  "moved_documents": [
+    {
+      "old_path": "research/MODEL_AND_CLAIMS.md",
+      "new_path": "science/MODEL_AND_CLAIMS.md",
+      "old_sha256": "5aca4b9f168fab348cc04273e516912e0a134edc4d3fc7b1e3f2d7c97d1e5cde",
+      "new_sha256": "bb27bf980b1146e50a05cf6ba028a3ca7dcf941167a86f7e7b47444d49d4a351",
+      "math_sha256": "eca6e6cd623e616bbc65c8451ab2f5751e62d63bf30480c19612f8d670929fc9"
+    },
+    {
+      "old_path": "research/THEOREM.md",
+      "new_path": "science/THEOREM.md",
+      "old_sha256": "f0c7ee8c1fac3d207209293166dc9e00dd2f700861666d571c3e275756b87c3f",
+      "new_sha256": "e9e48272bfdeced1dee814ff458f205b575f6ecbdf84086cb84b399a917a1993",
+      "math_sha256": "ee50a17ca72768d9eb49f0337bffd59e4d632c903b3bb7df2793cdc7dbf8766b"
+    },
+    {
+      "old_path": "research/PROOF_DETAILS.md",
+      "new_path": "science/PROOF_DETAILS.md",
+      "old_sha256": "62208ed4b95578253874e864571a4ed432a43300f77e884140189f0a30382d60",
+      "new_sha256": "62208ed4b95578253874e864571a4ed432a43300f77e884140189f0a30382d60",
+      "math_sha256": "bde5951aa3800bc91ee52f78de245ddccb8369a50a5c26811e3a0c2d68e532d3"
+    },
+    {
+      "old_path": "research/OPTICAL_CONSTRUCTION.md",
+      "new_path": "science/OPTICAL_CONSTRUCTION.md",
+      "old_sha256": "d0ceb36e568b1c6927fc520e2e6c1a8a866587af3679153b1a76930c6c52915f",
+      "new_sha256": "255b24c963e48b51fc6bc3343d23aeff469b102a45bde506af75093b971bf131",
+      "math_sha256": "7dd8d85f51d44c586dc0ceef605c1f326ee419f099206a32800a4fbce585c185"
+    },
+    {
+      "old_path": "research/PHYSICAL_MECHANISM.md",
+      "new_path": "science/PHYSICAL_MECHANISM.md",
+      "old_sha256": "c307df9ad66fa36bc7b56ae403ec73b52f6f64869fbeecdf153c6ff5b9a45fb2",
+      "new_sha256": "c307df9ad66fa36bc7b56ae403ec73b52f6f64869fbeecdf153c6ff5b9a45fb2",
+      "math_sha256": "553604b7b605d759509afedae6eb89d622499739399b01c8ad1419533e8aed04"
+    },
+    {
+      "old_path": "research/PHYSICAL_INTERPRETATION.md",
+      "new_path": "science/PHYSICAL_INTERPRETATION.md",
+      "old_sha256": "e9072b12819c26c3eade7f92f56cf575e1ae4da18771eb60d27ddd4ef3bd633e",
+      "new_sha256": "e9072b12819c26c3eade7f92f56cf575e1ae4da18771eb60d27ddd4ef3bd633e",
+      "math_sha256": "4782c9f066d24cba76f61e65a643e730f1ca70305f6295f7209b8e84a175dffc"
+    },
+    {
+      "old_path": "research/PROOF_MAP.md",
+      "new_path": "science/PROOF_MAP.md",
+      "old_sha256": "fec74fb2386f4109a7cc361f6529b84259c403220ffd2e333c49c252d8bc1c2c",
+      "new_sha256": "5165e3bebdbc9dc3ad44ec7922ef82abeaf4e33f718de3a129831a62c774d11a",
+      "math_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "old_path": "research/CONTRIBUTION_REVIEW.md",
+      "new_path": "references/CONTRIBUTION_REVIEW.md",
+      "old_sha256": "0348a50fe795a34df8af4b7f3a45fa0d61c9468bdfcfc0316e5c0f214d4cddf6",
+      "new_sha256": "47c8817292b2dcea15b244ccafe3b0182517f81bc1f907e177f1e7eaf095646a",
+      "math_sha256": "58e2610f65460e5165794a84a1345e1f14a9463de6f0901d2bfc7b7d1dc9652b"
+    },
+    {
+      "old_path": "research/TUTORIAL_BRIDGE.md",
+      "new_path": "learning/TICHY_BRIDGE.md",
+      "old_sha256": "9eb2f2936e2b4e37c9a0f16af1d1533751189a329156248268253ff8d4fc2e1f",
+      "new_sha256": "61fb8e6fab59bf4d2f47b7c302ab4afbc9dd884a8bbb32e4862ace44e10895f8",
+      "math_sha256": "618b784909b3269f575fd4ae2ed91aa9812f166b10443274938f7f3596e778ce"
+    },
+    {
+      "old_path": "literature/ATTRIBUTION.md",
+      "new_path": "references/ATTRIBUTION.md",
+      "old_sha256": "70a58e8b7962c1e3f32e58cb04d85570b6767e2a32c2b3813b50702f103c8f9b",
+      "new_sha256": "ada29aff7a7ddf06a716dfd695cabd3c99f36bf59fa80db33e45f5d11874d174",
+      "math_sha256": "2883b40e962d21aa613ffc8250d5dce398386c6144dfbcc50e1a459840b66bf5"
+    },
+    {
+      "old_path": "VERIFICATION.md",
+      "new_path": "verification/README.md",
+      "old_sha256": "50077f72c20146f6a318cb89ca76c48a1e76cc929533dcd6b282acf8b297521c",
+      "new_sha256": "e7f7156af7d491d15f120870ccbc1b8e157ee158e2a23e5610dd08813b9ff1ea",
+      "math_sha256": "15d5dfa5c35b1e53e7111685a9e89253c3459369deb18af1b63172935c4dff20"
+    }
+  ],
+  "unchanged_move": {
+    "old_path": "literature/SOURCES.json",
+    "new_path": "references/SOURCES.json",
+    "blob_sha": "67f3543b4a19b38e6948f07c7e9df1614104bdc5"
+  },
+  "preservation": {
+    "archive_tree": "5ed737e29308217cfafdbc276bb90762f6e8eac6",
+    "archive_files": 89,
+    "license_blob": "e17a781bf47c4aadf18b68fc593846a1193b86c1",
+    "scientific_groups": 21,
+    "scientific_assertions_tolerances_reports": "unchanged"
+  },
+  "presentation_specification": "ACTIVE_EDITS.json reconstructs the same three archival-derived reading copies, with relocated links and existing GitHub math syntax. Compaction removes superseded replacement history, not source evidence; the previous specification remains in Git history.",
+  "verification_boundary": "Source and mathematical-payload checks do not constitute hosted visual inspection. Exact-head and merged-main CI receipts, including any report or access differences, belong in the pull request."
+}

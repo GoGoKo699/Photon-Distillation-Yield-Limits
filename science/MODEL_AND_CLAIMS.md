@@ -1,6 +1,6 @@
 # Model and claim hierarchy
 
-The [tutorial bridge](TUTORIAL_BRIDGE.md) introduces the optical notation and
+The [tutorial bridge](../learning/TICHY_BRIDGE.md) introduces the optical notation and
 a worked heralding example. The complete statements and proofs are in
 [THEOREM.md](THEOREM.md).
 
@@ -49,6 +49,6 @@ first-order two-copy interference visibility and explains each hypothesis.
 ## Resource and attribution
 
 The optimized resource is ideal mean input-photon consumption under the
-first-order model above. [The result in context](CONTRIBUTION_REVIEW.md) and
-[the attribution map](../literature/ATTRIBUTION.md) relate the converse to
+first-order model above. [The result in context](../references/CONTRIBUTION_REVIEW.md) and
+[the attribution map](../references/ATTRIBUTION.md) relate the converse to
 established constructions and coefficient bounds.
